@@ -1,0 +1,219 @@
+//1
+package days06;
+
+public class Ex08_02 {
+
+	public static void main(String[] args) {
+		for (int i = 1; i <=4; i++) {
+			for (int j = 1; j <=i; j++) {
+				System.out.print("*");
+				
+			} // for
+			System.out.println();
+		} // for
+	} // main
+}
+/////////////////////////////////////////////////////////////////
+package days06;
+
+public class Ex08_02 {
+
+	public static void main(String[] args) {
+		
+		for (int i = 1; i <=4; i++) {
+			for (int j = 1; j <=5-i; j++) {
+				System.out.printf("*");
+				
+			} // for
+			System.out.println();
+		} // for
+	} // main
+}
+///////////////////////////////////////////////////////////////////////////////
+//3
+package days06;
+
+public class Ex08_02 {
+
+	public static void main(String[] args) {
+		for(int i=1;i<5;i++){
+			for(int j=4;j>0;j--){
+				if(i<j){
+					System.out.print("_");
+				}else{
+					System.out.print("*");
+				}
+			}
+			System.out.println("");
+		}
+	} // main
+}
+////////////////////////////////////////////////////////////////////////////////
+//4
+package days06;
+
+public class Ex08_02 {
+
+    public static void main(String[] args) {
+        for (int i = 4; i > 0; i--) { // 첫 번째 for 문의 반복 범위 변경
+            for (int j = 4; j > 0; j--) {
+                if (i < j) {
+                    System.out.print("_");
+                } else {
+                    System.out.print("*");
+                }
+            }
+            System.out.println("");
+        }
+    } // main
+}
+
+/////////////////////////////////////////////////////////////////////////
+//5
+package days06;
+
+public class Ex08_02 {
+
+	public static void main(String[] args) {
+		
+		for(int i=1;i<=3;i++){
+			for(int j=1;j<=3-i;j++){
+				System.out.print("_"); 
+			}
+			for(int j=1;j<=2*i-1;j++){
+				System.out.print("*"); 
+			}
+			System.out.println("");
+		} 
+	} // main
+}
+///////////////////////////////////////////////////////////////
+//6
+package days06;
+
+public class Ex08_02 {
+
+	public static void main(String[] args) {
+		
+		for(int i=0;i<3;i++){
+			for(int j=0;j<2-i;j++){
+				System.out.print("_"); 
+			}
+			for(int j=0;j<2*i+1;j++){
+				System.out.print("*"); 
+			}
+			System.out.println("");
+		} 
+		for(int i=1;i>=0;i--){
+			for(int j=0;j<2-i;j++){
+				System.out.print("_"); 
+			}
+			for(int j=0;j<2*i+1;j++){
+				System.out.print("*"); 
+			}
+			System.out.println("");
+		} 
+	} // main
+}
+//////////////////////////////////////////////////////////////////////////////////
+//6-2
+package days06;
+
+public class Ex08_02 {
+	
+	public static void main(String[] args) {
+		
+		for (int i = 0; i < 5; i++) {
+			for (int j = 0; j < 5; j++) {
+				
+				if (i <= 2 && (i + j <= 1 || j - i >= 3)) {
+					System.out.print("_");
+				} else if (i > 2 && (i - j >= 3 || i + j >= 7)) {
+					System.out.print("_");
+				} else {
+					System.out.print("*");
+				}//if
+			}//for j
+			System.out.println(); // 줄 바꿈
+		}//for
+	}
+}
+////////////////////////////////////////////////////////////////////////////////////
+//6-3
+package days06;
+
+public class Ex08_02 {
+
+	public static void main(String[] args) {
+		//6
+		for(int i=1;i<=5;i++){
+			for(int j=1;j<=Math.abs(3-i);j++){
+				System.out.print("_"); 
+			}
+			for(int j=1;j<=2*i-1&&(j<=Math.abs(2*i-11));j++){
+				
+				System.out.print("*"); 
+			}
+			System.out.println("");
+		} 
+	} // main
+}
+///////////////////////////////////////////////////////////////////////////////
+//7
+package days06;
+
+public class Ex08_02 {
+	
+	public static void main(String[] args) {
+		
+		for (int i = 1; i <=5; i++) {
+			for(int j=1;j<=i; j++) {
+				if(i==j) {
+				System.out.printf("*");
+				}else
+					System.out.printf("_");
+			}
+			System.out.println();
+		} // for
+	}
+}
+///////////////////////////////////////////////////////////////////////////////
+//8
+package days06;
+
+public class Ex08_02 {
+	
+	public static void main(String[] args) {
+		
+		for (int i = 5; i >=1; i--) {
+			for(int j=1;j<=i; j++) {
+				if(i==j) {
+				System.out.printf("*");
+				}else
+					System.out.printf("_");
+			}
+			System.out.println();
+		} // for
+	}
+}
+///////////////////////////////////////////////////
+//9
+package days06;
+
+public class Ex08_02 {
+	
+	public static void main(String[] args) {
+		//int k=1;
+		for (int i = 5,k=1; i >=1; i--,k++) {
+			for(int j=1;j<=5; j++) {
+				
+				if((i==j) || (j==k)) {
+				System.out.printf("*");
+				}else
+					System.out.printf("_");
+			
+			}
+			System.out.println();
+		} // for
+	}
+}

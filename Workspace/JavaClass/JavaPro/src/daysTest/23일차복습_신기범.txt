@@ -1,0 +1,105 @@
+1. 컬렉션 클래스의 종류 및 특징에 대해서 설명하세요.
+  List(순서 있음 중복 허용)	-	ArrayList,	Stack(LIFO구조)push로 데이터입력, pop으로 데이터 읽은 후 제거,peek데이터 읽기만함,	
+ 						LinkedList(비연속적) 노드가 그다음 노드의 주소값을 가지고있음, 읽기는 느리지만 데이터 수정은 ArrayList보다 빠름,	 
+ 						Vector	ArrayList와 비슷하지만 멀티스레드 동기화 가능
+ 			Set	-	HashSet(순서 유지x 중복허용x),	TreeSet	 중복허용x 오름차순으로 정렬
+ 																		ㄴ이진 검색 트리라는 자료구조로 데이터를 저장하는 컬렉션 클래스 검색, 정렬, 범위 검색하는데 성능이 높다
+																			링크드리스트 처럼 노드(node)가 서로 연결된 구조
+																			최상위 노드:	루트(root)노드
+																			부모 - 자식 노드 관계
+																			형제 노드 관계
+ 			Map	-	HashMap, HashTable, TreeMap, Properties 
+ 							ㄴHashTable과 사용법은 같지만 Map이 더 최근 + 동기화X
+ 							ㄴ Properties컬렉션 클래스 는 Hashtable 컬렉션 클래스와 같음 차이점은  key와 value가  String 타입
+							
+2. days19 패키지 안에 있는 
+  "1. Java 팀 구성.txt" 파일을 읽어와서
+  
+   Map 컬렉션 클래스 사용해서
+      key : 1조, 2조, 3조
+      value :  직위(급)과 이름을 저장하는 클래스를 선언하고
+               그 클래스 객체를 저장하는 컬렉션 클래스 사용   
+   저장하고 출력하는 코딩을 하세요.                
+
+package days24;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Set;
+import java.util.Map.Entry;
+
+public class Ex01 {
+	static HashMap<String, HashMap<String, String>> teamGroup = new HashMap<>();
+	public static void main(String[] args) {
+		String fileName = ".\\src\\days19\\1. Java 팀 구성.txt";
+		String value = null;
+		String group = null;
+
+		
+		try (BufferedReader br = new BufferedReader(new FileReader(fileName))) {
+			while ((value = br.readLine()) != null) {
+				if (value.equalsIgnoreCase("1조")) {
+					group = value;
+					value = br.readLine();
+					String[] team = value.split("\\s*,\\s*");
+					addGroup(group, team);
+				} // if
+			}
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		disp();
+		
+	} // main
+
+	private static void disp() {
+		Set<Entry<String, HashMap<String, String>>> es = teamGroup.entrySet();
+		
+		Iterator<Entry<String, HashMap<String, String>>> ir = es.iterator();
+		
+		while (ir.hasNext()) {
+			Entry<String, HashMap<String, String>> entry = (Entry<String, HashMap<String, String>>) ir.next();
+
+			String groupName = entry.getKey();
+			HashMap<String, String> groupMap = entry.getValue();
+			System.out.printf("* %s [%d명]\n", groupName, groupMap.size());
+
+			Iterator<Entry<String, String>> ir2 = groupMap.entrySet().iterator();
+			while (ir2.hasNext()) {
+				Entry<String, String> entry2 = (Entry<String, String>) ir2.next();
+				String name = entry2.getKey();
+				String tier = entry2.getValue();
+				System.out.printf("\t%s : %s\n", name, tier);
+			}
+		}
+	}
+		
+
+	private static void addGroup(String group, String[] team) {
+		String tier = null;
+		String name = null;
+		teamGroup.put(group, new HashMap<String, String>());
+		for (int i = 0; i < team.length; i++) {
+			if (team[i].contains(("팀장"))) {
+				name = team[i];
+				tier = "팀장";
+				HashMap<String, String> teamt = teamGroup.get(group);
+				teamt.put(name, tier);
+			} else {
+				tier = "팀원";
+				name = team[i];
+				HashMap<String, String> teamt = teamGroup.get(group);
+				teamt.put(name, tier);
+			}
+			
+		} // for
+		
+	}
+}
+
+
+3. Properties 컬렉션 클래스에 대해서 상세히 설명하세요.

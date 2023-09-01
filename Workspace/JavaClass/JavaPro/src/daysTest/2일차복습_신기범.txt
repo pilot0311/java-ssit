@@ -1,0 +1,183 @@
+﻿1. 에러메시지에 대한 설명을 하세요 .
+  ㄱ. The local variable age may not have been initialized  지역변수 초기화(할당) 안됨
+  ㄴ. grade cannot be resolved to a variable 변수 선언 안됨
+  ㄷ. The left-hand side of an assignment must be a variable "없음
+  ㄹ. Type mismatch: cannot convert from int to boolean		형변환 안됨
+  ㅁ. Duplicate local variable age		변수 중복 선언
+  ㅂ. Unhandled exception type IOException	IOException 예외 처리 안함
+  
+ 2. 지역변수( Local Variable ) 에 대해서 설명하세요. 
+   메모리 저장공간
+ 3.  표준 출력 함수 3가지에 대해서 설명(기능, 매개변수, 리턴값)하세요. 
+       
+     ㄱ.  System.out.println()  개행 있음, 	콘솔에 출력
+     ㄴ.  System.out.print()     개행 없음	콘솔에 출력
+     ㄷ.  System.out.printf()     format, args	콘솔에 출력
+     
+
+*** 4. 이름, 나이, 학점, 성별 관련 변수를 선언하시고, 출력하세요.
+    ( 각 변수의 값은  조건2)를 보고 초기화 하세요 )
+    
+    조건1) printf() 메서드 사용
+    조건2) 출력 형식은    ">이름:"홍길동", 나이:20, 학점:'A', 성별:true" 
+    package days03;
+
+public class Ex01 {
+	
+	public static void main(String[] args) {
+		String name = "신기범";
+		byte age = 20;
+		char grade = 'A';
+		boolean sex = true;
+		System.out.printf(">이름: \"%s\", 나이: %d, 학점: '%c', 성별: %b", name, age, grade, sex);
+	}
+
+}
+
+5. 아래 코딩의 차이점을 설명하세요 
+      A 식별자
+     'A' 문자 A
+     "A" 문자열 A
+
+6.  두 정수 x,y 변수를 선언하고 각각 1,2로 초기화하고 
+    합을 출력하고,
+    두 값을 교환하고 x,y 값을 출력하는 코딩을 하세요.
+     package days03;
+
+public class Ex01 {
+	
+	public static void main(String[] args) {
+		byte x = 1, y=2;
+		byte temp;
+		temp=x;
+		x=y;
+		y=temp;
+		System.out.printf("x= %d y=%d",x,y);
+	}
+
+}
+     
+7.  + 연산의 결과와 그에 대해서 설명하세요 
+   ㄱ. 3 + 5 + 0  실수형 8
+   ㄴ. 3 + 5 + "0" 문자열 "80' 3+5는 실수형끼리의 덧셈이라 8이되고 그후 문자열 0과의 더하기는 문자+문자 로 형변환이 되어 80
+   ㄴ. 3 + 5 + '0' 문자 '8'
+
+8. 자료형( Data Type )에 대해서 설명하세요 .
+  ㄱ. 정의 : 자료가 저장될 변수의 타입
+  ㄴ. 종류 : boolean, byte, short, int, long, float, double, char
+
+9.  나이와 국어점수, 원주율(3.141592)를 저장할 변수와 상수를 선언하세요 . 
+	String name;	byte kor;		final double PI = 3.141592;
+10. 함수(메서드)를 사용할 때 반드시 알아야 할 3가지에 대해 설명하세요.  
+    ㄱ. 기능
+    ㄴ. 매개변수
+    ㄷ. 리턴값
+                                 
+11. 개행( 줄바꿈 ) 하는 코딩을 모두 적으세요. 
+    ㄱ.System.out.println("");
+    ㄴ. \n
+
+12. 십진수 27을 2진수, 8진수, 16진수로 나타내세요.
+      11011	33		1b
+
+*** 13. 이름을 표준입력장치로 부터 입력받아서 
+    출력하는 코딩을 하세요. 
+     
+     [입력형식]
+     > 이름을 입력하세요 ? _
+     
+     [출력형식]
+     > 이름은 "홍길동"입니다.
+     package days03;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class Ex01 {
+	
+	public static void main(String[] args) throws IOException {
+		String name;
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		System.out.print(">이름을 입력하세요: ");
+		name = br.readLine();
+		System.out.printf(">이름은 \"%s\"입니다",name);
+	}
+
+}
+
+14.  printf(String format, Object...args) 함수의 String format 매개변수의 
+      %Conversion(출력서식) 에 대해서 설명하세요. 
+      ㄱ. String 일 때 사용하는 Conversion : %s
+      ㄴ. char 일 때 사용하는 Conversion :   %c
+      ㄷ. boolean 일 때 사용하는 Conversion :   %b
+      ㄹ. byte, short, int, long 일 때 사용하는 Conversion :  %d  
+      ㅁ. float, double 일 때 사용하는 Conversion :    %f
+
+15. 인코딩(encoding)과 디코딩(decoding)에 대해서 간단히 설명하세요.
+     
+     ㄱ. 인코딩 :  
+     ㄴ. 디코딩 :    
+     
+*** 16. 이름, 나이, 국어, 영어, 수학을 입력받아서
+
+    아래와 같이 출력
+    [입력형식] 이름 나이 국어 영어 수학 입력 ? 
+    [출력형식] "홍길동" 20살 10 20 30 60 20.00   
+    
+    ( 조건 : Scanner 클래스 사용 )   
+    ( 조건 : 평균은 소수점 2자리까지 출력 )   
+    package days03;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Scanner;
+
+public class Ex01 {
+	
+	public static void main(String[] args) throws IOException {
+		String name;
+		byte age;
+		byte kor;
+		byte eng;
+		byte math;
+		short total;
+		double avg;
+		Scanner sc = new Scanner(System.in);
+		System.out.printf("이름 나이 국어 영어 수학 입력");
+		name = sc.next();
+		age = sc.nextByte();
+		kor = sc.nextByte();
+		eng = sc.nextByte();
+		math = sc.nextByte();
+		total = (short)(kor+eng+math);
+		avg = (double)total/3;
+		System.out.printf("\"%s\" %d살 %d %d %d %d %.2f",name,age,kor,eng,math,total,avg);
+	}
+
+}
+17. 아래 코딩(import문)에 대해서 설명하세요. 
+	import java.io.BufferedReader;	 java.io패키지의 BufferedReader클래스 사용
+	import java.io.IOException;		java.io패키지의 IOException클래스 사용
+	import java.io.InputStreamReader;	java.io패키지의 InputStreamReader클래스 사용
+
+18. 문자열(String) "10"을   byte, short, int, long 으로 
+변환하는 코딩을 하세요. 
+String a = "10";
+byte b = Byte.parsebyte(a);
+short s = Short.parseshort(a);
+int i = Integer.parseint(a);
+ling l = Long.parelong(a);
+
+18-2. 정수(int) 10을   문자열(String) "10"으로 변환하는
+코딩을 하세요.  
+int b =10;
+String s = Integer.toString(b);
+
+2진수 : Integer.toString(10);
+                    
+																															
+
+
+                    

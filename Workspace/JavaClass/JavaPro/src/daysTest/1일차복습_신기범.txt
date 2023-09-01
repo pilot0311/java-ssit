@@ -1,0 +1,69 @@
+
+1. JDK 설치 확인 방법에 대해서 설명하세요.
+  ㄱ.  
+  ㄴ. 
+
+2. JDK 를 설치 후 환경변수 설정에 대해서 설명하세요. 
+   
+  1) 변수이름  : [                   ]
+     변수값    : [                   ]
+      
+                           
+  2) 변수이름  : [                   ]
+     변수값    : [                   ]
+    
+3. 자바에서 
+  1) 클래스 선언 형식을 적으세요.   
+  2) 함수(메서드) 선언 형식을 적으세요. 
+  3) 변수 선언 형식을 적으세요.  
+  4) 상수 선언 형식을 적으세요. 
+  
+4. 용어 정리
+
+  1) JDK                   
+  2) JRE  
+  3) JVM
+  4) Java API
+
+5. 자바 프로그램의 기본 구조에 대해서 설명하세요.
+    
+
+6. 메모장을 사용해서 
+   1) 소스파일( Test.java ) :
+      (ㄱ) 본인 이름 및 나이를 저장하는 변수를 선언하고
+      초기화 및 출력하는 코딩을 하세요.
+      (ㄴ) 출력 형식
+          이름 : "홍길동", 나이 : 20살입니다. 
+   
+   2) 자바 컴파일러  ( javac.exe )로 컴파일하고 
+   3) 자바 인터프리터( java.exe  )로 실행하세요. 
+   
+7. 어제 배운 이클립스 단축키를  적어주세요.
+	1) 단축키 목록  : 
+    2) 단일행       : 
+	3) 다중행       :  
+	4) 실행         : 
+	5) 자동 완성    : 	         
+	6)type comment  : 
+	7) 들여쓰기     : 
+	8) 코딩 복사    : 
+	
+	[복습] 자주 사용한 이클립스의 단축키 정리.. 
+
+8. 아래 에러에 대해서 설명하세요.
+	1) Duplicate local variable age
+	2) 이창익 cannot be resolved to a variable
+	3) The local variable name may not have been initialized
+	4) Type mismatch: cannot convert from int to String
+	5) The left-hand side of an assignment must be a variable
+ 
+       
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+    
+      

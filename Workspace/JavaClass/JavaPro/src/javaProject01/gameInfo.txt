@@ -1,0 +1,526 @@
+단식: 3판2선승
+	1 Round
+Player [name=가나다, point=1, pointStr=15, numberOfWongames=0, numberOfWonSets=0]
+Player [name=라마바, point=0, pointStr=0, numberOfWongames=0, numberOfWonSets=0]
+	2 Round
+Player [name=가나다, point=2, pointStr=30, numberOfWongames=0, numberOfWonSets=0]
+Player [name=라마바, point=0, pointStr=0, numberOfWongames=0, numberOfWonSets=0]
+	3 Round
+Player [name=가나다, point=2, pointStr=30, numberOfWongames=0, numberOfWonSets=0]
+Player [name=라마바, point=1, pointStr=15, numberOfWongames=0, numberOfWonSets=0]
+	4 Round
+Player [name=가나다, point=2, pointStr=30, numberOfWongames=0, numberOfWonSets=0]
+Player [name=라마바, point=2, pointStr=30, numberOfWongames=0, numberOfWonSets=0]
+	5 Round
+Player [name=가나다, point=2, pointStr=30, numberOfWongames=0, numberOfWonSets=0]
+Player [name=라마바, point=3, pointStr=40, numberOfWongames=0, numberOfWonSets=0]
+	6 Round
+Player [name=가나다, point=2, pointStr=30, numberOfWongames=0, numberOfWonSets=0]
+Player [name=라마바, point=4, pointStr=WIN, numberOfWongames=0, numberOfWonSets=0]
+	7 Round
+Player [name=가나다, point=1, pointStr=15, numberOfWongames=0, numberOfWonSets=0]
+Player [name=라마바, point=0, pointStr=0, numberOfWongames=1, numberOfWonSets=0]
+	8 Round
+Player [name=가나다, point=1, pointStr=15, numberOfWongames=0, numberOfWonSets=0]
+Player [name=라마바, point=1, pointStr=15, numberOfWongames=1, numberOfWonSets=0]
+	9 Round
+Player [name=가나다, point=1, pointStr=15, numberOfWongames=0, numberOfWonSets=0]
+Player [name=라마바, point=2, pointStr=30, numberOfWongames=1, numberOfWonSets=0]
+	10 Round
+Player [name=가나다, point=2, pointStr=30, numberOfWongames=0, numberOfWonSets=0]
+Player [name=라마바, point=2, pointStr=30, numberOfWongames=1, numberOfWonSets=0]
+	11 Round
+Player [name=가나다, point=3, pointStr=40, numberOfWongames=0, numberOfWonSets=0]
+Player [name=라마바, point=2, pointStr=30, numberOfWongames=1, numberOfWonSets=0]
+	12 Round
+Player [name=가나다, point=4, pointStr=WIN, numberOfWongames=0, numberOfWonSets=0]
+Player [name=라마바, point=2, pointStr=30, numberOfWongames=1, numberOfWonSets=0]
+	13 Round
+Player [name=가나다, point=1, pointStr=15, numberOfWongames=1, numberOfWonSets=0]
+Player [name=라마바, point=0, pointStr=0, numberOfWongames=1, numberOfWonSets=0]
+	14 Round
+Player [name=가나다, point=2, pointStr=30, numberOfWongames=1, numberOfWonSets=0]
+Player [name=라마바, point=0, pointStr=0, numberOfWongames=1, numberOfWonSets=0]
+	15 Round
+Player [name=가나다, point=2, pointStr=30, numberOfWongames=1, numberOfWonSets=0]
+Player [name=라마바, point=1, pointStr=15, numberOfWongames=1, numberOfWonSets=0]
+	16 Round
+Player [name=가나다, point=2, pointStr=30, numberOfWongames=1, numberOfWonSets=0]
+Player [name=라마바, point=2, pointStr=30, numberOfWongames=1, numberOfWonSets=0]
+	17 Round
+Player [name=가나다, point=2, pointStr=30, numberOfWongames=1, numberOfWonSets=0]
+Player [name=라마바, point=3, pointStr=40, numberOfWongames=1, numberOfWonSets=0]
+	18 Round
+Player [name=가나다, point=3, pointStr=40, numberOfWongames=1, numberOfWonSets=0]
+Player [name=라마바, point=3, pointStr=40, numberOfWongames=1, numberOfWonSets=0]
+	19 Round
+Player [name=가나다, point=4, pointStr=AD, numberOfWongames=1, numberOfWonSets=0]
+Player [name=라마바, point=3, pointStr=00, numberOfWongames=1, numberOfWonSets=0]
+	20 Round
+Player [name=가나다, point=5, pointStr=WIN, numberOfWongames=1, numberOfWonSets=0]
+Player [name=라마바, point=3, pointStr=00, numberOfWongames=1, numberOfWonSets=0]
+	21 Round
+Player [name=가나다, point=1, pointStr=15, numberOfWongames=2, numberOfWonSets=0]
+Player [name=라마바, point=0, pointStr=0, numberOfWongames=1, numberOfWonSets=0]
+	22 Round
+Player [name=가나다, point=2, pointStr=30, numberOfWongames=2, numberOfWonSets=0]
+Player [name=라마바, point=0, pointStr=0, numberOfWongames=1, numberOfWonSets=0]
+	23 Round
+Player [name=가나다, point=3, pointStr=40, numberOfWongames=2, numberOfWonSets=0]
+Player [name=라마바, point=0, pointStr=0, numberOfWongames=1, numberOfWonSets=0]
+	24 Round
+Player [name=가나다, point=3, pointStr=40, numberOfWongames=2, numberOfWonSets=0]
+Player [name=라마바, point=1, pointStr=15, numberOfWongames=1, numberOfWonSets=0]
+	25 Round
+Player [name=가나다, point=4, pointStr=WIN, numberOfWongames=2, numberOfWonSets=0]
+Player [name=라마바, point=1, pointStr=15, numberOfWongames=1, numberOfWonSets=0]
+	26 Round
+Player [name=가나다, point=0, pointStr=0, numberOfWongames=3, numberOfWonSets=0]
+Player [name=라마바, point=1, pointStr=15, numberOfWongames=1, numberOfWonSets=0]
+	27 Round
+Player [name=가나다, point=0, pointStr=0, numberOfWongames=3, numberOfWonSets=0]
+Player [name=라마바, point=2, pointStr=30, numberOfWongames=1, numberOfWonSets=0]
+	28 Round
+Player [name=가나다, point=1, pointStr=15, numberOfWongames=3, numberOfWonSets=0]
+Player [name=라마바, point=2, pointStr=30, numberOfWongames=1, numberOfWonSets=0]
+	29 Round
+Player [name=가나다, point=1, pointStr=15, numberOfWongames=3, numberOfWonSets=0]
+Player [name=라마바, point=3, pointStr=40, numberOfWongames=1, numberOfWonSets=0]
+	30 Round
+Player [name=가나다, point=2, pointStr=30, numberOfWongames=3, numberOfWonSets=0]
+Player [name=라마바, point=3, pointStr=40, numberOfWongames=1, numberOfWonSets=0]
+	31 Round
+Player [name=가나다, point=2, pointStr=30, numberOfWongames=3, numberOfWonSets=0]
+Player [name=라마바, point=4, pointStr=WIN, numberOfWongames=1, numberOfWonSets=0]
+	32 Round
+Player [name=가나다, point=1, pointStr=15, numberOfWongames=3, numberOfWonSets=0]
+Player [name=라마바, point=0, pointStr=0, numberOfWongames=2, numberOfWonSets=0]
+	33 Round
+Player [name=가나다, point=1, pointStr=15, numberOfWongames=3, numberOfWonSets=0]
+Player [name=라마바, point=1, pointStr=15, numberOfWongames=2, numberOfWonSets=0]
+	34 Round
+Player [name=가나다, point=2, pointStr=30, numberOfWongames=3, numberOfWonSets=0]
+Player [name=라마바, point=1, pointStr=15, numberOfWongames=2, numberOfWonSets=0]
+	35 Round
+Player [name=가나다, point=3, pointStr=40, numberOfWongames=3, numberOfWonSets=0]
+Player [name=라마바, point=1, pointStr=15, numberOfWongames=2, numberOfWonSets=0]
+	36 Round
+Player [name=가나다, point=3, pointStr=40, numberOfWongames=3, numberOfWonSets=0]
+Player [name=라마바, point=2, pointStr=30, numberOfWongames=2, numberOfWonSets=0]
+	37 Round
+Player [name=가나다, point=4, pointStr=WIN, numberOfWongames=3, numberOfWonSets=0]
+Player [name=라마바, point=2, pointStr=30, numberOfWongames=2, numberOfWonSets=0]
+	38 Round
+Player [name=가나다, point=0, pointStr=0, numberOfWongames=4, numberOfWonSets=0]
+Player [name=라마바, point=1, pointStr=15, numberOfWongames=2, numberOfWonSets=0]
+	39 Round
+Player [name=가나다, point=1, pointStr=15, numberOfWongames=4, numberOfWonSets=0]
+Player [name=라마바, point=1, pointStr=15, numberOfWongames=2, numberOfWonSets=0]
+	40 Round
+Player [name=가나다, point=2, pointStr=30, numberOfWongames=4, numberOfWonSets=0]
+Player [name=라마바, point=1, pointStr=15, numberOfWongames=2, numberOfWonSets=0]
+	41 Round
+Player [name=가나다, point=2, pointStr=30, numberOfWongames=4, numberOfWonSets=0]
+Player [name=라마바, point=2, pointStr=30, numberOfWongames=2, numberOfWonSets=0]
+	42 Round
+Player [name=가나다, point=3, pointStr=40, numberOfWongames=4, numberOfWonSets=0]
+Player [name=라마바, point=2, pointStr=30, numberOfWongames=2, numberOfWonSets=0]
+	43 Round
+Player [name=가나다, point=3, pointStr=40, numberOfWongames=4, numberOfWonSets=0]
+Player [name=라마바, point=3, pointStr=40, numberOfWongames=2, numberOfWonSets=0]
+	44 Round
+Player [name=가나다, point=4, pointStr=AD, numberOfWongames=4, numberOfWonSets=0]
+Player [name=라마바, point=3, pointStr=00, numberOfWongames=2, numberOfWonSets=0]
+	45 Round
+Player [name=가나다, point=5, pointStr=WIN, numberOfWongames=4, numberOfWonSets=0]
+Player [name=라마바, point=3, pointStr=00, numberOfWongames=2, numberOfWonSets=0]
+	46 Round
+Player [name=가나다, point=1, pointStr=15, numberOfWongames=5, numberOfWonSets=0]
+Player [name=라마바, point=0, pointStr=0, numberOfWongames=2, numberOfWonSets=0]
+	47 Round
+Player [name=가나다, point=2, pointStr=30, numberOfWongames=5, numberOfWonSets=0]
+Player [name=라마바, point=0, pointStr=0, numberOfWongames=2, numberOfWonSets=0]
+	48 Round
+Player [name=가나다, point=3, pointStr=40, numberOfWongames=5, numberOfWonSets=0]
+Player [name=라마바, point=0, pointStr=0, numberOfWongames=2, numberOfWonSets=0]
+	49 Round
+Player [name=가나다, point=4, pointStr=WIN, numberOfWongames=5, numberOfWonSets=0]
+Player [name=라마바, point=0, pointStr=0, numberOfWongames=2, numberOfWonSets=0]
+	50 Round
+Player [name=가나다, point=0, pointStr=0, numberOfWongames=0, numberOfWonSets=1]
+Player [name=라마바, point=1, pointStr=15, numberOfWongames=0, numberOfWonSets=0]
+	51 Round
+Player [name=가나다, point=0, pointStr=0, numberOfWongames=0, numberOfWonSets=1]
+Player [name=라마바, point=2, pointStr=30, numberOfWongames=0, numberOfWonSets=0]
+	52 Round
+Player [name=가나다, point=0, pointStr=0, numberOfWongames=0, numberOfWonSets=1]
+Player [name=라마바, point=3, pointStr=40, numberOfWongames=0, numberOfWonSets=0]
+	53 Round
+Player [name=가나다, point=0, pointStr=0, numberOfWongames=0, numberOfWonSets=1]
+Player [name=라마바, point=4, pointStr=WIN, numberOfWongames=0, numberOfWonSets=0]
+	54 Round
+Player [name=가나다, point=1, pointStr=15, numberOfWongames=0, numberOfWonSets=1]
+Player [name=라마바, point=0, pointStr=0, numberOfWongames=1, numberOfWonSets=0]
+	55 Round
+Player [name=가나다, point=1, pointStr=15, numberOfWongames=0, numberOfWonSets=1]
+Player [name=라마바, point=1, pointStr=15, numberOfWongames=1, numberOfWonSets=0]
+	56 Round
+Player [name=가나다, point=1, pointStr=15, numberOfWongames=0, numberOfWonSets=1]
+Player [name=라마바, point=2, pointStr=30, numberOfWongames=1, numberOfWonSets=0]
+	57 Round
+Player [name=가나다, point=2, pointStr=30, numberOfWongames=0, numberOfWonSets=1]
+Player [name=라마바, point=2, pointStr=30, numberOfWongames=1, numberOfWonSets=0]
+	58 Round
+Player [name=가나다, point=3, pointStr=40, numberOfWongames=0, numberOfWonSets=1]
+Player [name=라마바, point=2, pointStr=30, numberOfWongames=1, numberOfWonSets=0]
+	59 Round
+Player [name=가나다, point=4, pointStr=WIN, numberOfWongames=0, numberOfWonSets=1]
+Player [name=라마바, point=2, pointStr=30, numberOfWongames=1, numberOfWonSets=0]
+	60 Round
+Player [name=가나다, point=1, pointStr=15, numberOfWongames=1, numberOfWonSets=1]
+Player [name=라마바, point=0, pointStr=0, numberOfWongames=1, numberOfWonSets=0]
+	61 Round
+Player [name=가나다, point=2, pointStr=30, numberOfWongames=1, numberOfWonSets=1]
+Player [name=라마바, point=0, pointStr=0, numberOfWongames=1, numberOfWonSets=0]
+	62 Round
+Player [name=가나다, point=2, pointStr=30, numberOfWongames=1, numberOfWonSets=1]
+Player [name=라마바, point=1, pointStr=15, numberOfWongames=1, numberOfWonSets=0]
+	63 Round
+Player [name=가나다, point=2, pointStr=30, numberOfWongames=1, numberOfWonSets=1]
+Player [name=라마바, point=2, pointStr=30, numberOfWongames=1, numberOfWonSets=0]
+	64 Round
+Player [name=가나다, point=3, pointStr=40, numberOfWongames=1, numberOfWonSets=1]
+Player [name=라마바, point=2, pointStr=30, numberOfWongames=1, numberOfWonSets=0]
+	65 Round
+Player [name=가나다, point=3, pointStr=40, numberOfWongames=1, numberOfWonSets=1]
+Player [name=라마바, point=3, pointStr=40, numberOfWongames=1, numberOfWonSets=0]
+	66 Round
+Player [name=가나다, point=4, pointStr=AD, numberOfWongames=1, numberOfWonSets=1]
+Player [name=라마바, point=3, pointStr=00, numberOfWongames=1, numberOfWonSets=0]
+	67 Round
+Player [name=가나다, point=5, pointStr=WIN, numberOfWongames=1, numberOfWonSets=1]
+Player [name=라마바, point=3, pointStr=00, numberOfWongames=1, numberOfWonSets=0]
+	68 Round
+Player [name=가나다, point=0, pointStr=0, numberOfWongames=2, numberOfWonSets=1]
+Player [name=라마바, point=1, pointStr=15, numberOfWongames=1, numberOfWonSets=0]
+	69 Round
+Player [name=가나다, point=1, pointStr=15, numberOfWongames=2, numberOfWonSets=1]
+Player [name=라마바, point=1, pointStr=15, numberOfWongames=1, numberOfWonSets=0]
+	70 Round
+Player [name=가나다, point=1, pointStr=15, numberOfWongames=2, numberOfWonSets=1]
+Player [name=라마바, point=2, pointStr=30, numberOfWongames=1, numberOfWonSets=0]
+	71 Round
+Player [name=가나다, point=2, pointStr=30, numberOfWongames=2, numberOfWonSets=1]
+Player [name=라마바, point=2, pointStr=30, numberOfWongames=1, numberOfWonSets=0]
+	72 Round
+Player [name=가나다, point=2, pointStr=30, numberOfWongames=2, numberOfWonSets=1]
+Player [name=라마바, point=3, pointStr=40, numberOfWongames=1, numberOfWonSets=0]
+	73 Round
+Player [name=가나다, point=2, pointStr=30, numberOfWongames=2, numberOfWonSets=1]
+Player [name=라마바, point=4, pointStr=WIN, numberOfWongames=1, numberOfWonSets=0]
+	74 Round
+Player [name=가나다, point=0, pointStr=0, numberOfWongames=2, numberOfWonSets=1]
+Player [name=라마바, point=1, pointStr=15, numberOfWongames=2, numberOfWonSets=0]
+	75 Round
+Player [name=가나다, point=1, pointStr=15, numberOfWongames=2, numberOfWonSets=1]
+Player [name=라마바, point=1, pointStr=15, numberOfWongames=2, numberOfWonSets=0]
+	76 Round
+Player [name=가나다, point=2, pointStr=30, numberOfWongames=2, numberOfWonSets=1]
+Player [name=라마바, point=1, pointStr=15, numberOfWongames=2, numberOfWonSets=0]
+	77 Round
+Player [name=가나다, point=3, pointStr=40, numberOfWongames=2, numberOfWonSets=1]
+Player [name=라마바, point=1, pointStr=15, numberOfWongames=2, numberOfWonSets=0]
+	78 Round
+Player [name=가나다, point=4, pointStr=WIN, numberOfWongames=2, numberOfWonSets=1]
+Player [name=라마바, point=1, pointStr=15, numberOfWongames=2, numberOfWonSets=0]
+	79 Round
+Player [name=가나다, point=1, pointStr=15, numberOfWongames=3, numberOfWonSets=1]
+Player [name=라마바, point=0, pointStr=0, numberOfWongames=2, numberOfWonSets=0]
+	80 Round
+Player [name=가나다, point=2, pointStr=30, numberOfWongames=3, numberOfWonSets=1]
+Player [name=라마바, point=0, pointStr=0, numberOfWongames=2, numberOfWonSets=0]
+	81 Round
+Player [name=가나다, point=2, pointStr=30, numberOfWongames=3, numberOfWonSets=1]
+Player [name=라마바, point=1, pointStr=15, numberOfWongames=2, numberOfWonSets=0]
+	82 Round
+Player [name=가나다, point=3, pointStr=40, numberOfWongames=3, numberOfWonSets=1]
+Player [name=라마바, point=1, pointStr=15, numberOfWongames=2, numberOfWonSets=0]
+	83 Round
+Player [name=가나다, point=3, pointStr=40, numberOfWongames=3, numberOfWonSets=1]
+Player [name=라마바, point=2, pointStr=30, numberOfWongames=2, numberOfWonSets=0]
+	84 Round
+Player [name=가나다, point=4, pointStr=WIN, numberOfWongames=3, numberOfWonSets=1]
+Player [name=라마바, point=2, pointStr=30, numberOfWongames=2, numberOfWonSets=0]
+	85 Round
+Player [name=가나다, point=1, pointStr=15, numberOfWongames=4, numberOfWonSets=1]
+Player [name=라마바, point=0, pointStr=0, numberOfWongames=2, numberOfWonSets=0]
+	86 Round
+Player [name=가나다, point=1, pointStr=15, numberOfWongames=4, numberOfWonSets=1]
+Player [name=라마바, point=1, pointStr=15, numberOfWongames=2, numberOfWonSets=0]
+	87 Round
+Player [name=가나다, point=1, pointStr=15, numberOfWongames=4, numberOfWonSets=1]
+Player [name=라마바, point=2, pointStr=30, numberOfWongames=2, numberOfWonSets=0]
+	88 Round
+Player [name=가나다, point=2, pointStr=30, numberOfWongames=4, numberOfWonSets=1]
+Player [name=라마바, point=2, pointStr=30, numberOfWongames=2, numberOfWonSets=0]
+	89 Round
+Player [name=가나다, point=2, pointStr=30, numberOfWongames=4, numberOfWonSets=1]
+Player [name=라마바, point=3, pointStr=40, numberOfWongames=2, numberOfWonSets=0]
+	90 Round
+Player [name=가나다, point=3, pointStr=40, numberOfWongames=4, numberOfWonSets=1]
+Player [name=라마바, point=3, pointStr=40, numberOfWongames=2, numberOfWonSets=0]
+	91 Round
+Player [name=가나다, point=4, pointStr=AD, numberOfWongames=4, numberOfWonSets=1]
+Player [name=라마바, point=3, pointStr=00, numberOfWongames=2, numberOfWonSets=0]
+	92 Round
+Player [name=가나다, point=4, pointStr=40, numberOfWongames=4, numberOfWonSets=1]
+Player [name=라마바, point=4, pointStr=40, numberOfWongames=2, numberOfWonSets=0]
+	93 Round
+Player [name=가나다, point=4, pointStr=00, numberOfWongames=4, numberOfWonSets=1]
+Player [name=라마바, point=5, pointStr=AD, numberOfWongames=2, numberOfWonSets=0]
+	94 Round
+Player [name=가나다, point=5, pointStr=40, numberOfWongames=4, numberOfWonSets=1]
+Player [name=라마바, point=5, pointStr=40, numberOfWongames=2, numberOfWonSets=0]
+	95 Round
+Player [name=가나다, point=6, pointStr=AD, numberOfWongames=4, numberOfWonSets=1]
+Player [name=라마바, point=5, pointStr=00, numberOfWongames=2, numberOfWonSets=0]
+	96 Round
+Player [name=가나다, point=6, pointStr=40, numberOfWongames=4, numberOfWonSets=1]
+Player [name=라마바, point=6, pointStr=40, numberOfWongames=2, numberOfWonSets=0]
+	97 Round
+Player [name=가나다, point=6, pointStr=00, numberOfWongames=4, numberOfWonSets=1]
+Player [name=라마바, point=7, pointStr=AD, numberOfWongames=2, numberOfWonSets=0]
+	98 Round
+Player [name=가나다, point=6, pointStr=00, numberOfWongames=4, numberOfWonSets=1]
+Player [name=라마바, point=8, pointStr=WIN, numberOfWongames=2, numberOfWonSets=0]
+	99 Round
+Player [name=가나다, point=1, pointStr=15, numberOfWongames=4, numberOfWonSets=1]
+Player [name=라마바, point=0, pointStr=0, numberOfWongames=3, numberOfWonSets=0]
+	100 Round
+Player [name=가나다, point=1, pointStr=15, numberOfWongames=4, numberOfWonSets=1]
+Player [name=라마바, point=1, pointStr=15, numberOfWongames=3, numberOfWonSets=0]
+	101 Round
+Player [name=가나다, point=2, pointStr=30, numberOfWongames=4, numberOfWonSets=1]
+Player [name=라마바, point=1, pointStr=15, numberOfWongames=3, numberOfWonSets=0]
+	102 Round
+Player [name=가나다, point=3, pointStr=40, numberOfWongames=4, numberOfWonSets=1]
+Player [name=라마바, point=1, pointStr=15, numberOfWongames=3, numberOfWonSets=0]
+	103 Round
+Player [name=가나다, point=3, pointStr=40, numberOfWongames=4, numberOfWonSets=1]
+Player [name=라마바, point=2, pointStr=30, numberOfWongames=3, numberOfWonSets=0]
+	104 Round
+Player [name=가나다, point=3, pointStr=40, numberOfWongames=4, numberOfWonSets=1]
+Player [name=라마바, point=3, pointStr=40, numberOfWongames=3, numberOfWonSets=0]
+	105 Round
+Player [name=가나다, point=3, pointStr=00, numberOfWongames=4, numberOfWonSets=1]
+Player [name=라마바, point=4, pointStr=AD, numberOfWongames=3, numberOfWonSets=0]
+	106 Round
+Player [name=가나다, point=4, pointStr=40, numberOfWongames=4, numberOfWonSets=1]
+Player [name=라마바, point=4, pointStr=40, numberOfWongames=3, numberOfWonSets=0]
+	107 Round
+Player [name=가나다, point=5, pointStr=AD, numberOfWongames=4, numberOfWonSets=1]
+Player [name=라마바, point=4, pointStr=00, numberOfWongames=3, numberOfWonSets=0]
+	108 Round
+Player [name=가나다, point=5, pointStr=40, numberOfWongames=4, numberOfWonSets=1]
+Player [name=라마바, point=5, pointStr=40, numberOfWongames=3, numberOfWonSets=0]
+	109 Round
+Player [name=가나다, point=5, pointStr=00, numberOfWongames=4, numberOfWonSets=1]
+Player [name=라마바, point=6, pointStr=AD, numberOfWongames=3, numberOfWonSets=0]
+	110 Round
+Player [name=가나다, point=6, pointStr=40, numberOfWongames=4, numberOfWonSets=1]
+Player [name=라마바, point=6, pointStr=40, numberOfWongames=3, numberOfWonSets=0]
+	111 Round
+Player [name=가나다, point=7, pointStr=AD, numberOfWongames=4, numberOfWonSets=1]
+Player [name=라마바, point=6, pointStr=00, numberOfWongames=3, numberOfWonSets=0]
+	112 Round
+Player [name=가나다, point=7, pointStr=40, numberOfWongames=4, numberOfWonSets=1]
+Player [name=라마바, point=7, pointStr=40, numberOfWongames=3, numberOfWonSets=0]
+	113 Round
+Player [name=가나다, point=7, pointStr=00, numberOfWongames=4, numberOfWonSets=1]
+Player [name=라마바, point=8, pointStr=AD, numberOfWongames=3, numberOfWonSets=0]
+	114 Round
+Player [name=가나다, point=7, pointStr=00, numberOfWongames=4, numberOfWonSets=1]
+Player [name=라마바, point=9, pointStr=WIN, numberOfWongames=3, numberOfWonSets=0]
+	115 Round
+Player [name=가나다, point=0, pointStr=0, numberOfWongames=4, numberOfWonSets=1]
+Player [name=라마바, point=1, pointStr=15, numberOfWongames=4, numberOfWonSets=0]
+	116 Round
+Player [name=가나다, point=1, pointStr=15, numberOfWongames=4, numberOfWonSets=1]
+Player [name=라마바, point=1, pointStr=15, numberOfWongames=4, numberOfWonSets=0]
+	117 Round
+Player [name=가나다, point=1, pointStr=15, numberOfWongames=4, numberOfWonSets=1]
+Player [name=라마바, point=2, pointStr=30, numberOfWongames=4, numberOfWonSets=0]
+	118 Round
+Player [name=가나다, point=2, pointStr=30, numberOfWongames=4, numberOfWonSets=1]
+Player [name=라마바, point=2, pointStr=30, numberOfWongames=4, numberOfWonSets=0]
+	119 Round
+Player [name=가나다, point=3, pointStr=40, numberOfWongames=4, numberOfWonSets=1]
+Player [name=라마바, point=2, pointStr=30, numberOfWongames=4, numberOfWonSets=0]
+	120 Round
+Player [name=가나다, point=3, pointStr=40, numberOfWongames=4, numberOfWonSets=1]
+Player [name=라마바, point=3, pointStr=40, numberOfWongames=4, numberOfWonSets=0]
+	121 Round
+Player [name=가나다, point=3, pointStr=00, numberOfWongames=4, numberOfWonSets=1]
+Player [name=라마바, point=4, pointStr=AD, numberOfWongames=4, numberOfWonSets=0]
+	122 Round
+Player [name=가나다, point=3, pointStr=00, numberOfWongames=4, numberOfWonSets=1]
+Player [name=라마바, point=5, pointStr=WIN, numberOfWongames=4, numberOfWonSets=0]
+	123 Round
+Player [name=가나다, point=1, pointStr=15, numberOfWongames=4, numberOfWonSets=1]
+Player [name=라마바, point=0, pointStr=0, numberOfWongames=5, numberOfWonSets=0]
+	124 Round
+Player [name=가나다, point=1, pointStr=15, numberOfWongames=4, numberOfWonSets=1]
+Player [name=라마바, point=1, pointStr=15, numberOfWongames=5, numberOfWonSets=0]
+	125 Round
+Player [name=가나다, point=1, pointStr=15, numberOfWongames=4, numberOfWonSets=1]
+Player [name=라마바, point=2, pointStr=30, numberOfWongames=5, numberOfWonSets=0]
+	126 Round
+Player [name=가나다, point=1, pointStr=15, numberOfWongames=4, numberOfWonSets=1]
+Player [name=라마바, point=3, pointStr=40, numberOfWongames=5, numberOfWonSets=0]
+	127 Round
+Player [name=가나다, point=1, pointStr=15, numberOfWongames=4, numberOfWonSets=1]
+Player [name=라마바, point=4, pointStr=WIN, numberOfWongames=5, numberOfWonSets=0]
+	128 Round
+Player [name=가나다, point=1, pointStr=15, numberOfWongames=0, numberOfWonSets=1]
+Player [name=라마바, point=0, pointStr=0, numberOfWongames=0, numberOfWonSets=1]
+	129 Round
+Player [name=가나다, point=1, pointStr=15, numberOfWongames=0, numberOfWonSets=1]
+Player [name=라마바, point=1, pointStr=15, numberOfWongames=0, numberOfWonSets=1]
+	130 Round
+Player [name=가나다, point=1, pointStr=15, numberOfWongames=0, numberOfWonSets=1]
+Player [name=라마바, point=2, pointStr=30, numberOfWongames=0, numberOfWonSets=1]
+	131 Round
+Player [name=가나다, point=2, pointStr=30, numberOfWongames=0, numberOfWonSets=1]
+Player [name=라마바, point=2, pointStr=30, numberOfWongames=0, numberOfWonSets=1]
+	132 Round
+Player [name=가나다, point=2, pointStr=30, numberOfWongames=0, numberOfWonSets=1]
+Player [name=라마바, point=3, pointStr=40, numberOfWongames=0, numberOfWonSets=1]
+	133 Round
+Player [name=가나다, point=3, pointStr=40, numberOfWongames=0, numberOfWonSets=1]
+Player [name=라마바, point=3, pointStr=40, numberOfWongames=0, numberOfWonSets=1]
+	134 Round
+Player [name=가나다, point=3, pointStr=00, numberOfWongames=0, numberOfWonSets=1]
+Player [name=라마바, point=4, pointStr=AD, numberOfWongames=0, numberOfWonSets=1]
+	135 Round
+Player [name=가나다, point=4, pointStr=40, numberOfWongames=0, numberOfWonSets=1]
+Player [name=라마바, point=4, pointStr=40, numberOfWongames=0, numberOfWonSets=1]
+	136 Round
+Player [name=가나다, point=5, pointStr=AD, numberOfWongames=0, numberOfWonSets=1]
+Player [name=라마바, point=4, pointStr=00, numberOfWongames=0, numberOfWonSets=1]
+	137 Round
+Player [name=가나다, point=6, pointStr=WIN, numberOfWongames=0, numberOfWonSets=1]
+Player [name=라마바, point=4, pointStr=00, numberOfWongames=0, numberOfWonSets=1]
+	138 Round
+Player [name=가나다, point=0, pointStr=0, numberOfWongames=1, numberOfWonSets=1]
+Player [name=라마바, point=1, pointStr=15, numberOfWongames=0, numberOfWonSets=1]
+	139 Round
+Player [name=가나다, point=0, pointStr=0, numberOfWongames=1, numberOfWonSets=1]
+Player [name=라마바, point=2, pointStr=30, numberOfWongames=0, numberOfWonSets=1]
+	140 Round
+Player [name=가나다, point=0, pointStr=0, numberOfWongames=1, numberOfWonSets=1]
+Player [name=라마바, point=3, pointStr=40, numberOfWongames=0, numberOfWonSets=1]
+	141 Round
+Player [name=가나다, point=0, pointStr=0, numberOfWongames=1, numberOfWonSets=1]
+Player [name=라마바, point=4, pointStr=WIN, numberOfWongames=0, numberOfWonSets=1]
+	142 Round
+Player [name=가나다, point=0, pointStr=0, numberOfWongames=1, numberOfWonSets=1]
+Player [name=라마바, point=1, pointStr=15, numberOfWongames=1, numberOfWonSets=1]
+	143 Round
+Player [name=가나다, point=1, pointStr=15, numberOfWongames=1, numberOfWonSets=1]
+Player [name=라마바, point=1, pointStr=15, numberOfWongames=1, numberOfWonSets=1]
+	144 Round
+Player [name=가나다, point=2, pointStr=30, numberOfWongames=1, numberOfWonSets=1]
+Player [name=라마바, point=1, pointStr=15, numberOfWongames=1, numberOfWonSets=1]
+	145 Round
+Player [name=가나다, point=3, pointStr=40, numberOfWongames=1, numberOfWonSets=1]
+Player [name=라마바, point=1, pointStr=15, numberOfWongames=1, numberOfWonSets=1]
+	146 Round
+Player [name=가나다, point=4, pointStr=WIN, numberOfWongames=1, numberOfWonSets=1]
+Player [name=라마바, point=1, pointStr=15, numberOfWongames=1, numberOfWonSets=1]
+	147 Round
+Player [name=가나다, point=1, pointStr=15, numberOfWongames=2, numberOfWonSets=1]
+Player [name=라마바, point=0, pointStr=0, numberOfWongames=1, numberOfWonSets=1]
+	148 Round
+Player [name=가나다, point=1, pointStr=15, numberOfWongames=2, numberOfWonSets=1]
+Player [name=라마바, point=1, pointStr=15, numberOfWongames=1, numberOfWonSets=1]
+	149 Round
+Player [name=가나다, point=2, pointStr=30, numberOfWongames=2, numberOfWonSets=1]
+Player [name=라마바, point=1, pointStr=15, numberOfWongames=1, numberOfWonSets=1]
+	150 Round
+Player [name=가나다, point=3, pointStr=40, numberOfWongames=2, numberOfWonSets=1]
+Player [name=라마바, point=1, pointStr=15, numberOfWongames=1, numberOfWonSets=1]
+	151 Round
+Player [name=가나다, point=3, pointStr=40, numberOfWongames=2, numberOfWonSets=1]
+Player [name=라마바, point=2, pointStr=30, numberOfWongames=1, numberOfWonSets=1]
+	152 Round
+Player [name=가나다, point=4, pointStr=WIN, numberOfWongames=2, numberOfWonSets=1]
+Player [name=라마바, point=2, pointStr=30, numberOfWongames=1, numberOfWonSets=1]
+	153 Round
+Player [name=가나다, point=1, pointStr=15, numberOfWongames=3, numberOfWonSets=1]
+Player [name=라마바, point=0, pointStr=0, numberOfWongames=1, numberOfWonSets=1]
+	154 Round
+Player [name=가나다, point=1, pointStr=15, numberOfWongames=3, numberOfWonSets=1]
+Player [name=라마바, point=1, pointStr=15, numberOfWongames=1, numberOfWonSets=1]
+	155 Round
+Player [name=가나다, point=2, pointStr=30, numberOfWongames=3, numberOfWonSets=1]
+Player [name=라마바, point=1, pointStr=15, numberOfWongames=1, numberOfWonSets=1]
+	156 Round
+Player [name=가나다, point=3, pointStr=40, numberOfWongames=3, numberOfWonSets=1]
+Player [name=라마바, point=1, pointStr=15, numberOfWongames=1, numberOfWonSets=1]
+	157 Round
+Player [name=가나다, point=4, pointStr=WIN, numberOfWongames=3, numberOfWonSets=1]
+Player [name=라마바, point=1, pointStr=15, numberOfWongames=1, numberOfWonSets=1]
+	158 Round
+Player [name=가나다, point=0, pointStr=0, numberOfWongames=4, numberOfWonSets=1]
+Player [name=라마바, point=1, pointStr=15, numberOfWongames=1, numberOfWonSets=1]
+	159 Round
+Player [name=가나다, point=0, pointStr=0, numberOfWongames=4, numberOfWonSets=1]
+Player [name=라마바, point=2, pointStr=30, numberOfWongames=1, numberOfWonSets=1]
+	160 Round
+Player [name=가나다, point=1, pointStr=15, numberOfWongames=4, numberOfWonSets=1]
+Player [name=라마바, point=2, pointStr=30, numberOfWongames=1, numberOfWonSets=1]
+	161 Round
+Player [name=가나다, point=1, pointStr=15, numberOfWongames=4, numberOfWonSets=1]
+Player [name=라마바, point=3, pointStr=40, numberOfWongames=1, numberOfWonSets=1]
+	162 Round
+Player [name=가나다, point=2, pointStr=30, numberOfWongames=4, numberOfWonSets=1]
+Player [name=라마바, point=3, pointStr=40, numberOfWongames=1, numberOfWonSets=1]
+	163 Round
+Player [name=가나다, point=2, pointStr=30, numberOfWongames=4, numberOfWonSets=1]
+Player [name=라마바, point=4, pointStr=WIN, numberOfWongames=1, numberOfWonSets=1]
+	164 Round
+Player [name=가나다, point=1, pointStr=15, numberOfWongames=4, numberOfWonSets=1]
+Player [name=라마바, point=0, pointStr=0, numberOfWongames=2, numberOfWonSets=1]
+	165 Round
+Player [name=가나다, point=1, pointStr=15, numberOfWongames=4, numberOfWonSets=1]
+Player [name=라마바, point=1, pointStr=15, numberOfWongames=2, numberOfWonSets=1]
+	166 Round
+Player [name=가나다, point=2, pointStr=30, numberOfWongames=4, numberOfWonSets=1]
+Player [name=라마바, point=1, pointStr=15, numberOfWongames=2, numberOfWonSets=1]
+	167 Round
+Player [name=가나다, point=3, pointStr=40, numberOfWongames=4, numberOfWonSets=1]
+Player [name=라마바, point=1, pointStr=15, numberOfWongames=2, numberOfWonSets=1]
+	168 Round
+Player [name=가나다, point=4, pointStr=WIN, numberOfWongames=4, numberOfWonSets=1]
+Player [name=라마바, point=1, pointStr=15, numberOfWongames=2, numberOfWonSets=1]
+	169 Round
+Player [name=가나다, point=1, pointStr=15, numberOfWongames=5, numberOfWonSets=1]
+Player [name=라마바, point=0, pointStr=0, numberOfWongames=2, numberOfWonSets=1]
+	170 Round
+Player [name=가나다, point=1, pointStr=15, numberOfWongames=5, numberOfWonSets=1]
+Player [name=라마바, point=1, pointStr=15, numberOfWongames=2, numberOfWonSets=1]
+	171 Round
+Player [name=가나다, point=2, pointStr=30, numberOfWongames=5, numberOfWonSets=1]
+Player [name=라마바, point=1, pointStr=15, numberOfWongames=2, numberOfWonSets=1]
+	172 Round
+Player [name=가나다, point=2, pointStr=30, numberOfWongames=5, numberOfWonSets=1]
+Player [name=라마바, point=2, pointStr=30, numberOfWongames=2, numberOfWonSets=1]
+	173 Round
+Player [name=가나다, point=3, pointStr=40, numberOfWongames=5, numberOfWonSets=1]
+Player [name=라마바, point=2, pointStr=30, numberOfWongames=2, numberOfWonSets=1]
+	174 Round
+Player [name=가나다, point=4, pointStr=WIN, numberOfWongames=5, numberOfWonSets=1]
+Player [name=라마바, point=2, pointStr=30, numberOfWongames=2, numberOfWonSets=1]
+	175 Round
+Player [name=가나다, point=0, pointStr=0, numberOfWongames=6, numberOfWonSets=2]
+Player [name=라마바, point=0, pointStr=0, numberOfWongames=2, numberOfWonSets=1]

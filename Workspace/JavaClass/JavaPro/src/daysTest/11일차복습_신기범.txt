@@ -1,0 +1,160 @@
+1. 선택정렬 selectionSort()  함수만 구현하세요.
+private static void selectionSort(int[] m) {
+		for (int i = 0; i < m.length-1; i++) {
+			int index = i;
+			for (int j = i+1; j < m.length; j++) {
+				if(m[index]>m[j])
+				index = j;
+			} // for
+			int temp = m[i];
+			m[i]=m[index];
+			m[index]=temp;
+			System.out.println(Arrays.toString(m));
+		} // for
+	}
+2. 30명의 학생의 이름,국,영,수,총,평,등수 처리하는 코딩을 하세요.
+ package days12;
+//학생 성적 2차원배열
+public class Ex03 {
+
+	public static void main(String[] args) {
+		final int STUDENT_COUNT = 30;
+		String name;
+		int kor;
+		int eng;
+		int mat;
+		int tot;
+		int rank;
+		double avg;
+		int count = 0;
+		String[] names = new String[STUDENT_COUNT];
+		int[][] infos = new int[STUDENT_COUNT][5];
+		double[] avgs = new double[STUDENT_COUNT];
+		
+		do {
+			rank=1;
+			name = getName(count);
+			kor = getScore(count);
+			eng = getScore(count);
+			mat = getScore(count);
+			tot = kor+eng+mat;
+			avg = (double)tot/3;
+			names[count]= name;
+			names[count] = name;
+			infos[count][0] = kor;
+			infos[count][1] = eng;
+			infos[count][2] = mat;
+			infos[count][3] = tot;
+			infos[count][4] = rank;
+			avgs[count] = avg;
+			count++;
+		} while (count != STUDENT_COUNT);
+		totRank(infos,count);
+		disp(names,infos,avgs,count);
+	} // main
+
+	private static void disp(String[] names, int[][] infos, double[] avgs, int count) {
+		for (int i = 0; i < count; i++) {
+			System.out.printf("%d번 %s \t%d \t%d \t%d \t%d \t%d \t%.2f\n",i+1,names[i],infos[i][0],infos[i][1],infos[i][2],infos[i][3],infos[i][4],avgs[i]);
+		} // for
+		
+	}
+
+	private static void totRank(int[][] infos, int count) {
+		for (int i = 0; i < count; i++) {
+			infos[i][4]=1;
+			for (int j = 0; j < count; j++) {
+				if(infos[i][3]<infos[j][3]) {
+					infos[i][4]++;
+				}
+			} // for
+		} // for
+		
+	}
+
+	private static int getScore(int count) {
+		
+		return (int)(Math.random()*101);
+	}
+
+	private static String getName(int count) {
+		char[] names = new char[3];
+		for (int i = 0; i < names.length; i++) {
+			names[i]= (char)(Math.random()*('힝'-'가'+1)+'가');
+		} // for
+		String name = String.valueOf(names);
+		return name;
+	}
+}
+
+3. 순차검색 sequentialSearch() 함수 구현해서 
+   배열 안의 임의의 정수를 찾아서 인덱스를 모두 출력
+   하는 코딩을 하세요 ...
+   (조건)
+   int [] m = new int[50];
+   1~30 까지의 임의의 수를 채워넣고
+package days12;
+
+import java.util.Arrays;
+import java.util.Random;
+import java.util.stream.IntStream;
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		int[] m = new int[50];
+		int index = -1;
+		int startIndex = 0;
+		for (int i = 0; i < m.length; i++) {
+			m[i]= (int)(Math.random()*30)+1;
+		} // for
+		
+				System.out.println(Arrays.toString(m));
+				int n = (int)(Math.random()*30)+1;
+				System.out.printf("찾을 수:%d\n",n);
+		//selectionSort(m);
+				
+		 while ((index= sequentialSearch(m,n,startIndex)) != -1) {
+			index =  sequentialSearch(m,n,startIndex);
+			System.out.printf("%d\n",index);
+			 startIndex = index+1;
+		}
+		 
+		 
+	} // main
+
+	
+
+	private static int sequentialSearch(int[] m, int n, int startIndex) {
+		int index = -1;
+		for (int i = startIndex; i < m.length; i++) {
+			if (m[i]==n) {
+				index = i;
+				break;
+			} //if
+		} // for
+		return index;
+	}
+
+
+
+	private static void selectionSort(int[] m) {
+		for (int i = 0; i < m.length-1; i++) {
+			int index = i;
+			for (int j = i+1; j < m.length; j++) {
+				if(m[index]>m[j])
+				index = j;
+			} // for
+			int temp = m[i];
+			m[i]=m[index];
+			m[index]=temp;
+			System.out.println(Arrays.toString(m));
+		} // for
+	}
+}
+
+4.아래 1차원 배열 m 의 값을 2차원 배열 n에 채워넣는 변환코딩을 하세요.
+  int [] m = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12  };
+  int [][] n = new int[6][2];  
+

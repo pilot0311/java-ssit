@@ -1,0 +1,45 @@
+1.인터페이스에 대해서 상세히 설명하세요.
+작업률 향상의 효과가 있다
+추상메서드로만 이루어져 있고
+상수외엔 필드가 올 수없다
+인터페이스끼리는 다중 상속이 가능하고 인터페이스 구현시 implements사용
+
+2. 객체로 부터 [Class 객체]를 얻어오는 3가지 방법에 대해서 설명하세요 .
+.getClass(), 클래스명.class 
+ 3. String 클래스의 메서드 설명 - 기능, 매개변수, 리턴값(리턴자료형)
+  ㄱ. length()  크기를 반환함, 매개변수 없음, int형
+  ㄴ. charAt()  매개변수로 받은 위치의 문자 반환, 매개변수 int	,char
+  ㄷ. compareTo() / compareToIgnoreCase()	두 문자열을 비교함,	String, int		compareToIgnoreCase()두 문자열을 대소문자무시하고 비교함
+  ㄹ. equals() / equalsIgnoreCase()	두 객체를 비교함, Object, boolean  			equalsIgnoreCase()두 문자열을 대소문자무시하고 비교함, string, boolean
+  ㅁ. concat()   문자열뒤에 문자열 추가, String, String
+  ㅅ. startsWith()  특정 문자열(문자)로 시작되는지 체크 , string,(int 어느 위치부터 체크할껀지), boolean
+  ㅇ. endWith()     특정 문자열(문자)로 끝나는지 체크 , string,(int 어느 위치부터 체크할껀지), boolean
+  ㅈ. indexOf()      특정 문자열이 어느 위치에 있는지 처음위치부터 탐색해 알려줌, [String,int,char] , [int 어느 위치부터 체크할껀지], int
+      lastIndexOf()  특정 문자열이 어느 위치에 있는지 마지막 위치부터 탐색해 알려줌, [String,int,char] , [int 어느 위치부터 체크할껀지], int
+  ㅊ. replace()     	특정 문자열을 다른 문자열로 치환함	,	string, string
+      replaceAll( regex )	모든 특정 문자열을 다른 문자열로 치환함	,	string(정규식) string(바꿀문자), string
+      replaceFirst(regex)특정 문자열중 처음 만나는 문자를 다른 문자열로 치환함	,	string(정규식) string(바꿀문자), string
+  ㅋ. split()						문자열을 내가 정한 구분자를 기준으로 나누어줌, string(정규식 가능) (int 제한)	, string
+  ㅌ. toUpperCase() / toLowerCase()	문자열을 대/소 문자로 바꿔줌, 	,string
+  ㅍ. trim()           		문자 사이의 공백을 없애줌,		,	string
+  ㅎ. valueOf()      		String타입으로 바꿔줌 ,[int,char,byte,,float,long,object] , string
+  ㄱ. join()										,구분자, 요소, string
+  ㄴ. format()  			문자열 형식 설정,	String형식 요소,	string
+  ㄷ. matches()			문자열 패턴 확인,	string(정규표현식),	boolean
+  ㄹ. substring() 		문자열 자르기 ,int beginIndex int endIndex, String
+  :
+  
+4. "1. Java 팀 구성.txt"  파일을 읽어서 본인의 팀원들만의 이름을 teamMember 배열에 저장한 후 팀장명을 제외한 나머지 팀원들의 이름을  내림차순으로 정렬해서 아래와 같이 출력하는 코딩을 하세요.
+[실행결과]  예 : [ 2조 ]
+<ul>
+	<li class="leader">임경재</li>
+	<li>이지현</li>
+	<li>유희진</li>
+	<li>박민석</li>
+	<li>김호영</li>
+	<li>김정주</li>
+	<li>고경림</li>
+</ul>
+
+5. https://school.programmers.co.kr/learn/courses/30/lessons/120913
+위의 주소 문제 풀기.

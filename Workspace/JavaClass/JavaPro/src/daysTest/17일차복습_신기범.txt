@@ -1,0 +1,75 @@
+1. 막대기 자르기(CutOperation) 전체 코딩을  각 라인별로 상세하게 설명하세요.
+package days17;				//	모든 클래스는 1개의 패키지에 포함 된다 , 패키지명 소문자, 첫 번째 라인에 코딩, 물리적으로 폴더 생성
+
+import java.util.Arrays;	//java.util패키지의 Arrays클래스를 사용 하겠다 = java.util.Arrays.sort(); 여기서 import문 사용시  java.util. 생략 가능
+import java.util.Scanner;	//java.util패키지의 Scanne클래스를 사용 하겠다 = java.util.Scanner; 여기서 import문 사용시  java.util. 생략 가능
+// 클래스 사용 : 풀네임 작성
+
+public class CutOperation {			//클래스 선언부
+
+	
+	public static void main(String[] args) {		프로그램 시작 종료를 위한 메서드, 매개변수는 string[] args, 리턴값은 없음
+		 
+		Scanner scanner = new Scanner(System.in);		//시스템에서 입력받을 수 있는 Scanner 객체 생성
+		int n = scanner.nextInt();		//입력받은 정수를 정수형 변수n에 저장  공백을 기준으로 입력 받음
+		int [] sticks = new int[n];		// 정수형 배열 sticks를 크기를 n만큼 선언
+		int sticksLength = sticks.length;	// sticks.length;==배열 sticks의 길이 즉 배열 크기를 뜻함 
+		for (int i = 0; i < sticksLength; i++) {	i를 0에서부터 sticks배열크기 보다 작을 때까지 sticks[i]에 입력 받은 정수를 저장
+			sticks[i] = scanner.nextInt();
+		} // for
+		Arrays.sort(sticks);  // 오름차순 정렬			배열 sticks를 Arrys클래스의 sort메서드로 배열sticks의 요소를 오름차순 정렬
+		System.out.println( Arrays.toString(sticks));  배열 sticks 출력
+		
+		int index = 0;				정수형 변수 index를 0으로 초기화
+		int sticksCount = sticksLength - index;	 sticksCount를 배열 크기 - index 값으로 초기화
+		System.out.println(sticksCount);	sticksCount 출력
+		
+		for (int i = 0; i < sticksLength; i++) {		i는 0부터 sticksLength의 값보다 작을때 까지 아래 코드 실행 그후 i크기를 1 올림
+			if( sticks[index] != sticks[i] ) {		sticks[index] 요소에 있는 값이 sticks[i] 다르면 아래 코드 실행
+				index = i;									index값을 i로 변경
+				sticksCount = sticksLength - index;
+				System.out.println(sticksCount);
+			}
+			
+		} // for
+		
+	} // main
+
+}
+
+2.  days17.Ex01.java 파일을 읽어서 각 라인 번호를 붙여서 출력하는 코딩을 하세요.
+   ( 조건 : try~resources 문 사용 )
+   
+ package days18;
+ 
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class Ex01 {
+
+	public static void main(String[] args) {	
+		
+		
+		String fileName = "E:\\Class\\Workspace\\JavaClass\\JavaPro\\src\\days17\\Ex01.java";
+		int lineNumber = 1;
+		String line;
+		try(BufferedReader br = new BufferedReader(new FileReader(fileName))) {
+			while ((line=br.readLine()) != null) {
+				System.out.printf("%d: %s\n",lineNumber,line);
+			}
+			
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}catch (IOException e) {
+			e.printStackTrace();
+		}catch (Exception e) {
+			e.printStackTrace();
+		}
+	} // main
+}
+
+
+
+   

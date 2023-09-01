@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="-551.5" y="-393.0">javaProject01.TennisGame</node>
+    <node x="-588.0" y="-253.00000000000003">javaProject01.TennisCounter</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="javaProject01.TennisGame" target="javaProject01.TennisCounter" relationship="CREATE">
+      <point x="0.0" y="39.5" />
+      <point x="0.0" y="-120.5" />
+    </edge>
+  </edges>
+  <settings layout="계층" zoom="1.5" showDependencies="true" x="-466.4999999999999" y="-192.5" />
+  <SelectedNodes>
+    <node>javaProject01.TennisCounter</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>내부 클래스</Category>
+    <Category>메서드</Category>
+    <Category>생성자</Category>
+    <Category>필드</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

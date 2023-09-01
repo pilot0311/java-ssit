@@ -1,0 +1,123 @@
+1. Date 타입을 Calendar 타입으로 변환하는 코딩을 하세요.
+Date d = new Date();
+		Calendar c = new GregorianCalendar(2020, 3, 2);
+		c.setTime(d);
+		System.out.println(c.getTime());
+		
+1-2. Calendar 타입을  Date 타입으로 변환하는 코딩을 하세요.
+	Calendar c = new GregorianCalendar(2020, 3, 2);
+		Date d = c.getTime();
+		System.out.println(d);
+		
+2. String source = "2023/08/10 (목) 12:23:01"
+문자열 source를 Calendar 객체로 변환해 
+"2023년 8월 10일 (목)"으로 출력하는 코딩을 하세요 .
+
+		String source = "2023/08/10 (목) 12:23:01";
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd (E) hh:mm:ss");
+		SimpleDateFormat sdf2 = new SimpleDateFormat("\"yyyy년 MM월 dd (E)\"");
+		try {
+			Date d = sdf.parse(source);
+			Calendar c = Calendar.getInstance();
+			c.setTime(d);
+			System.out.println(sdf2.format(c.getTime()));
+		} catch (ParseException e) {
+			e.printStackTrace();
+		}
+		//"2023년 8월 10일 (목)"
+
+
+3-1. java.time 패키지에 대해서 설명하세요.  날짜, 시간 다루는 핵심 클래스 
+3-2. java.time패키지의 4가지 하위 패키지에 대해서 설명하세요 .	
+					ㄴChrono		표준 날짜 외의 달력 제공 클래스
+					ㄴTemporal	날짜, 시간의 필드와 단위 제공하는 클래스
+					ㄴFormat		형식화 클래스
+					ㄴZone			시간대 클래스
+3-3. java.time 패키지의 핵심 클래스에 대해 설명하세요.
+ 					LocalDate	날짜 제공 
+ 					LocalTime	시간 제공
+ 					LocalDateTime	시간 + 날짜 제공
+
+3-4. Period, Duration 클래스에 대해서 설명하세요.
+		Period 날짜와 날짜 사이의 간격 구하는 클래스
+		Duration 시간과 시간 사이의 간격 구하는 클래스
+3-5. TemporalUnit 인터페이스와  ChronoUnit 열거형에 대해서 설명하세요 . 
+		시간과 날짜의 단위를 정의 한 인터페이스TemporalUnit 이를 구현한  ChronoUnit 클래스
+3-6. TemporalField 인터페이스TemporalUnit 와 ChronoField 열거형에 대해서 설명하세요 .
+		시간과 날짜의 필드를 정의 한 인터페이스와 이를 구현한  ChronoUnit 클래스
+		
+3-7. java.time 패키지의 핵심 클래스의 객체 생성 방법에 대해서 설명하세요 .
+	.now()	현재 날짜/시간			//LocalDate ld = LocalDate.now();
+	.or()		날짜/ 시간 지정			//LocalDate ld = LocalDate.of(2015, 11, 23);
+	
+4. java.time 패키지의 핵심 클래스
+
+ 1) 객체 생성하는 방법
+ LocalDate ld = LocalDate.now();
+ LocalDate ld = LocalDate.of(args);
+ 2) 특정 필드를 얻어오는 방법
+ 	ex)년도를 가져온다.
+ 	getYear();	//메서드로 가져오기 get가져올필드()
+ 	get(ChronoField.YEAR); //필드로 가져오기 get(ChronoField.가져올필드);
+ 3) 특정 필드를 수정하는 방법
+ LocalDate d =LocalDate.now();
+  d = d.withYear();
+  d = d.with(ChronoField.YEAR, 수정할 값);
+  // 주의 LocalDate
+  // 주의 LocalTime			은 불변 객체라 새 객체를 만들어서 저장해야함
+  // 주의 LocalDateTime
+ 
+5. 개강일(2023.7.13)로부터 100일 되는 날짜를 출력하세요. 
+ 1) Date 클래스 사용
+ Date d = new Date(2023-1900, 7-1, 13);
+		int m = d.getDate()+100;
+		d.setDate(m);
+		System.out.println(d.toLocaleString());
+ 2) Calendar 클래스 사용
+ Calendar c = new GregorianCalendar(2023, 7-1, 13);
+		c.add(Calendar.DAY_OF_MONTH, 100);
+		System.out.println(c.getTime());
+ 3) LocalDate 클래스 사용
+  LocalDate ld = LocalDate.of(2023, 7, 13);
+		ld = ld.plusDays(100);
+		System.out.println(ld);
+		
+6. 수료일(2023.12.27)까지 남은 기간을 아래와 같이 출력하세요 . 
+   예)
+   27일 22시간 17분 1초 883밀초  
+
+Date d = new Date(2023-1900, 12-1, 27);
+		Date t = new Date();
+		long diff = d.getTime() - t.getTime();
+		long n = diff/(1000 * 60 * 60 * 24);
+		
+		int[] time = { 1000 * 60 * 60 * 24, 1000 * 60 * 60, 1000 * 60, 1000, 1 };
+		String[] timea = { "일", "시간", "분", "초", "밀초" };
+		for (int i = 0; i < time.length; i++) {
+			System.out.printf(" %d%s ", (diff / time[i]), timea[i]);
+			diff %= time[i];
+		}
+
+7. String source = "번호:1,이름:홍길동,주소:서울 양천구 목동";
+   위의 문자열에서 MessageFormat 클래스를 사용해서
+   번호,이름,주소만 얻어와서 아래와 같이 출력하세요.
+   
+   String source = "번호:1,이름:홍길동,주소:서울 양천구 목동";
+		String pattern = "번호:{0},이름:{1},주소:{2}";
+		MessageFormat mf = new MessageFormat(pattern);
+		try {
+			Object[]objs = mf.parse(source);
+			for (Object obj : objs) {
+				System.out.println(obj);
+			} //foreach
+		} catch (ParseException e) {
+			e.printStackTrace();
+		}
+		
+   
+   [출력형식]
+    1
+	홍길동
+	서울 양천구 목동
+
+   

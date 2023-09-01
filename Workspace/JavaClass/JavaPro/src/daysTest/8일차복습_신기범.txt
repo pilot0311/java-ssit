@@ -1,0 +1,137 @@
+1. 팩토리얼 재귀함수 구현 
+private static int factorial(int n) {
+		if(n>0)
+			return n*factorial(n-1); 
+		else if(n==1||n==0) return 1;
+		else  return -1;
+	}
+*** 2. 로또 구현
+   1) 배열 선언
+public static void main(String[] args) {
+		int[] lotto = new int[6];
+		fillLotto(lotto);
+		dispLotto(lotto);
+	}//main
+   2) 랜덤하게 중복체크해서 로또번호 채워넣는 함수 선언
+private static void fillLotto(int[] lotto) {
+		int lottoNumber;
+		int index=0;
+		while (index<6) {
+			lottoNumber = (int)(Math.random()*6)+1;
+			if(!isDuplicateLotto(lotto,lottoNumber,index))
+				lotto[index++]=lottoNumber;
+		}
+	}//fillLotto
+
+	private static boolean isDuplicateLotto(int[] lotto, int lottoNumber, int index) {
+		for (int i = 0; i <=index; i++) {
+			if(lotto[i]==lottoNumber)
+				return true;
+			
+		} // for
+		return false;
+	}//isDuplicateLotto
+   3) 로또 번호 출력 함수 선언
+private static void dispLotto(int[] lotto) {
+		for (int i = 0; i < lotto.length; i++) {
+			System.out.printf("lotto[%d]=[%d]\n",i,lotto[i]);
+		} // for
+		
+	}//dispLotto
+3. String rrn = "830412-1700001";
+   이렇게 출력되도록 코딩하세요 . 
+   실행결과 : 830412-1******
+package days09;
+
+public class Extest_03 {
+	
+	public static void main(String[] args) {
+		String rrn = "830412-1700001";
+		System.out.printf("%s******",rrn.substring(0, 8));
+	} // main
+
+}// class
+
+4. 2010~2030 까지의 윤년체크하는 함수를 만들어서 
+  윤년/평년 출력하는 코딩하세요.  
+package days09;
+
+public class Extest_04 {
+	
+	public static void main(String[] args) {
+		int year = 2030;
+		boolean leapYear = true;
+		for (int i = 2000; i <=2030; i++) {			
+				System.out.printf("%d년은 %s 입니다",i,isLeapYear(i)?"윤년\n":"평년\n");
+			
+
+		} // for
+	} // main
+
+	private static boolean isLeapYear(int year) {
+		if(year%4==0 && year%100 !=0 || year%400==0) return true;
+		else return false;
+		
+	}
+
+}// class
+
+5. 머니(money)를 입력받아서 각 화폐단위의 갯수를 출력하는 코딩을 하세요.
+package days09;
+
+import java.util.Scanner;
+
+public class Extest_05 {
+	
+	public static void main(String[] args) {
+		try (Scanner sc = new Scanner(System.in)) {
+			System.out.print("돈 입력하세요: ");
+		
+		int money = sc.nextInt();
+		int count = 50000;
+		boolean sw = true;
+
+		String[] sdon = {"5만원", "1만원", "5천원", "1천원","5백원", "1백원","5십원", "1십원", "5원", "1원"};
+		
+		for(int i = 0; i<10; i++) {
+			System.out.printf("%s: %d개\n",sdon[i],money/count);
+			money%=count;
+			if(sw) {
+				count/=5;
+				sw=false;
+			}else if(!sw && count != 1){
+				count/=2;	
+				sw=true;
+			}
+		}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		
+	} // main
+}// class
+
+6. 정수를 입력받아서 2진수로 출력하는 코딩을 하세요. 
+    10 => 00000000 00000000 00000000 00001010
+   package days09;
+
+
+package days09;
+
+import java.util.Scanner;
+
+public class Extest_06 {
+	
+	public static void main(String[] args) {
+		
+		try (Scanner sc = new Scanner(System.in)) {
+		System.out.print("정수를 입력하세요:");	
+		int n = Integer.parseInt(Integer.toBinaryString(sc.nextInt()));
+		System.out.printf("%032d",n);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	} // main
+}// class
+
