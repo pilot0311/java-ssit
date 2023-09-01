@@ -23,11 +23,11 @@ public class Ex01_01 {
 			lotto = new TreeSet();
 			fillLotto(lotto);
 			lottos.add(lotto);
-			
+
 		} // for
-		
+			// test
 		dispLotto(lottos);
-		
+
 	} // main
 
 	private static void dispLotto(ArrayList lottos) {
@@ -36,16 +36,16 @@ public class Ex01_01 {
 			TreeSet lotto = (TreeSet) ir.next();
 			System.out.println(lotto);
 		}
-		
+
 	}
 
 	private static void fillLotto(TreeSet lotto) {
 		Random rnd = new Random();
-		while (lotto.size()<6) {
-			lotto.add(rnd.nextInt(45)+1);
-			
+		while (lotto.size() < 6) {
+			lotto.add(rnd.nextInt(45) + 1);
+
 		}
-		
+
 	}
 
 }
