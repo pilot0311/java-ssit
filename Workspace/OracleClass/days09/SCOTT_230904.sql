@@ -664,8 +664,24 @@ SELECT *
 FROM tbl_emp;
 SELECT *
 FROM tbl_bonus;
-
-
+SELECT *
+FROM tbl_score;
+commit;
+MERGE INTO tbl_score b
+    USING (SELECT num,RANK()OVER(ORDER BY tot DESC)r FROM tbl_score)e
+    ON (b.num = e.num)
+    WHEN MATCHED THEN 
+        UPDATE SET b.rank = e.r;
+        
+        
+UPDATE tbl_score p SET rank = ( 
+                            SELECT t.r
+                            FROM(
+                                SELECT num,tot, RANK()OVER(ORDER BY tot DESC)r
+                                FROM tbl_score
+                                )t
+                            WHERE t.num = p.num
+                                );
 ------------------
 SELECT 
       NVL( MIN( DECODE( TO_CHAR( dates, 'D'), 1, TO_CHAR( dates, 'DD')) ), ' ')  ¿œ
