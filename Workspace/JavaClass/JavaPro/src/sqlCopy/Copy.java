@@ -6,7 +6,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Copy {
-	   static String dirPath = "E:\\Class\\Workspace\\OraclClass";
+	   static String dirPath = "E:\\Class\\Workspace\\OracleClass";
 	   
 
 

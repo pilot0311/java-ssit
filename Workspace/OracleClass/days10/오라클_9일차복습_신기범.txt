@@ -1,0 +1,120 @@
+1.  truncate / delete / drop 대해서 설명하세요
+truncate: 테이블의 행 삭제 + 자동 commit
+delete : 테이블의 행 삭제  commit따로해야 완전히 완료됨
+drop : 테이블 삭제
+2.  insert 문 수행 중 다음과 같은 오류가 발생했다면 이유에 대해 설명하세요
+  ㄱ. 00947. 00000 -  "not enough values"  : values의 컬럼과  입력할려는 컬럼이 맞지 않음
+  ㄴ. ORA-00001: unique constraint (SCOTT.SYS_C007770) violated  : 유일성제약조건 위반
+  ㄷ. ORA-02291: integrity constraint (SCOTT.FK_DEPTNO) violated - parent key not found
+	FK로 사용한 부모키 발견안됨 - 무결성 제약조건 위반
+   
+3. 서브쿼리를 사용해서 테이블 생성
+  ㄱ. deptno, dname, empno, ename, sal+nvl(comm,0) pay, grade 컬럼을 가진 새로운 테이블 생성
+  ㄴ. 테이블명 : tbl_empdeptgrade   
+CREATE TABLE tbl_empdeptgrade (deptno, dname,empno,ename,pay,grade)
+AS
+SELECT e.deptno, d.dname,e.empno,e.ename,sal+NVL(comm,0) pay,s.grade
+FROM emp e,dept d,SALGRADE s 
+WHERE e.deptno = d.deptno AND sal+NVL(comm,0) BETWEEN s.losal AND s.hisal;
+
+
+4-1. insa 테이블에서 num, name 가져와서 tbl_score 테이블 생성
+     (tbl_score 테이블이 있으면 삭제 후 시작하세요 )
+CREATE TABLE tbl_score (num, name)
+AS
+SELECT num,name
+FROM insa;
+
+4-2. kor, eng, mat, tot          , avg , grade, rank 컬럼 추가
+ALTER TABLE tbl_score ADD (kor NUMBER(3) DEFAULT 0, 
+                            eng NUMBER(3) DEFAULT 0,
+                            mat NUMBER(3) DEFAULT 0,
+                            tot NUMBER(3) DEFAULT 0,
+                            avg NUMBER(5,2) DEFAULT 0,
+                            grade CHAR(1 char),
+                            rank NUMBER(3));
+
+4-3. 각 학생들의 kor,eng,mat 점수 0~100 랜덤하게 채워넣기.
+UPDATE tbl_score SET
+                kor = FLOOR(dbms_random.value(0,101)),
+                eng = FLOOR(dbms_random.value(0,101)),
+                mat = FLOOR(dbms_random.value(0,101));    
+
+4-4. 총점, 평균, 등급, 등수 수정
+    조건)
+     등급은 모든 과목이 40점이상이고, 평균 60 이상이면 "합격"
+           평균 60 이상이라도 한 과목이라 40점 미만이라면  "과락"
+           그외는 "불합격" 이라고 저장.
+             
+UPDATE tbl_score SET grade = CASE
+                WHEN avg >=60 AND kor >= 40 AND eng >= 40 AND mat >= 40 THEN '합격'
+                WHEN avg >= 60 AND (kor < 40 OR eng < 40 OR mat < 40) THEN '과락'
+                ELSE '불합격'
+                END;            
+
+5.  emp 테이블의 구조를 확인하고, 제약조건을 확인하고, 임의의 사원 정보를 추가하는 INSERT 문을 작성하세요.
+   ㄱ. 구조확인 쿼리 
+DESC emp;
+   ㄴ. 제약조건 확인 쿼리
+SELECT *
+FROM user_constraints
+WHERE table_name = 'EMP';
+
+   ㄷ. INSERT 쿼리 
+INSERT INTO emp VALUES (8000,'pilot','CLERK',7788,'23/9/5',4000,1500,40);
+
+6-1. emp 테이블의 구조만 복사해서 새로운 tbl_emp10, tbl_emp20, tbl_emp30, tbl_emp40 테이블을 생성하세요. 
+CREATE TABLE tbl_emp10 AS (SELECT * FROM emp WHERE 1=0);
+CREATE TABLE tbl_emp20 AS (SELECT * FROM emp WHERE 1=0);
+CREATE TABLE tbl_emp30 AS (SELECT * FROM emp WHERE 1=0);
+CREATE TABLE tbl_emp40 AS (SELECT * FROM emp WHERE 1=0);
+
+6-2. emp 테이블의 각 부서에 해당하는 사원정보를  위에서 생성한 테이블에 INSERT 하는 쿼리를 작성하세요.   
+INSERT FIRST
+        WHEN deptno =10 THEN
+            INTO tbl_emp10 VALUES(empno,ename,job,mgr,hiredate,sal,comm,deptno)
+        WHEN deptno =20 THEN
+            INTO tbl_emp20 VALUES(empno,ename,job,mgr,hiredate,sal,comm,deptno)
+        WHEN deptno =30 THEN
+            INTO tbl_emp30 VALUES(empno,ename,job,mgr,hiredate,sal,comm,deptno)
+        WHEN deptno =40 THEN
+            INTO tbl_emp40 VALUES(empno,ename,job,mgr,hiredate,sal,comm,deptno)
+SELECT * FROM emp;
+
+7. 조건이 있는 다중 INSERT 문에서  INSERT ALL 과 INSERT FIRST 문에 대한 차이점을 설명하세요.
+INSERT ALL : 만족하는 모든 조건의 insert 실행
+NSERT FIRST : 만족하는 첫번째 조건의 insert 실행
+ 
+8. 병합(merge) 문제
+ 1) 테이블생성
+CREATE TABLE tbl_merge1
+(
+     id number primary key
+   , name varchar2(20)
+   , pay number
+   , sudang number             
+);
+    
+CREATE TABLE tbl_merge2
+(
+   id number primary key 
+   , sudang number             
+);
+  2) 데이타 추가  
+INSERT INTO tbl_merge1 (id, name, pay, sudang) VALUES (1, 'a', 100, 10);
+INSERT INTO tbl_merge1 (id, name, pay, sudang) VALUES (2, 'b', 150, 20);
+INSERT INTO tbl_merge1 (id, name, pay, sudang) VALUES (3, 'c', 130, 0);
+    
+INSERT INTO tbl_merge2 (id, sudang) VALUES (2,5);
+INSERT INTO tbl_merge2 (id, sudang) VALUES (3,10);
+INSERT INTO tbl_merge2 (id, sudang) VALUES (4,20);
+
+COMMIT;
+ 
+  3) tbl_merge1을 tbl_merge2에 병합 ( id, sudang )하세요... 
+MERGE INTO tbl_merge2 m2
+    USING (SELECT id, sudang FROM tbl_merge1) m1
+    ON (m2.id = m1.id)
+    WHEN MATCHED THEN
+        UPDATE SET m2.sudang = m2.sudang + m1.sudang
+        WHEN NOT MATCHED THEN INSERT (m2.id,m2.sudang) VALUES (m1.id,m1.sudang);
