@@ -1,0 +1,49 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="VOTE" directorySegmentName="seg_0" id="A3E177A7-67E7-DD90-9D41-315BC5ED5ED5">
+<createdBy>user</createdBy>
+<createdTime>2023-09-07 09:37:04 UTC</createdTime>
+<ownerDesignName>pr</ownerDesignName>
+<schemaObject>86C5A304-01FD-95DF-ABBF-7E162F233611</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>CA7DE949-87DA-E394-9698-D13C3C3B9529</segment>
+<tableSpace>69F590B3-55C0-CDFB-581D-0FB2F126B7A1</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ITEM_ID" id="63B5D4CD-1B75-C288-0A25-CFAE7AFA24EF">
+<createdBy>user</createdBy>
+<createdTime>2023-09-07 09:37:04 UTC</createdTime>
+<ownerDesignName>pr</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SEQ" id="75193B64-4304-C934-8E21-ACD5CCD3CF9E">
+<createdBy>user</createdBy>
+<createdTime>2023-09-07 09:37:04 UTC</createdTime>
+<ownerDesignName>pr</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SURVEY_ID" id="A67F9D9E-BCC3-BC95-404F-01231D05899E">
+<createdBy>user</createdBy>
+<createdTime>2023-09-07 09:37:04 UTC</createdTime>
+<ownerDesignName>pr</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="USER_ID" id="F89DDD73-78B8-F423-188F-4F58F8AB931C">
+<createdBy>user</createdBy>
+<createdTime>2023-09-07 09:37:04 UTC</createdTime>
+<ownerDesignName>pr</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="VOTE_PK" id="609E2FC7-72E3-1E1F-1DEC-2D8B5F20EE4F">
+<createdBy>user</createdBy>
+<createdTime>2023-09-07 09:37:04 UTC</createdTime>
+<ownerDesignName>pr</ownerDesignName>
+<schemaObject>86C5A304-01FD-95DF-ABBF-7E162F233611</schemaObject>
+<segment>61764152-ECBA-B4DE-E8BE-DC92B4C28B06</segment>
+<tableSpace>69F590B3-55C0-CDFB-581D-0FB2F126B7A1</tableSpace>
+<indexSegment>61764152-ECBA-B4DE-E8BE-DC92B4C28B06</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

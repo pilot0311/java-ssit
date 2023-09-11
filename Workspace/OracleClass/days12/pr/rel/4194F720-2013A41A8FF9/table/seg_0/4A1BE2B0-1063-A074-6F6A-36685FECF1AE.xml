@@ -1,0 +1,129 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4A1BE2B0-1063-A074-6F6A-36685FECF1AE" schemaObject="86C5A304-01FD-95DF-ABBF-7E162F233611" name="SURVEY">
+<createdBy>user</createdBy>
+<createdTime>2023-09-07 09:36:56 UTC</createdTime>
+<ownerDesignName>pr</ownerDesignName>
+<importedID>549DE072-4B83-12FD-EADF-65BD7E280638</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SURVEY_ID" id="E9BB5018-6B31-409F-BD2F-D5C41185177C">
+<createdBy>user</createdBy>
+<createdTime>2023-09-07 09:36:56 UTC</createdTime>
+<ownerDesignName>pr</ownerDesignName>
+<importedID>478B4D9B-A281-8105-95E6-3EFF9A853A5A</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USER_ID" id="1150D954-63D7-15C0-7B50-8860C1315AE9">
+<createdBy>user</createdBy>
+<createdTime>2023-09-07 09:36:56 UTC</createdTime>
+<ownerDesignName>pr</ownerDesignName>
+<importedID>3BC3F4F7-D408-3E6E-8C8B-21296EA6FD33</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FC98EA5D-6F02-6E6E-EEE5-E16719431A12" referredColumn="8B79A5FA-4169-5705-7A27-BFFC6CBD98B9"/>
+</associations>
+</Column>
+<Column name="START_DATE" id="9C00C18A-B0C9-734B-C4BC-8CDFAAC9C923">
+<createdBy>user</createdBy>
+<createdTime>2023-09-07 09:36:56 UTC</createdTime>
+<ownerDesignName>pr</ownerDesignName>
+<importedID>250B4CD2-1EB1-F4F1-0AFF-D38081259029</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<defaultValue>SYSDATE</defaultValue>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="END_DATE" id="CCB8EDDB-E205-2488-B90C-8FD616E0EA65">
+<createdBy>user</createdBy>
+<createdTime>2023-09-07 09:36:56 UTC</createdTime>
+<ownerDesignName>pr</ownerDesignName>
+<importedID>E1D10E55-5194-6E21-CB8E-4C9A5F95700E</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TITLE" id="005B200D-3F13-6798-C769-1AB043A7BE15">
+<createdBy>user</createdBy>
+<createdTime>2023-09-07 09:36:56 UTC</createdTime>
+<ownerDesignName>pr</ownerDesignName>
+<importedID>7ACBFAB9-ABC0-E2F2-19F4-9A41DB2E6732</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STATE" id="C92BF74C-9052-9DB3-9E94-F58D4A65FC88">
+<createdBy>user</createdBy>
+<createdTime>2023-09-07 09:36:56 UTC</createdTime>
+<ownerDesignName>pr</ownerDesignName>
+<importedID>5763B5E4-24DB-5DC9-23A3-EC098F4587AD</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<defaultValue>&apos;일반&apos;</defaultValue>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SURVEY_ALLCNT" id="1D1249D1-9F5B-0101-2A3F-E09B70022182">
+<createdBy>user</createdBy>
+<createdTime>2023-09-07 09:36:56 UTC</createdTime>
+<ownerDesignName>pr</ownerDesignName>
+<importedID>FFA481F9-8488-53D5-654F-43943E6DAD1B</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="459BF4B8-9505-1BA3-53AF-0BDACA76746D" schemaObject="86C5A304-01FD-95DF-ABBF-7E162F233611" name="SURVEY_PK">
+<createdBy>user</createdBy>
+<createdTime>2023-09-07 09:36:56 UTC</createdTime>
+<ownerDesignName>pr</ownerDesignName>
+<importedID>292C04EE-345D-02A5-8421-F56ACD64C69A</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E9BB5018-6B31-409F-BD2F-D5C41185177C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0F022E36-F3D0-C58A-CD15-02F06D46193C" name="FK_SURVEY_USER_ID">
+<createdBy>user</createdBy>
+<createdTime>2023-09-07 09:36:56 UTC</createdTime>
+<ownerDesignName>pr</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1150D954-63D7-15C0-7B50-8860C1315AE9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

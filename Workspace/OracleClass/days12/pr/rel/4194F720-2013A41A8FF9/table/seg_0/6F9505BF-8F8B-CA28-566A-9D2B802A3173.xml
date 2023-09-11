@@ -1,0 +1,119 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6F9505BF-8F8B-CA28-566A-9D2B802A3173" schemaObject="86C5A304-01FD-95DF-ABBF-7E162F233611" name="USER_INFO">
+<createdBy>user</createdBy>
+<createdTime>2023-09-07 09:36:56 UTC</createdTime>
+<ownerDesignName>pr</ownerDesignName>
+<importedID>65B4251D-B9AD-2E86-EEFC-1784350927F4</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="USER_ID" id="8B79A5FA-4169-5705-7A27-BFFC6CBD98B9">
+<createdBy>user</createdBy>
+<createdTime>2023-09-07 09:36:56 UTC</createdTime>
+<ownerDesignName>pr</ownerDesignName>
+<importedID>64D35F4C-B8F4-DEBD-83FA-BB19CED47B05</importedID>
+<constraintName>SYS_C007101</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="LENGTH(user_id) &gt;= 4"/>
+<implementationDef dbType="Oracle Database 11g" definition="LENGTH(user_id) &gt;= 4"/>
+</checkConstraint>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PASSWORD" id="1AA41E6F-CCB5-3164-E4E3-5924AFC0C462">
+<createdBy>user</createdBy>
+<createdTime>2023-09-07 09:36:56 UTC</createdTime>
+<ownerDesignName>pr</ownerDesignName>
+<importedID>2B7F0AB3-605E-F50D-EE52-EBA207AA4F83</importedID>
+<constraintName>SYS_C007102</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="LENGTH(password) &gt;= 8"/>
+<implementationDef dbType="Oracle Database 11g" definition="LENGTH(password) &gt;= 8"/>
+</checkConstraint>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAME" id="5239EFEE-D405-92EB-68E7-85F53426B531">
+<createdBy>user</createdBy>
+<createdTime>2023-09-07 09:36:56 UTC</createdTime>
+<ownerDesignName>pr</ownerDesignName>
+<importedID>B62675FD-D1DB-04F3-DF6A-4039DD360D62</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EMAIL" id="A17E9408-152E-8D59-297A-C1692A19EA09">
+<createdBy>user</createdBy>
+<createdTime>2023-09-07 09:36:56 UTC</createdTime>
+<ownerDesignName>pr</ownerDesignName>
+<importedID>17E0B653-182B-3A81-D955-19D35F0988AD</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ROLE" id="F8A319F8-6A2D-E97C-B646-3DBD3E3C93F4">
+<createdBy>user</createdBy>
+<createdTime>2023-09-07 09:36:56 UTC</createdTime>
+<ownerDesignName>pr</ownerDesignName>
+<importedID>561B2A6A-80B4-C912-D163-0655229A6DE7</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<defaultValue>&apos;일반&apos;</defaultValue>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BE4C731E-5751-42A1-C404-2EA9387F25F4" name="PK_USER_INFO_USER_ID">
+<createdBy>user</createdBy>
+<createdTime>2023-09-07 09:36:56 UTC</createdTime>
+<ownerDesignName>pr</ownerDesignName>
+<importedID>19B5D957-6D3D-9BF9-D728-2F5F850013A9</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8B79A5FA-4169-5705-7A27-BFFC6CBD98B9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="259A8820-E482-8B1B-B594-5285A305D6FC" schemaObject="86C5A304-01FD-95DF-ABBF-7E162F233611" name="USER_INFO_EMAIL_UN">
+<createdBy>user</createdBy>
+<createdTime>2023-09-07 09:36:56 UTC</createdTime>
+<ownerDesignName>pr</ownerDesignName>
+<importedID>8D9DE1A6-836D-5F51-8516-C5AFF77E146A</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A17E9408-152E-8D59-297A-C1692A19EA09"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="59C7831A-A5B2-6379-D79A-BEAF5496D324" schemaObject="86C5A304-01FD-95DF-ABBF-7E162F233611" name="PK_USER_INFO_USER_ID">
+<createdBy>user</createdBy>
+<createdTime>2023-09-07 09:36:56 UTC</createdTime>
+<ownerDesignName>pr</ownerDesignName>
+<importedID>BDD63A25-043C-065B-4812-8D47BE412D06</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8B79A5FA-4169-5705-7A27-BFFC6CBD98B9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

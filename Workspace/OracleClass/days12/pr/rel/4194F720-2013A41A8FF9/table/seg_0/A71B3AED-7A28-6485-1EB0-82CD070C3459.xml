@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A71B3AED-7A28-6485-1EB0-82CD070C3459" schemaObject="86C5A304-01FD-95DF-ABBF-7E162F233611" name="SURVEY_OPTION">
+<createdBy>user</createdBy>
+<createdTime>2023-09-07 09:36:56 UTC</createdTime>
+<ownerDesignName>pr</ownerDesignName>
+<importedID>5F6986F0-3E67-4717-62C0-595FAACB74F1</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SURVEY_ID" id="2610D2C0-48B9-EE2A-38BA-2B8A1D00257C">
+<createdBy>user</createdBy>
+<createdTime>2023-09-07 09:36:56 UTC</createdTime>
+<ownerDesignName>pr</ownerDesignName>
+<importedID>6CABC320-C473-3AE5-00C4-EE857C69D2DD</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DAF86AEB-1266-0D10-BD00-1DA2D61437A1" referredColumn="E9BB5018-6B31-409F-BD2F-D5C41185177C"/>
+</associations>
+</Column>
+<Column name="CONTENT_ID" id="1C13ED97-FAEF-D75B-3F2F-B1AE10192C31">
+<createdBy>user</createdBy>
+<createdTime>2023-09-07 09:36:56 UTC</createdTime>
+<ownerDesignName>pr</ownerDesignName>
+<importedID>1BA922FF-5987-6317-25DD-21AA966C81A8</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OPTION_CNT" id="1F0E20EC-68C7-F079-170F-B8014CFA4259">
+<createdBy>user</createdBy>
+<createdTime>2023-09-07 09:36:56 UTC</createdTime>
+<ownerDesignName>pr</ownerDesignName>
+<importedID>5B1574FB-C781-4CA1-F766-3D8A0E83579E</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,4,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OPTION_CONTENT" id="498433FB-0A9B-18AE-D979-4AD05265B617">
+<createdBy>user</createdBy>
+<createdTime>2023-09-07 09:36:56 UTC</createdTime>
+<ownerDesignName>pr</ownerDesignName>
+<importedID>D36ABDA1-7396-7035-60B4-B77AA21CB56F</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5416E6EC-CCF5-E399-85D2-7C0EC11E4D74" name="SURVEY_OPTION_PK">
+<createdBy>user</createdBy>
+<createdTime>2023-09-07 09:36:56 UTC</createdTime>
+<ownerDesignName>pr</ownerDesignName>
+<importedID>3467110E-5BDB-70B3-9AC3-69F951C80530</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2610D2C0-48B9-EE2A-38BA-2B8A1D00257C"/>
+<colUsage columnID="1C13ED97-FAEF-D75B-3F2F-B1AE10192C31"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="269D32B6-02A5-A7A5-A30E-F40292B8CED9" schemaObject="86C5A304-01FD-95DF-ABBF-7E162F233611" name="SURVEY_OPTION_PK">
+<createdBy>user</createdBy>
+<createdTime>2023-09-07 09:36:56 UTC</createdTime>
+<ownerDesignName>pr</ownerDesignName>
+<importedID>46C7A240-A8BB-9D5B-0827-A71D03A54051</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2610D2C0-48B9-EE2A-38BA-2B8A1D00257C"/>
+<colUsage columnID="1C13ED97-FAEF-D75B-3F2F-B1AE10192C31"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="85B3BFDD-2A04-F9B2-154A-7CE0BBBEA3E1" name="FK_OPTION_SURVEY_ID">
+<createdBy>user</createdBy>
+<createdTime>2023-09-07 09:36:56 UTC</createdTime>
+<ownerDesignName>pr</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2610D2C0-48B9-EE2A-38BA-2B8A1D00257C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

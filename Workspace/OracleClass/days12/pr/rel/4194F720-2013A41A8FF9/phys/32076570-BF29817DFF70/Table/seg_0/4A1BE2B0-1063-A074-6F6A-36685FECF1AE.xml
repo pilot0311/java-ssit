@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="SURVEY" directorySegmentName="seg_0" id="4A1BE2B0-1063-A074-6F6A-36685FECF1AE">
+<createdBy>user</createdBy>
+<createdTime>2023-09-07 09:36:56 UTC</createdTime>
+<ownerDesignName>pr</ownerDesignName>
+<schemaObject>86C5A304-01FD-95DF-ABBF-7E162F233611</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>CA7DE949-87DA-E394-9698-D13C3C3B9529</segment>
+<tableSpace>69F590B3-55C0-CDFB-581D-0FB2F126B7A1</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="TITLE" id="005B200D-3F13-6798-C769-1AB043A7BE15">
+<createdBy>user</createdBy>
+<createdTime>2023-09-07 09:36:56 UTC</createdTime>
+<ownerDesignName>pr</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="USER_ID" id="1150D954-63D7-15C0-7B50-8860C1315AE9">
+<createdBy>user</createdBy>
+<createdTime>2023-09-07 09:36:56 UTC</createdTime>
+<ownerDesignName>pr</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SURVEY_ALLCNT" id="1D1249D1-9F5B-0101-2A3F-E09B70022182">
+<createdBy>user</createdBy>
+<createdTime>2023-09-07 09:36:56 UTC</createdTime>
+<ownerDesignName>pr</ownerDesignName>
+<defaultValue>0</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="START_DATE" id="9C00C18A-B0C9-734B-C4BC-8CDFAAC9C923">
+<createdBy>user</createdBy>
+<createdTime>2023-09-07 09:36:56 UTC</createdTime>
+<ownerDesignName>pr</ownerDesignName>
+<defaultValue>SYSDATE</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="STATE" id="C92BF74C-9052-9DB3-9E94-F58D4A65FC88">
+<createdBy>user</createdBy>
+<createdTime>2023-09-07 09:36:56 UTC</createdTime>
+<ownerDesignName>pr</ownerDesignName>
+<defaultValue>&apos;일반&apos;</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="END_DATE" id="CCB8EDDB-E205-2488-B90C-8FD616E0EA65">
+<createdBy>user</createdBy>
+<createdTime>2023-09-07 09:36:56 UTC</createdTime>
+<ownerDesignName>pr</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SURVEY_ID" id="E9BB5018-6B31-409F-BD2F-D5C41185177C">
+<createdBy>user</createdBy>
+<createdTime>2023-09-07 09:36:56 UTC</createdTime>
+<ownerDesignName>pr</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_SURVEY_USER_ID" id="0F022E36-F3D0-C58A-CD15-02F06D46193C">
+<createdBy>user</createdBy>
+<createdTime>2023-09-07 09:36:56 UTC</createdTime>
+<ownerDesignName>pr</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="SURVEY_PK" id="459BF4B8-9505-1BA3-53AF-0BDACA76746D">
+<createdBy>user</createdBy>
+<createdTime>2023-09-07 09:36:56 UTC</createdTime>
+<ownerDesignName>pr</ownerDesignName>
+<schemaObject>86C5A304-01FD-95DF-ABBF-7E162F233611</schemaObject>
+<segment>61764152-ECBA-B4DE-E8BE-DC92B4C28B06</segment>
+<tableSpace>69F590B3-55C0-CDFB-581D-0FB2F126B7A1</tableSpace>
+<indexSegment>61764152-ECBA-B4DE-E8BE-DC92B4C28B06</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

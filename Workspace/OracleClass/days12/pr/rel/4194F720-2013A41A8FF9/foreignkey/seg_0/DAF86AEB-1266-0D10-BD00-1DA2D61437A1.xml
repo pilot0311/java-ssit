@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="DAF86AEB-1266-0D10-BD00-1DA2D61437A1" containerWithKeyObject="A71B3AED-7A28-6485-1EB0-82CD070C3459" localFKIndex="85B3BFDD-2A04-F9B2-154A-7CE0BBBEA3E1" name="FK_OPTION_SURVEY_ID">
+<createdBy>user</createdBy>
+<createdTime>2023-09-07 09:36:56 UTC</createdTime>
+<ownerDesignName>pr</ownerDesignName>
+<importedID>D615FE75-5C29-055C-D230-99AA3F660C02</importedID>
+<referredTableLongName>SCOTT.SURVEY</referredTableLongName>
+<deleteRule>CASCADE</deleteRule>
+<referredTableID>4A1BE2B0-1063-A074-6F6A-36685FECF1AE</referredTableID>
+<keyObject>459BF4B8-9505-1BA3-53AF-0BDACA76746D</keyObject>
+<referredKeyID>459BF4B8-9505-1BA3-53AF-0BDACA76746D</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>SURVEY_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

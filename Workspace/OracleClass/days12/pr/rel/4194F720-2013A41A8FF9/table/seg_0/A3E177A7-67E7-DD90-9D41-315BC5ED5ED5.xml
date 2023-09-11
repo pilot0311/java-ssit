@@ -1,0 +1,95 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A3E177A7-67E7-DD90-9D41-315BC5ED5ED5" schemaObject="86C5A304-01FD-95DF-ABBF-7E162F233611" name="VOTE">
+<sourceConnName>localhostSCOTT</sourceConnName>
+<sourceObjSchema>SCOTT</sourceObjSchema>
+<sourceObjName>VOTE</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2023-09-07 09:37:04 UTC</createdTime>
+<ownerDesignName>pr</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SEQ" id="75193B64-4304-C934-8E21-ACD5CCD3CF9E">
+<sourceConnName>localhostSCOTT</sourceConnName>
+<sourceObjSchema>VOTE</sourceObjSchema>
+<sourceObjName>SEQ</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2023-09-07 09:37:04 UTC</createdTime>
+<ownerDesignName>pr</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USER_ID" id="F89DDD73-78B8-F423-188F-4F58F8AB931C">
+<sourceConnName>localhostSCOTT</sourceConnName>
+<sourceObjSchema>VOTE</sourceObjSchema>
+<sourceObjName>USER_ID</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2023-09-07 09:37:04 UTC</createdTime>
+<ownerDesignName>pr</ownerDesignName>
+<constraintName>FK_USER_INFO_USER_ID</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="LENGTH(user_id) &gt;= 4"/>
+<implementationDef dbType="Oracle Database 11g" definition="LENGTH(user_id) &gt;= 4"/>
+</checkConstraint>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SURVEY_ID" id="A67F9D9E-BCC3-BC95-404F-01231D05899E">
+<sourceConnName>localhostSCOTT</sourceConnName>
+<sourceObjSchema>VOTE</sourceObjSchema>
+<sourceObjName>SURVEY_ID</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2023-09-07 09:37:04 UTC</createdTime>
+<ownerDesignName>pr</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,4,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ITEM_ID" id="63B5D4CD-1B75-C288-0A25-CFAE7AFA24EF">
+<sourceConnName>localhostSCOTT</sourceConnName>
+<sourceObjSchema>VOTE</sourceObjSchema>
+<sourceObjName>ITEM_ID</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2023-09-07 09:37:04 UTC</createdTime>
+<ownerDesignName>pr</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="609E2FC7-72E3-1E1F-1DEC-2D8B5F20EE4F" schemaObject="86C5A304-01FD-95DF-ABBF-7E162F233611" name="VOTE_PK">
+<sourceConnName>localhostSCOTT</sourceConnName>
+<sourceObjSchema>SCOTT</sourceObjSchema>
+<sourceObjName>SYS_C007115</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2023-09-07 09:37:04 UTC</createdTime>
+<ownerDesignName>pr</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="75193B64-4304-C934-8E21-ACD5CCD3CF9E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
