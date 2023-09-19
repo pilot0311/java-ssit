@@ -1,0 +1,12 @@
+
+CREATE TABLE tbl_dept
+AS
+(
+SELECT *
+FROM dept
+WHERE 1=0
+);
+
+
+ALTER TABLE tbl_dept
+ADD CONSTRAINT PK_TBL_DEPT_DEPTNO PRIMARY KEY (deptno);
