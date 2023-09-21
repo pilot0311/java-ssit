@@ -13,7 +13,7 @@ import com.util.DBConn;
 import domain.DeptVO;
 import domain.EmpVO;
 
-public class test01 {
+public class Test01 {
 
 	public static void main(String[] args) {
 		// empvo 클래스 선언
@@ -46,8 +46,8 @@ public class test01 {
 			System.out.println("부서번호 입력(0입력시 모든 부서 조회): ");
 			inputdeptno = sc.next();
 			if (!inputdeptno.equals("0")) {
-				sql += " WHERE deptno = ";
-				sql += inputdeptno;
+				sql += " WHERE deptno IN( ";
+				sql += inputdeptno +")";
 			} 
 			stmt = conn.createStatement();
 			rs = stmt.executeQuery(sql);

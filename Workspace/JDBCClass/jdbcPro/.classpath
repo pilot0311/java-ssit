@@ -8,5 +8,6 @@
 	</classpathentry>
 	<classpathentry kind="lib" path="C:/ojdbc6.jar"/>
 	<classpathentry kind="lib" path="C:/eclipse-jee-2021-09-R-win32-x86_64/eclipse/lombok.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

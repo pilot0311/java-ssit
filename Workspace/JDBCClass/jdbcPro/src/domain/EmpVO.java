@@ -10,7 +10,6 @@ import lombok.ToString;
 @AllArgsConstructor
 @Getter
 @Setter
-@ToString
 public class EmpVO {
 //	이름       널?       유형           
 //			-------- -------- ------------ 
@@ -31,6 +30,28 @@ public class EmpVO {
 	private int sal;
 	private int comm;
 	private int deptno;
+	private String dname;
+	
+	
+	
+	@Override
+	public String toString() {
+		return "EmpVO [empno=" + empno + ", ename=" + ename + ", job=" + job + ", mgr=" + mgr + ", hiredate=" + hiredate
+				+ ", sal=" + sal + ", comm=" + comm + ", deptno=" + deptno + "]";
+	}
+
+
+
+	public EmpVO(int empno, String ename, String job, int mgr, String hiredate, int sal, int comm, int deptno) {
+		this.empno = empno;
+		this.ename = ename;
+		this.job = job;
+		this.mgr = mgr;
+		this.hiredate = hiredate;
+		this.sal = sal;
+		this.comm = comm;
+		this.deptno = deptno;
+	}
 	
 	
 	
