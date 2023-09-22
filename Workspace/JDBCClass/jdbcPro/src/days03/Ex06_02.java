@@ -7,8 +7,11 @@ import java.util.Scanner;
 
 import com.util.DBConn;
 
-public class Ex06 {
+import domain.DeptVO;
 
+public class Ex06_02 {
+// CallableStatement 사용해서 emp테이블 crud 작업
+// Ex05 시리즈  제출....
 	public static void main(String[] args) {
 		int empno;
 		String ename;
@@ -18,7 +21,7 @@ public class Ex06 {
 		//int sal;
 		//int comm;
 		int deptno;
-		String sql ="{call up_insemp (?,?,?)}";
+		String sql ="{call up_updemp (?,?,?)}";
 		
 		Connection conn = null;
 		CallableStatement cstmt = null;
@@ -38,7 +41,7 @@ public class Ex06 {
 			cstmt.setString(2, ename);
 			cstmt.setInt(3, deptno);
 			rowCount = cstmt.executeUpdate();
-			if(rowCount == 1)System.out.println("사원추가 완료");
+			if(rowCount == 1)System.out.println("사원업뎃 완료");
 			
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -56,23 +59,18 @@ public class Ex06 {
 	}
 }
 
-//create or replace PROCEDURE up_insemp
+//CREATE OR REPLACE PROCEDURE up_upddept
 //(
 //    pempno emp.empno%TYPE,
-//    pename emp.ename%TYPE,
-//    pdeptno emp.deptno%TYPE
+//    pename emp.ename%TYPE  := NULL,
+//    pdeptno emp.deptno%TYPE := NULL
 //)
 //IS
-//    NO_FK_FOUND EXCEPTION;
-//    PRAGMA EXCEPTION_INIT (NO_FK_FOUND,-02291);
 //BEGIN
-//    INSERT INTO emp (empno,ename,deptno) VALUES (pempno,pename,pdeptno);
+//
+//     UPDATE emp
+//    SET ename = NVL(pename,ename), deptno = NVL(pdeptno,deptno)
+//    WHERE empno = pempno;
+//
 //    COMMIT;
-//EXCEPTION
-//    WHEN DUP_VAL_ON_INDEX THEN
-//        RAISE_APPLICATION_ERROR(-20001,'> QUERY PK 위반');
-//    WHEN NO_FK_FOUND THEN
-//        RAISE_APPLICATION_ERROR(-20002,'> QUERY deptno FK 위반');
-//    WHEN OTHERS THEN    --그 외 모든 예외 발생 경우
-//        RAISE_APPLICATION_ERROR(-20004,'> QUERY OTHERS EXCEPTION FOUND');
 //END;
