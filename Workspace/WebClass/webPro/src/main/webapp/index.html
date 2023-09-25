@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h3>환경 설정</h3>
+<ol>
+   <li>파일 탐색기 - WebClass 폴더 생성</li>
+   <li>https://tomcat.apache.org/</li>
+   <li>
+     <ul>
+        <li>
+         Core:
+            zip (pgp, sha512) ***
+            tar.gz (pgp, sha512)
+            32-bit Windows zip (pgp, sha512)
+            64-bit Windows zip (pgp, sha512)
+            32-bit/64-bit Windows Service Installer (pgp, sha512)
+        </li>
+        <li>C:\apache-tomcat-8.5.93</li>
+     </ul>
+   </li>
+   <li>이클립스 실행 - Dynamic Web Project</li>
+   <li>프로젝트명 : webPro</li>
+   <li>2021.09 이클립스  JavaSE 11 설정</li>
+   <li>webapp 폴더 안에 index.html 추가 - Ctrl + F11</li>
+   <li>에러:8080포트 충돌 -> server.xml  63라인 port="80"</li>
+   <li>context root == context path == 컨텍스트 패스 == /webPro</li>
+   <li>content directory ==  src/main/webapp 폴더 </li>
+   <li>webapp/html/days01/ex01.html</li>
+</ol>
+</body>
+</html>

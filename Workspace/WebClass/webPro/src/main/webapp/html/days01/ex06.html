@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--<html lang="en"> 언어 지정하는 속성-->
+    <!--<html="en-US"> 언어+국가 지정하는 속성-->
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="Generator" content="Eclipse IDE">
+<meta name="Author" content="홍길동">
+<meta name="Keywords" content="html, meta">
+<meta name="Description" content="html 기본 구조 설명,meta,hn태그 설명">
+<title>Insert title here</title>
+<link rel="shortcut icon"href="http://localhost/webPro/images/SiSt.ico">
+<style>
+    h1,h2,h3,h4,h5,h6{
+        border:  solid 1px;
+    }
+    
+   
+    h1:hover {
+        background: red;
+        display: block;
+        content: "이상문";
+        
+        
+    }h1:hover ~ h1{
+        background: red;
+        display: block;
+        
+    }
+    h1:hover ~ h1::before {
+            content: "이상문";
+        }
+        
+        h1::before {
+            content: "요소설명";
+        }
+    
+</style>
+</head>
+<body>
+<h3><h1>html</h1>문서의 보여지는 부분</h3>
+<h1></h1>
+<h1 class="lee"></h1>
+<h1 class="sang"></h1>
+<h1 class="sang"></h1>
+<h1 class="sang"></h1>
+<h1 class="sang"></h1>
+<h1 class="sang"></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<!--중첩 요소-->
+<!--
+W3C - html 태그는 대소문자 구분x, 소문자 권장<br>
+xhtml 반드시 소문자 사용
+
+-속성도 소문자 사용 권장
+-->
+<!--
+    - 모든 html 요소는 속성을 가질 수 있다
+    - 속성은 그 요소의 추가적인 정보를 제공한다
+    - 속성은 시작태그에 지정한다
+    - 형식) 속성명 = "속성값"   속성명 = '속성값'   속성명 = 속성값
+
+-->
+
+
+<hr>
+
+</body>
+</html>

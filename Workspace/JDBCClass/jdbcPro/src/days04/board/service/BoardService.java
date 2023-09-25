@@ -73,6 +73,12 @@ public class BoardService {
 				e1.printStackTrace();
 			}
 			e.printStackTrace();
+		}finally {
+			try {
+				((BoardDAOImpl) this.dao).getConn().setAutoCommit(true);
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
 		}
 
 		return dto;
@@ -140,6 +146,50 @@ public class BoardService {
 		int totalPages;
 		try {
 			totalPages = this.dao.getTotPages(numberPerPage);
+			int start = (currentPage - 1) / numberOfPageBlock * numberOfPageBlock + 1;
+			int end = start + numberOfPageBlock - 1;
+			end = end > totalPages ? totalPages : end;
+
+			if (start != 1)
+				pagingBlock +=" < ";
+			for (int j = start; j <= end; j++) {
+				pagingBlock += String.format(currentPage == j ? "[%d] " : "%d ", j);
+			}
+			if (end != totalPages)
+				pagingBlock += " > ";
+
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return pagingBlock;
+	}
+
+	public ArrayList<BoardDTO> searchService(int currentPage, int numberPerPage, int searchCondition,
+			String searchWord) {
+		ArrayList<BoardDTO> list = null;
+
+		// 1) 로그기록
+		System.out.println("게시글 목록 검색 -> 로그 기록 작업...");
+		// 2)
+		try {
+			//list = this.dao.search(searchCondition, searchWord);
+			list = this.dao.search(currentPage,numberPerPage,searchCondition, searchWord);
+			
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+
+		return list;
+	}
+
+	public String pageService(int currentPage, int numberPerPage, int numberOfPageBlock, int searchCondition,
+			String searchWord) {
+		String pagingBlock = "\t\t\t";
+
+		int totalPages;
+		try {
+			//totalPages = this.dao.getTotPages(numberPerPage);
+			totalPages = this.dao.getTotPages(numberPerPage,searchCondition,searchWord);
 			int start = (currentPage - 1) / numberOfPageBlock * numberOfPageBlock + 1;
 			int end = start + numberOfPageBlock - 1;
 			end = end > totalPages ? totalPages : end;

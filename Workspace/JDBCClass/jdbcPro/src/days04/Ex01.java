@@ -88,5 +88,15 @@ public class Ex01 {
   content CLOB null
 );
 
+1) sequence 생성
+2) tbl_cstVSBoard 테이블 생성
+3) BoardDTO
+4) BoardDAO, BoardDAOImple -> 단위 테스트
+5) BoardService -> 단위 테스트
+6) BoardController
+7) Ex01.main()
+		controller.boardStart();
+8)페이징 처리
+9) 검색하기() 페이징 처리
 
  */

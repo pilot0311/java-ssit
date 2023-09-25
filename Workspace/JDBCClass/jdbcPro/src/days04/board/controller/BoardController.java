@@ -76,7 +76,12 @@ public class BoardController {
 		System.out.print("> 현재 페이지(currentPage) 번호를 입력: ");
 		this.currentPage = this.sc.nextInt();
 
-		ArrayList<BoardDTO> list = this.service.searchService(searchCondition, searchWord);
+		//ArrayList<BoardDTO> list = this.service.searchService(searchCondition, searchWord);
+		ArrayList<BoardDTO> list = this.service.searchService(
+				this.currentPage
+				,this.numberPerPage
+				,searchCondition
+				, searchWord);
 
 		// 뷰-출력담당
 		System.out.println("\t\t\t 게시판");
@@ -94,7 +99,11 @@ public class BoardController {
 			}
 		}
 		System.out.println("-".repeat(95));
-		System.out.println("\t\t\t[1] 2 3 4 5 6 7 8 9 10 >");
+		//System.out.println("\t\t\t[1] 2 3 4 5 6 7 8 9 10 >");
+		String pagingBlock = this.service.pageService(this.currentPage, this.numberPerPage, this.numberOfPageBlock
+				,searchCondition,searchWord);
+		//	검색도 한다면this.service.pageService + 검색조건, 검색어
+		System.out.println(pagingBlock);
 		System.out.println("-".repeat(95));
 		일시정지();
 

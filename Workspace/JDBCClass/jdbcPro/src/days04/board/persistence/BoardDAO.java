@@ -21,11 +21,15 @@ public interface BoardDAO {
 	int update(BoardDTO dto) throws SQLException;
 	//7. 게시글 검색
 	ArrayList<BoardDTO> search(int searchCondition, String searchWord) throws SQLException;
+	//7-2. 게시글 검색 + 페이징 처리
+	ArrayList<BoardDTO> search(int currentPage, int numberPerPage, int searchCondition, String searchWord) throws SQLException;
 	//8-1. 총 레코드 수
 	int getTotRecords()throws SQLException;
 	//8-2. 총 페이지 수
 	int getTotPages(int numberPerPage)throws SQLException;
 	//9. 게시글 목록 조회 + 페이징 처리 O
 	ArrayList<BoardDTO> select(int currentPage,int numberPerPage) throws SQLException;
+	int getTotPages(int numberPerPage, int searchCondition, String searchWord)throws SQLException;
+	
 	
 }//class
