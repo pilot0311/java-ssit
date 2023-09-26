@@ -11,7 +11,22 @@
 <title>Insert title here</title>
 <link rel="shortcut icon"href="http://localhost/webPro/images/SiSt.ico">
 <style>
-    h1,h2,h3,h4,h5,h6{
+
+body {
+    background-color: black;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .snowflake {
+    position: absolute;
+    color: white;
+    user-select: none;
+  }
+
+    /* h1,h2,h3,h4,h5,h6{
         border:  solid 1px;
     }
     
@@ -33,12 +48,12 @@
         
         h1::before {
             content: "요소설명";
-        }
+        } */
     
 </style>
 </head>
 <body>
-<h3><h1>html</h1>문서의 보여지는 부분</h3>
+<!-- <h3><h1>html</h1>문서의 보여지는 부분</h3>
 <h1></h1>
 <h1 class="lee"></h1>
 <h1 class="sang"></h1>
@@ -50,7 +65,7 @@
 <h1></h1>
 <h1></h1>
 <h1></h1>
-<h1></h1>
+<h1></h1> -->
 <!--중첩 요소-->
 <!--
 W3C - html 태그는 대소문자 구분x, 소문자 권장<br>
@@ -68,6 +83,31 @@ xhtml 반드시 소문자 사용
 
 
 <hr>
+ <script>
+    function createSnowflake() {
+      const snowflake = document.createElement("div");
+      snowflake.className = "snowflake";
+      snowflake.innerHTML = "이상문";
+      document.body.appendChild(snowflake);
+
+      const leftPosition = Math.random() * window.innerWidth;
+      const animationDuration = Math.random() * 5 + 5;
+
+      snowflake.style.left = leftPosition + "px";
+      snowflake.style.animationDuration = animationDuration + "s";
+
+      snowflake.addEventListener("animationiteration", () => {
+        snowflake.style.left = Math.random() * window.innerWidth + "px";
+        snowflake.style.animationDuration = Math.random() * 5 + 5 + "s";
+      });
+
+      snowflake.addEventListener("animationend", () => {
+        document.body.removeChild(snowflake);
+      });
+    }
+
+    setInterval(createSnowflake, 100);
+  </script>
 
 </body>
 </html>

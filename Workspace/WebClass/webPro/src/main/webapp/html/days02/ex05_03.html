@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="shortcut icon"href="http://localhost/webPro/images/SiSt.ico">
+<style>
+    a{
+        background-color: #f44336;
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        display: inline-block;
+        margin: 5px;
+        
+    }
+    a:hover{
+        background-color: red;
+    }
+</style>
+<script>
+    function bookmark(){
+        var url = "ex05_02.html#desc";
+        //window.location.href = url;
+        location.href = url;
+    }
+</script>
+</head>
+<body>
+<h3>ex05_03.html</h3>
+
+<pre>
+    [a] 
+    - 자바스크립트 처리
+    - js 경고창 띄우기
+    window      BOM
+    - js문자열: [""], ['']
+</pre>
+<a href="javascript:window.alert('경고창');">경고창 띄우기</a><br>
+<a href='javascript:window.alert("경고창");'>경고창 띄우기</a>
+<br>
+<a href='javascript:bookmark();'>북마크 구현 설명 이동</a>
+<br>
+<a href="mailto:admin@naver.com">관리자메일보내는 기능</a>
+</body>
+</html>

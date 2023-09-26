@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="shortcut icon"href="http://localhost/webPro/images/SiSt.ico">
+<style>
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    a:hover{
+        text-transform: uppercase;
+        text-decoration: underline;
+        color: red;
+    }
+</style>
+</head>
+<h3>html 링크</h3>
+
+<pre>
+    [ a ]
+        - 링크 클릭하면 다른 페이지로 이동
+        - 마우스를 올리면 작은 손 모양으로 변한다
+        - 링크: 텍스트,이미지,기타 html요소 사용할 수 있다
+</pre>
+
+<a target="_blank" href="https://www.naver.com/">naver</a>
+<br>
+절대경로<br>
+<a target="_blank" href="http://192.168.10.182/webPro/html/days01/exl.html">days01.exl.html</a>
+<br>상대경로<br>
+<a target="_blank" href="../days01/exl.html">../days01/exl.html</a>
+<br>
+<a target="_blank" href="./../days01/exl.html">./../days01/exl.html</a>
+<hr>
+<!--days02/ex01.html-->
+<br>절대경로<br>
+<a target="_blank" href="http://192.168.10.182/webPro/html/days02/ex01.html">.days02/ex01.html</a>
+<br>상대경로<br>
+<a target="_blank" href="ex01.html">.days02/ex01.html</a><br>
+<br>기억하자!<br>
+<a target="_blank" href="/ex01.html">/ex01.html</a>
+    <!--http://127.0.0.1:5500/ex01.html-->
+<hr>
+<!--index.html 상대경로 랑크 href속성-->
+<a target="_blank" href="../../index.html">/index.html</a>
+<!--
+    webPro 웹프로젝트명 =context root = context path
+    웹서버/웹프로젝트/src/main/webapp 폴더 까지 연결
+-->
+
+<!--
+    링크 브라우저에 표시
+    1) 밑줄 + 보라색: 방문한 링크테그
+    2) 밑줄 + 파랑색: 방문하지 않은 링크테그
+    3) 밑줄 + 빨강색: 방문하려고 클릭한 순간
+
+    CSS사용해서 변경 가능
+-->
+<br>
+<a target="_blank" href="ex05_02.html#desc">다른페이지 책갈피</a>
+</body>
+</html>

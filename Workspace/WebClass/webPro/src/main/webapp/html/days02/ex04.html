@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="shortcut icon"href="http://localhost/webPro/images/SiSt.ico">
+</head>
+<body>
+<pre>
+    [URL] 
+    - 네트워크 상에서 자원이 어디 있는 지를 알려주기 위한 규약
+    - Uniform Resource Locator
+    - 웹 페이지를 찾기 위한 주소
+
+예)http://192.168.10.182[:80]/webPro/html/days02/ex02.html
+    통신구약
+    scheme://host:port/path                    /filename
+            prefix.domain:port/path
+    http:// :80
+    https://
+    ftp:// :21
+    file://
+    등등
+예) https://search.naver.com/search.naver
+    ?   요청(request)파라미터   [GET]/POST 방식
+    where=nexearch
+    &
+    sm=top_hty
+    &
+    fbm=0
+    &
+    ie=utf8
+    &
+    query=%ED%99%8D%EA%B8%B8%EB%8F%99   홍길동
+
+    URL은 한글 사용할 수 없다
+        ㄴ 한글 문지 -> 변환 %16진수 값으로 변환되어져서 URL 사용된다
+        ㄴ 공백 + 기호 (%20) %16진수 값 변환
+
+    URL은 ASCII 문자셋만 사용가능    
+
+    [URI]
+    - URL 보다 상위 개념
+    - ?~~~~#책갈피
+    <a target="_blank" href="https://ko.wikipedia.org/wiki/%ED%86%B5%ED%95%A9_%EC%9E%90%EC%9B%90_%EC%8B%9D%EB%B3%84%EC%9E%90">URI 설명 링크</a>
+</pre>
+</body>
+</html>
