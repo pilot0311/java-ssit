@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="shortcut icon" href="http://localhost/webPro/images/SiSt.ico">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<style>
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+	background-color: #666;
+	color: white;
+	padding: 30px;
+	text-align: center;
+	font-size: 35px;
+}
+
+footer {
+	background-color: #777;
+	color: white;
+	padding: 20px;
+	text-align: center;
+	font-size: 2dvh;
+}
+</style>
+<style>
+nav {
+	width: 30%;
+	background-color: #ccc;
+	height: 500px;
+	padding: 20px;
+	float: left;
+}
+
+article {
+	width: 70%;
+	background-color: #f1f1f1;
+	padding: 20px;
+	float: left;
+	min-height: 500px;
+}
+</style>
+<style>
+section::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+</style>
+<!--반응형 웹 구현: 미디어 쿼리-->
+<style>
+@media screen and (max-width:800px) {
+	nav, article {
+		width: 100%;
+		height: auto;
+	}
+}
+</style>
+</head>
+<body>
+	<h2>div(layout)+css</h2>
+
+	<header>
+		<h2>Cites-시멘틱태그(sementic elements)</h2>
+	</header>
+	<section>
+		<nav>
+			<ul>
+				<li><a href="#">London</a></li>
+				<li><a href="#">Paris</a></li>
+				<li><a href="#">Seoul</a></li>
+			</ul>
+		</nav>
+		<article>
+			<h2>London</h2>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo
+				soluta ea distinctio quo laudantium tempore labore, vitae quis,
+				nostrum sequi rerum, assumenda aut possimus! Assumenda magni
+				temporibus facilis officiis ipsa.</p>
+			<p>Expedita quo dolorem debitis libero facilis esse in sapiente,
+				dicta rem, et ullam aspernatur unde ex enim odio maxime sunt rerum
+				magni inventore, nam sint culpa doloribus id laudantium. Corporis!</p>
+			<h2>Paris</h2>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+				Doloribus ipsa qui facilis esse dignissimos quidem voluptatibus
+				facere deleniti harum ut, quae velit commodi a vitae autem sint eum
+				voluptates blanditiis.</p>
+			<p>Ea, voluptates delectus aperiam necessitatibus, quis, tempora
+				consectetur quidem incidunt adipisci voluptate soluta! Facilis error
+				sapiente consequatur nesciunt facere, quisquam ut repellat, ad,
+				minus at eligendi maxime voluptatum possimus vel.</p>
+			<h2>Seoul</h2>
+			<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+				Impedit optio provident unde repellat illum. Doloribus deleniti
+				molestias quaerat. Magnam quod dolorum ipsam temporibus, cumque
+				harum earum iste pariatur unde fuga!</p>
+			<p>Aliquam neque velit ipsa fugiat dolorum voluptatum hic,
+				laborum amet rerum, aperiam nulla sed impedit provident odio
+				doloremque eum a quaerat molestias dolor modi beatae maxime. Ut et
+				doloremque magni?</p>
+		</article>
+	</section>
+	<!-- <div style="clear: both;"></div> -->
+	<footer>
+		<h2>Footer</h2>
+	</footer>
+</body>
+</html>
+
+<!--
+    [시맨틱 태그]
+    1. 브라우저 또는 개발자에게 의미가 있는 태그(요소)
+    2. 의미 O 
+<article>
+<aside>
+<details>
+<figcaption>
+<figure>
+<footer>
+<header>
+<main>
+<mark>
+<nav>
+<section>
+<summary>
+<time>
+    3. 의미 X div + 속성(class,id)들로 의미 부여
+    4. 시멘틱 태그의 종류
+        1) header - 소개 내용이나 탐색 링크의 집합에 대한 컨테이너
+        2) section - 문서의 섹션(제목이 있는 주제별 컨텐츠 그룹)을 정의하는 태그
+            장/소개/뉴스 항목/ 연락처 정보
+        3) article -  기사(그 자체에 의미), 독립적인 자체에 포함된 내용을 지정하는 태그
+            - 웹 페이지의 나머지 부분과 독립적으로 배포할 수 있어야 된다.
+            신문기사들, 제품 카드, 사용자 의견, 블로그 게시글, 포럼 게시글.
+        참고)  section 태그 안에  article 중첩되어질 수 도 잇고,
+                article  태그 안에 section 중첩 되어질 수도 있다. 
+        4)footer - 바닥글, 문서나 구역의 바닥글을 정의하는 태그      
+            - 저작권 정보, 연락처 정보, 사이트 맵 , 맨 위로 링크, 관련된 문서
+        5) nav - 탐색 링크의 집합을 정의하는 태그
+                문서의 모든 탐색링크들이 nav 태그 안에 있어야 되는 것은 아니다. 
+                주요 링크      
+        6) aside - 한쪽으로 , 따로
+                    - 어떤 주요 내용과 관련된 어떤 콘텐츠를 정의하는 태그     
+                    
+        7) figure/figcaption - 그림, 도표, 사진, 코드 목록 내용을 정의하는 태그 
+            예)
+            <figure>
+                <img />
+                <figcaption>이미지 설명</figcaption>
+            </figure>  
+        8) details, main, mark, summary, time      
+-->

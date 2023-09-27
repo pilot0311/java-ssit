@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="shortcut icon"href="http://localhost/webPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #header{
+        background-color: #666;
+        color: white;
+        padding: 30px;
+        text-align: center;
+        font-size: 35px;
+    }
+
+    #footer{
+        background-color: #777;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        font-size: 2dvh;
+    }
+</style>
+<style>
+    #section{
+        /* border: solid 1px red; */
+    }
+    #nav{
+        width: 30%;
+        background-color: #ccc;
+        height: 500px;
+        padding: 20px;
+        float: left;
+    }
+    #article{
+        width: 70%;
+        background-color: #f1f1f1;
+        padding: 20px;
+        float: left;
+        min-height: 500px;
+    }
+</style>
+<style>
+    #section::after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+</style>
+<!--반응형 웹 구현: 미디어 쿼리-->
+<style>
+    @media screen and (max-width:800px){
+        #nav, #aeticle{
+            width: 100%;
+            height: auto;
+        }
+    } 
+</style>
+</head>
+<body>
+<h2>div(layout)+css</h2>
+<div id="header">
+    <h2>Cites-시멘틱태그(sementic elements)</h2>
+</div>
+<div id="section">
+    <div id="nav">
+        <ul>
+            <li><a href="#">London</a></li>
+            <li><a href="#">Paris</a></li>
+            <li><a href="#">Seoul</a></li>
+        </ul>
+    </div>
+    <div id="article">
+        <h2>London</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo soluta ea distinctio quo laudantium tempore labore, vitae quis, nostrum sequi rerum, assumenda aut possimus! Assumenda magni temporibus facilis officiis ipsa.</p>
+        <p>Expedita quo dolorem debitis libero facilis esse in sapiente, dicta rem, et ullam aspernatur unde ex enim odio maxime sunt rerum magni inventore, nam sint culpa doloribus id laudantium. Corporis!</p>
+        <h2>Paris</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ipsa qui facilis esse dignissimos quidem voluptatibus facere deleniti harum ut, quae velit commodi a vitae autem sint eum voluptates blanditiis.</p>
+        <p>Ea, voluptates delectus aperiam necessitatibus, quis, tempora consectetur quidem incidunt adipisci voluptate soluta! Facilis error sapiente consequatur nesciunt facere, quisquam ut repellat, ad, minus at eligendi maxime voluptatum possimus vel.</p>
+        <h2>Seoul</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit optio provident unde repellat illum. Doloribus deleniti molestias quaerat. Magnam quod dolorum ipsam temporibus, cumque harum earum iste pariatur unde fuga!</p>
+        <p>Aliquam neque velit ipsa fugiat dolorum voluptatum hic, laborum amet rerum, aperiam nulla sed impedit provident odio doloremque eum a quaerat molestias dolor modi beatae maxime. Ut et doloremque magni?</p>
+    </div>
+</div>
+<!-- <div style="clear: both;"></div> -->
+<div id="footer">
+    <h2>Footer</h2>
+</div>
+</body>
+</html>

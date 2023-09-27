@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="shortcut icon"href="http://localhost/webPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+<h3>ex09.html</h3>
+<pre>
+    Emmet - CSS 선택자 구문 유사
+    Ctrl + e
+</pre>
+<!-- ul>li*5>lorem10 -->
+<ul>
+    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, aut?</li>
+    <li>Architecto ab in maiores molestiae nobis veritatis et rerum odit.</li>
+    <li>Repudiandae a qui temporibus tenetur! Commodi atque explicabo sed accusamus?</li>
+    <li>Voluptatum qui atque, cupiditate tenetur ad amet aliquam delectus blanditiis.</li>
+    <li>Excepturi suscipit, iure quis qui distinctio vero maxime magnam nihil!</li>
+</ul>
+<div></div>
+<!-- 중첩 연산자 >  -->
+<!-- div>ul -->
+<div>
+    <ul></ul>
+</div>
+<!-- div>ul>li -->
+<div>
+    <ul>
+        <li></li>
+    </ul>
+</div>
+
+<!-- 중첩 연산사 +  형제, 자매-->
+<div></div>
+<ul></ul>
+<!-- div+ul>li -->
+<div></div>
+<ul>
+    <li></li>
+</ul>
+
+<!-- div+ul+ol+p+bq -->
+<div></div>
+<ul></ul>
+<ol></ol>
+<p></p>
+<blockquote></blockquote>
+
+<!-- 중첩 연산자 > + ^ 등반   -->
+<!-- div>ul>li -->
+<!-- div>ul>li+p -->
+<div>
+    <ul>
+        <li></li>
+        <p></p>
+    </ul>
+</div>
+
+<!-- (div>ul>li)+p -->
+<div>
+    <ul>
+        <li></li>
+    </ul>
+</div>
+<p></p>
+
+<!-- div>ul>li^p -->
+<div>
+    <ul>
+        <li></li>
+    </ul>
+    <p></p>
+</div>
+
+<!-- div>ul>li^^p -->
+<div>
+    <ul>
+        <li></li>
+    </ul>
+</div>
+<p></p>
+
+<!-- div+div>p>span^^em>bq -->
+<div></div>
+<div>
+    <p><span></span></p>
+</div>
+<em>
+    <blockquote></blockquote>
+</em>
+
+<!-- div>ul>li+li+li+li -->
+<!-- div>ul>li*4 -->
+<div>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+
+<!-- div>(ul>li*4)*2 -->
+<div>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+
+<!-- div>ul*2>li*4      ()그룹화 -->
+<div>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+<!-- div>(header>ul>li*2>a)+footer>p -->
+<div>
+    <header>
+        <ul>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+        </ul>
+    </header>
+    <footer>
+        <p></p>
+    </footer>
+</div>
+<!-- 속성 연산자: 속성 추가 []-->
+<!-- div#header -->
+<div id="header"></div>
+
+<!-- img[속성명=속성값][속성명=속성값][속성명=속성값][속성명=속성값] -->
+<!-- img[width height] -->
+<img src="" alt="" width="" height="">
+<!-- td[colspan=3 title=dname] -->
+<td colspan="3" title="dname"></td>
+<!-- ul>li*5{item} -->
+<ul>
+    <li>item</li>
+    <li>item</li>
+    <li>item</li>
+    <li>item</li>
+    <li>item</li>
+</ul>
+
+<!-- ul>li.box*5{item} -->
+<ul>
+    <li class="box">item</li>
+    <li class="box">item</li>
+    <li class="box">item</li>
+    <li class="box">item</li>
+    <li class="box">item</li>
+</ul>
+
+<!-- ul>li.box{item-$}*5 -->
+<ul>
+    <li class="box">item-1</li>
+    <li class="box">item-2</li>
+    <li class="box">item-3</li>
+    <li class="box">item-4</li>
+    <li class="box">item-5</li>
+</ul>
+
+<!-- ul>li.box{item-$$$}*5 -->
+<ul>
+    <li class="box">item-001</li>
+    <li class="box">item-002</li>
+    <li class="box">item-003</li>
+    <li class="box">item-004</li>
+    <li class="box">item-005</li>
+</ul>
+
+<!-- ul>li.box*5{item-$@-} -->
+<ul>
+    <li class="box">item-5</li>
+    <li class="box">item-4</li>
+    <li class="box">item-3</li>
+    <li class="box">item-2</li>
+    <li class="box">item-1</li>
+</ul>
+
+<!-- ul>li*5{item$@11} -->
+<ul>
+    <li>item11</li>
+    <li>item12</li>
+    <li>item13</li>
+    <li>item14</li>
+    <li>item15</li>
+</ul>
+
+<!-- {텍스트} -->
+<!-- a>{naver} --> == <!-- a{naver} -->
+<a href="">naver</a>
+
+<!-- p{click}>a{here}{ to continue} -->
+<p>click<a href="">here</a> to continue</p>
+<hr>
+<!-- table[style="border: solid 1px gray;"]>tr*3>td*4>lorem1 -->
+<table style="border: solid 1px gray;">
+    <tr>
+        <td>Lorem.</td>
+        <td>At.</td>
+        <td>Distinctio!</td>
+        <td>Ipsam.</td>
+    </tr>
+    <tr>
+        <td>Lorem.</td>
+        <td>Repellendus.</td>
+        <td>Consectetur!</td>
+        <td>Qui?</td>
+    </tr>
+    <tr>
+        <td>Lorem.</td>
+        <td>Laborum.</td>
+        <td>Quidem.</td>
+        <td>Quae.</td>
+    </tr>
+</table>
+
+</body>
+</html>

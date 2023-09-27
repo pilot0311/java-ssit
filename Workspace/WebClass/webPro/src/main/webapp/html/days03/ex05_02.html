@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Insert title here</title>
+    <link rel="shortcut icon" href="http://localhost/webPro/images/SiSt.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        p {
+            border: 1px solid gray;
+        }
+    </style>
+</head>
+<body>
+    <xmp>
+        1. html 모든 태그들은
+        유형에 따라 기본적으로 표시(display)값이 있다.
+        2. display
+        ㄱ. 블럭모드 : 항상 새로운 라인에서 시작
+        브라우저가 자동으로 여백 추가
+        너비가 부모의 100%로 설정.
+        p, ul, li, div
+        <!-- 			  
+			<address><article><aside><blockquote><canvas><dd><div><dl><dt><fieldset><figcaption><figure><footer><form><h1>-<h6><header><hr><li><main><nav><noscript><ol><p><pre><section><table><tfoot><ul><video>
+			 -->
+
+        ㄴ. 인라인모드 : 새로운 라인에서 시작 X
+        내용(content)에 따라 너비 지정
+        span
+        <!-- 		  
+			<a><abbr><acronym><b><bdo><big><br><button><cite><code><dfn><em><i><img><input><kbd><label><map><object><output><q><samp><script><select><small><span><strong><sub><sup><textarea><time><tt><var>
+			 -->
+        3. [div]
+        ㄱ. 웹 페이지의 배치(layout)
+        ㄴ. 블럭모드
+        ㄷ. 다른 html 요소의 컨테이너 역할.
+    </xmp>
+    <!-- [js 사용]
+    버튼들을 클릭할때 사용자 반응 처리
+    숨기고,보이게 
+    클릭 이벤트 발생 처리
+    on이벤트명 속성 = "자바스크립트 코딩"
+    -->
+    <button>숨기기(hide)</button>
+    <button>보이기(show)</button>
+    <br>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Nihil consectetur maxime iure dolore!</p>
+    <div>
+        <span id="sp01">1</span>
+        <br>
+        <span id="sp02">2</span>
+        <br>
+        <span id="sp03">3</span>
+        <br>
+        <span id="sp04">4</span>
+        <br>
+        <span id="sp05">5</span>
+        <br>
+        <span id="sp06">6</span>
+        <br>
+        <span id="sp07">7</span>
+        <br>
+    </div>
+
+    <script>
+        //js->jquery사용
+        //hquery 객체 얻어오기
+        $("button").first().click(function(){
+            //alert("숨기기 버튼 클릭")
+            jQuery("span").hide();
+        });
+        $("button").last().click(function(){
+            //alert("보이기 버튼 클릭")
+            $("span").show();
+        });
+    </script>
+</body>
+
+</html>
