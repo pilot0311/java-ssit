@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="shortcut icon" href="http://localhost/webPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<style>
+  #panel,  .flip{
+     font-size: 16px;
+     padding: 10px;
+     background-color: #4acf50;
+     color:white;
+     text-align: center;
+     margin:auto;
+     border:1px solid #a6d8a8;
+  }
+  #panel{
+    /*공간차지X 숨기기*/
+    display: none;
+  }
+  .flip:hover{
+    cursor:pointer;
+    color: red;
+  }
+</style>
+</head>
+<body>
+	<p class="flip">Click to show panel</p>
+	<div id="panel">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima corporis ut totam eos? Eligendi quasi saepe laudantium corporis nobis deserunt nulla consectetur beatae ratione fuga voluptatum placeat architecto vitae delectus.</p>
+		<p>Sunt accusamus esse est aliquid repellat facilis iusto placeat voluptatum aspernatur reiciendis rem molestias facere nesciunt accusantium quisquam minima maiores distinctio quod architecto nemo sint! Ipsa dicta perferendis quasi possimus!</p>
+		<p>Nobis voluptate eos minima tempora dolore omnis corporis labore enim sit suscipit in veniam maiores eaque quos dignissimos quaerat at adipisci consectetur autem sint nesciunt error ducimus deleniti! Esse facilis.</p>
+	</div>
+    <script>
+      $("p.flip").click(function(){
+        $("#panel").toggle();
+      })
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="shortcut icon"href="http://localhost/webPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+<h3>ex03.html</h3>
+<form action="ex03_ok.jsp" method="get" enctype="application/x-www-form-urlencoded">
+    아이디: <input type="text" id="uid"><br>
+    비밀번호: <input type="password" id="pewd"><br>
+    <input type="submit">
+    <!-- formaction 속성은 form 태그의 action 속성을 재정의 할 때 사용 -->
+    <input type="submit" formaction="ex04_ok.jsp" formmethod="post" formenctype="multipart/form-data" formtarget="_blank" formnovalidate>
+</form>
+
+</body>
+</html>

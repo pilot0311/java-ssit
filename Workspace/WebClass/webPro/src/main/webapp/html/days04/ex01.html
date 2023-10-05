@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="shortcut icon"href="http://localhost/webPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <h3>ex01.html form(입력양식)</h3>
+    <!-- <form action="서버로 전송할URI"></form> -->
+    <fieldset>
+        <legend>logon</legend>
+        <form action="ex01_ok.jsp" method="get">
+            First Name : 
+            <input type="text" id="fname" name="fname" value="홍" autofocus="autofocus"><br>
+            <label for="lname">Last Name : </label>
+            <input type="text" id="lname" name="lname" value="길동"><br>
+
+            <!-- data[list]요소: 옵션 목록 지정 -->
+            <input list="browsers">
+            <datalist id="browsers">
+                <option value="IE"></option>
+                <option value="Firefox"></option>
+                <option value="Chrome"></option>
+                <option value="Opera"></option>
+            </datalist>
+            <input type="submit">
+        </form>
+    </fieldset>
+    <hr>
+
+    [기억]action 속성값을 지정하지 않으면<br>
+    자기 자신 URL 호출<br>
+    http://localhost/webPro/html/days05/ex01.html<br>
+    이전에 입력한 값들은 유지X (상태관리 X)
+    <!-- a target 속성 : _self,_blank,_parent,framename,_top -->
+    <!-- target="_blank" == 새 브라우저 탭 -->
+    <!-- autocomplete="on" 자동완성이 켜져 있으면 사용자가
+    이전에 입력한 값을 기반으로 자동으로 값을 완성 -->
+    <!-- novalidate="novalidate": 입력 값에 대한 유효성 검사를 하지 않겠다 -->
+    <form action="" method="post" target="_blank" autocomplete="on" novalidate="novalidate">
+        <p>좋아하는 동물은?</p>
+        <input type="checkbox" name="animal" id="" value="강아지" checked = "checked">강아지<br>
+        <input type="checkbox" name="animal" id="cat" value="고양이" checked><label for="cat">고양이</label><br>
+        <input type="checkbox" name="animal" id="" value="도마뱀">도마뱀<br>
+        <br>
+        <p>좋아하는 과목은?</p>
+        <input type="radio" name="subject" id="" value="java" checked = "checked">Java<br>
+        <input type="radio" name="subject" id="orace" value="oracle"><label for="orace">Oracle</label><br>
+        <input type="radio" name="subject" id="" value="jsp">JSP<br>
+
+        Email : <input type="email" name="" id=""><br>
+        
+        <!-- size 속성: 표시되는 항목수 -->
+        <!-- 항목을 여러개 선택 -->
+        부서를 선택 하세요 <br>
+        <select onchange="alert('경고창')" name="deptno" id="deptno" size="4" multiple>    
+            <option value="10">ACCOUNTING</option>
+            <option value="20">RESEARCH</option>
+            <option value="30" selected>SALES</option>
+            <option value="40">OPERATIONS</option>
+        </select><br>
+        여러 라인의 텍스트 입력: <br>
+        <!-- rows 속성: 텍스트 영역에 표시되는 라인 수
+        cols 속성: 텍스트 영역에 표시 너피 지정 -->
+        <!-- input 요소는 value 속성에 값을 지정 -->
+
+        <!-- <textarea name="content" id="" cols="30" rows="10"> -->
+        <textarea name="content" id="" style="width: 600px; height: 200px;">
+시작/닫기 태그 사이에 텍스트 입력
+        </textarea>
+        <br>
+        <!-- 클릭 가능한 버튼을 정의 
+            항상 type 속정 지정-->
+        <button type="button" onclick="alert('버튼 클릭')">버튼</button>
+        <button type="submit">버튼</button>
+        <button type="reset">버튼</button>
+
+        <!--
+            fieldset 요소는 관련 데이터를 양식으로 그룹화 하는 데 사용
+            legend 요소
+        -->
+
+        <input type="submit">
+        <input type="reset">
+    </form>
+    <hr>
+    <pre>
+        1. 모든 사용자의 입력정보를 수집하는데 사용되는 태그
+        2. 입력한 정보를 서버에 전송 (submit == 제출)
+        3. form 태그: 컨테이너
+        4. 한줄의 텍스트 입력 input type = "text"
+        5. 꼬리표: label
+            ㄴ 레이블 정의
+            ㄴ 라디오버튼, 체크박스를 클릭할 때
+                입력 태그에 포커스를 맞출 때 편리
+                ㄴ for, id 속성 설정
+        6. http://localhost/webPro/html/days05/ex01_ok.jsp
+            ? 요청파라미터 == 쿼리 스트링 get 방식
+            fname=%ED%99%8D
+            &
+            lname=%EA%B8%B8%EB%8F%99
+        7. form method= "get/post"
+            get:    -?이름=값 URL추가
+                    - 보안X, 길이 제한
+                    - 안전하지 않은 데이터를 전송할 때 적합
+                    - 북마크 기능 O
+                    
+            post:   - http 요청 body(몸체) 추가
+                    - 크기제한X (첨부파일)
+                    - 북마크 기능X
+                    - 민감한 데이터, 개인정보
+    </pre>
+
+</body>
+</html>

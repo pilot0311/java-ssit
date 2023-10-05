@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="shortcut icon"href="http://localhost/webPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<style>
+    .box{
+        border: solid 1px gray;
+        width: 100px;
+        height: 100px;
+        text-align: center;
+    }
+    div:nth-of-type(1){
+        background-color: red;
+        position: static; /*기본값*/
+    }
+    div:nth-of-type(2){
+        background-color: green;
+        position: relative; /*상대좌표*/
+        left: 20px;
+        top: 20px;
+    }
+    div:nth-of-type(3){
+        background-color: blue;
+        position: fixed; /*고정, 스크롤 해도 항상 같은 위치 유지*/
+        right: 20px;
+        bottom: 20px;
+    }
+    /* div:nth-of-type(5) */
+    div:last-of-type{
+        background-color: yellow;
+        position: absolute; 
+        /*절대 좌표, 기준좌표는 가장가까운 위치의 조상(body)기준
+        이상문-1과 겹쳐짐*/
+        left: 20px;
+        top: 20px;
+        /*z-index: 곂쳐졌을때 순서 값이 큰게 위로 올라옴*/
+        z-index: -1;
+    }
+</style>
+</head>
+<body>
+<!-- <div>Box - 1</div> -->
+
+<script>
+    for (var i = 1; i <= 5; i++){
+    var divElement = document.createElement("div");
+    divElement.innerText = "이상문"+i;
+    divElement.className = "box"
+    document.body.appendChild(divElement);
+    }
+    
+</script>
+</body>
+</html>

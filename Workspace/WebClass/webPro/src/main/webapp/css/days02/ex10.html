@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="shortcut icon"href="http://localhost/webPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<style>
+    ul, ol{
+        /* background-color: yellow; */
+    }
+    ul.first{
+        /* list-style-type: lower-roman; */
+
+        list-style-image: url(../images/arr.gif);
+
+        /*마커의 위치: li태그 밖/안 */
+        list-style-position: inside;
+    }
+    li{
+        background-color: green;
+    }
+    ul, ol{
+        /* list-style-type: none; */
+        list-style: none;
+        /* 약식)list-style: square inside url('/'); */
+    }
+</style>
+</head>
+<body>
+<h3>ex10.html - ul,ol,li css 목록</h3>
+
+<!-- ul.first>li*5>lorem1 -->
+<ul class="first">
+    <li>Lorem.</li>
+    <li>Quo.</li>
+    <li>Velit!</li>
+    <li>Veritatis.</li>
+    <li>Minima.</li>
+</ul>
+
+<!-- ol.second>li*5>lorem1 -->
+<ol class="second">
+    <li>Lorem.</li>
+    <li>Saepe!</li>
+    <li>Laboriosam.</li>
+    <li>Eius!</li>
+    <li>Quis?</li>
+</ol>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="shortcut icon"href="http://localhost/webPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<!-- 외부 css파일 참조 -->
+<link rel="stylesheet" href="ex02_style.css">
+<style>
+    /* 내부적인 스타일 적용방식(internal css 적용방식) */
+    /*웹 페이지의 모든 html요소: 범용 선택자 **/
+    *{
+        padding: 0;
+        margin: 0;
+    }
+
+    h1{ /*태그명을 선택자*/
+        color: red;
+        text-align: center;
+    }
+
+    /* h1{
+        border: solid 1px gray;
+    }
+    h2{
+        border: solid 1px gray;
+    }
+    h3{
+        border: solid 1px gray;
+    }
+    h4{
+        border: solid 1px gray;
+    }
+    h5{
+        border: solid 1px gray;
+    }
+    h6{
+        border: solid 1px gray;
+    } */
+    /*그룹화 선택자 ,연산자 */
+    h1,h2,h3,h4,h5,h6{
+        border: solid 1px gray;
+    }
+    /* #아이디명 */
+    #three{
+        color: blue;
+        text-align: center;
+        border: solid 1px gray;
+    }
+    /* .클래스명 */
+    .first{
+        background-color: skyblue;
+    }
+    /* first클래스를 가진 p태그 */
+    p.first{
+        background-color: blue;
+    }
+    /* 동일할 경우 최신 규칙이 우선 */
+    h4{color: red;}
+    h4{color: blue;}
+</style>
+</head>
+<body>
+<pre>
+    [jquery,CSS]의 선택자(selector)
+    1) 태그명, #아이디, .클래스명
+
+    [css 특이성]
+    - 동일한 요소를 가리키는 두 개 이상의 CSS규칙이 있는 경우
+        가장 높은 특이성을 가진 선택자에 의해 css적용
+    - 특이성 == 스타일 적용 점수/순위
+    (암기)
+        태그명              1점
+        클래스명            10점
+        아이디명            100점
+        태그명.아이디명     101점
+        태그명.클래스명     11점
+        인라인식 css        1000점
+        예)
+            p.box.first :    1+10+10=21점
+            #nav div.#demo : 100+1+100=201점
+        
+        *                   0점
+
+    - (기억) 한 가지 예외 있다
+    !important: 속성뒤에 붙일경우 무조건 적용
+
+    -   1) 인라인 CSS적용
+        2) 내부/외부 CSS적용 방식(헤드 코딩 순서)
+</pre>
+<!-- h$*6>{hellow World} -->
+<h1 class="first">hellow World</h1>
+<h2>hellow World</h2>
+<h3 id="three">hellow World</h3>
+<!-- 인라인식 스타일 적용방식 -->
+<h4 style="color: red;">hellow World</h4>
+<h5>hellow World</h5>
+<h6>hellow World</h6>
+
+<!-- p>h1>lorem3 -->
+<p>
+    <h1>Lorem, ipsum dolor.</h1>
+</p>
+
+<!-- p*5>lorem7 -->
+<p class="first">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+<p>Ea numquam voluptate id odio. Omnis, eveniet.</p>
+<p>Quos labore, temporibus officia blanditiis illum veritatis?</p>
+<p>Explicabo nobis facilis, odio a modi ipsa.</p>
+<p>Eveniet soluta nemo minima, nisi quia ipsam.</p>
+
+<!-- div*5>lorem5 -->
+<!-- 1+10+10=21
+div.first.box{
+    스타일 적용
+} -->
+<div class="first box">Lorem ipsum dolor sit amet.</div>
+<div>In quibusdam reiciendis officia incidunt?</div>
+<div>Esse soluta assumenda tenetur repellat.</div>
+<div>Blanditiis sequi provident dolore voluptas!</div>
+<div>Dolores commodi molestiae repellendus enim.</div>
+
+</body>
+</html>

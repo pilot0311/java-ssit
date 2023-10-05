@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="shortcut icon" href="http://localhost/webPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<style>
+	.imgbox {
+		width: 120px;
+		border: 1px solid gray;
+		padding: 6px;
+		margin: 4px;
+		text-align: center;
+		
+		float: left;
+	}
+	
+	.imgbox img {
+		width: 100%;
+	}
+</style>
+</head>
+<body>
+	<h3>display, visibility 숨기기, 보이기</h3>
+	
+	<div id="imgbox1" class="imgbox">
+		Box1
+		<img src="../images/img_5terre.jpg" alt="" />
+		<button onclick="remove();">Remove</button>
+	</div>
+	
+	<div id="imgbox2" class="imgbox">
+		Box2
+		<img src="../images/img_lights.jpg" alt="" />
+		<button>Hide</button>
+	</div>
+	
+	<div id="imgbox3" class="imgbox">
+		Box3
+		<img src="../images/img_forest.jpg" alt="" />
+		<button>ResetAll</button>
+	</div>
+	
+	<script>
+		function remove(){
+            //alert("1");
+            var box01 = document.getElementById("imgbox1");
+            box01.style.display = "none";
+        }
+		
+		var box2 = document.querySelector("#imgbox2");
+		box2.addEventListener("click",function(){
+			//alert('12')
+			// 눈에 안보여도 이전의 공간 여전히 차지
+			box2.style.visibility = "hidden"
+		});
+		
+		var box3 = document.querySelector("#imgbox3");
+		box3.onclick = function(){
+			//alert('12')
+			var box01 = document.getElementById("imgbox1");
+			box01.style.display = "block";
+			box2.style.visibility = "visible"
+		};
+	</script>
+	
+</body>
+</html>

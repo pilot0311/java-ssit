@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Insert title here</title>
+    <link rel="shortcut icon" href="http://localhost/webPro/images/SiSt.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .pagination {
+            width: 50%;
+            /* background-color: red; */
+            margin: 0 auto;
+
+            text-align: center;
+        }
+
+        .pagination a {
+            text-decoration: none;
+            color: black;
+
+            float: left;
+            width: 8.3%;
+        }
+
+        .pagination a:hover {
+            background-color: #ddd;
+        }
+
+        .pagination a.active {
+            background-color: dodgerblue;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>ex09.html - css 페이징 처리</h3>
+
+    <div class="pagination">
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#" class="active">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">7</a>
+        <a href="#">8</a>
+        <a href="#">9</a>
+        <a href="#">10</a>
+        <a href="#">&gt;</a>
+        <a href="#">&raquo;</a>
+    </div>
+
+    <script>
+        //class 속성 설정 제거
+        //addClass("추가할 클래스명")removeClass("제거할 클래스명")
+        // $(".pagination a").click
+        $(".pagination a").on("click", function () {
+            //alert("이벤트 확인")
+            $(".pagination a").not(this).removeClass("active");
+            $(this).addClass("active");
+        });
+    </script>
+</body>
+
+</html>

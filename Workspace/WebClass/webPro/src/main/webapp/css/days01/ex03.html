@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="shortcut icon"href="http://localhost/webPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<style>
+    /*링크 4가지 상태*/
+    /* : 의사 클래스*/
+    /*방문하지 않은 상태*/
+    a:link{
+        background-color: yellow;
+        text-decoration: none;
+
+        padding: 14px 25px;
+        display: inline-block;
+    }
+    /*방문한 상태*/
+    a:visited{
+        background-color: cyan;
+        text-decoration: none;
+    }
+    /*사용자 마우스 올려 놓은 상태*/
+    a:hover{
+        background-color: lightgreen;
+        text-decoration: underline;
+    }
+    /*클릭한 상태*/
+    a:active{
+        color: blue;
+        background-color: hotpink;
+        text-decoration: underline;
+    }
+</style>
+<style>
+    div{
+        border: solid 1px red;
+    }
+    p{
+        border: solid 1px blue;
+    }
+    *{
+        padding: 20px;
+    }
+    /*
+    a{
+        font-size: 20px;
+    }
+    */
+    div a{
+        font-size: 20px;
+        color: black;
+    }
+    /*
+        a + b a태그 앞에오는 형제 태그들
+        a ~ b a태그 뒤에 오는 형제 태그들
+    */
+</style>
+</head>
+<body>
+<!-- a*3>lorem1 -->
+<a href="#">Lorem.</a>
+<a href="#">Nobis.</a>
+<a href="#">Ab?</a>
+
+<div>
+    1111
+    <a href="#">xxx</a>
+    <p>2222
+        <a href="#">yyyy</a>
+    </p>
+</div>
+</body>
+</html>

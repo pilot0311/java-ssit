@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="shortcut icon"href="http://localhost/webPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+<pre>
+    [html 멀티미디어]
+    - 웹 멀티미디어: 사운드, 음악, 비디오, 영화, 애니메이션
+    - 웹 브라우저: 텍스트만 지원, 단일 글꼴 지원
+    -> 색상, 글꼴, 이미지 및 멀티미디어를 지원하는 브라우저 출시
+    - .wav, .mp3, .mp4, .mpg, .wmv, .avi 등의
+        다양한 확장자를 지원
+    - 참고) html 표준: mp4,wem,ogg 비디오만 지원
+                ""   : mp3,wav,ogg 오디오만 지원
+</pre>
+<!-- 
+    웹 페이지에서 비디오를 표시하는데 사용되는 태그: video 
+    controls속성: 재생,일지정지,볼륨 등의 비디오 제어
+    항상 width, height 설정 하는 것 권장
+    (비디오가 로딩되는 동안 깜빡일 수 있다)
+    source속성: 브라우저 별로 비디오 파일 설정할 수 있다
+    주의: 크롬 브라우저는 자동 재생을 허용X
+    단) 음속된 자동 재생은 허용O
+-->
+<video src="movie.mp4" width="320px" height="240px" controls></video>
+
+<video width="320px" height="240px" autoplay muted>
+    <source src="movie.mp4" type="video/mp4">
+    <source src="movie.ogg" type="video/ogg">
+    현재 브라우저는 지원하지 않습니다
+</video>
+<h3>html 오디오</h3>
+<audio controls>
+    <source src="horse.mp4" type="audio/mpeg">
+    <source src="horse.ogg" type="audio/ogg">
+    현재 브라우저는 지원하지 않습니다
+</audio>
+</body>
+</html>

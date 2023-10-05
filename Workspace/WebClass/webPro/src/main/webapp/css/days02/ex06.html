@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="shortcut icon"href="http://localhost/webPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<style>
+    body{
+        color: blue;
+        background-color: lightgray;
+    }
+    h3{
+        /* color: rgb(0, 255, 0); */
+        background: black;
+        color: white;
+
+        /*텍스트 가로정렬*/
+        text-align: center;
+    }
+    p#p1{
+        border: solid 1px black;
+        padding: 5px;
+        width: 250px;
+        height: 100px;
+
+        /*
+        정당화 시키다
+        출력되는 텍스트의 행의 끝을 나란히 맟추겠다
+        */
+        text-align: justify;
+
+        overflow: hidden;
+    }
+    div{
+        color: red;
+        /*텍스트의 방향*/
+        direction: rtl;
+    }
+</style>
+<style>
+    /* 텍스트에서 이미지의 vertical-align 수직정렬 */
+    img.a{vertical-align: baseline;}
+    img.b{vertical-align: text-top;}
+    img.c{vertical-align: text-bottom;}
+    img.d{vertical-align: sub;}
+    img.e{vertical-align: super;}
+</style>
+</head>
+<body>
+<h3>css 텍스트</h3>
+<pre>
+    [css 텍스트 서식 지정]
+    1. 색상: 표준색상(140), #16진수, rgb(), rgba()
+    2. 정렬: 
+        text-align          수평정렬
+        text-align-last
+        direction   
+        unicorde-bidi       텍스트의 방향 변경
+        vertical-align      수직 정렬
+</pre>
+<!-- div>lorem*5 -->
+<div>Lorem ipsum dolor sit amet.</div>
+<!-- p#p1>lorem -->
+<p id="p1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias possimus inventore, ut reprehenderit voluptates voluptate alias modi sapiente recusandae voluptatum perferendis eaque autem officiis explicabo sit nam odio rem deleniti!</p>
+
+<!-- p*5>lorem5 -->
+<p>Lorem ipsum <img src="../images/sqpurple.gif" class="a" style="width: 9px; height: 9px;"> dolor sit amet.</p>
+<p>Fugit doloremque <img src="../images/sqpurple.gif" class="b" style="width: 9px; height: 9px;"> illo quaerat nihil.</p>
+<p>Exercitationem culpa <img src="../images/sqpurple.gif" class="c" style="width: 9px; height: 9px;"> facere earum pariatur.</p>
+<p>Nobis aliquam <img src="../images/sqpurple.gif" class="d" style="width: 9px; height: 9px;"> dolores eius eveniet.</p>
+<p>Iusto magnam <img src="../images/sqpurple.gif" class="e" style="width: 9px; height: 9px;"> accusamus doloremque saepe!</p>
+
+
+</body>
+</html>

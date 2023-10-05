@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="shortcut icon"href="http://localhost/webPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<style>
+    body{
+        /* background-color: red;
+        background-image: url('../images/img_tree.gif');
+        background-repeat: no-repeat;
+        background-position: right top;
+        background-attachment: fixed; */
+
+        background: aliceblue url('../images/img_tree.gif') no-repeat right top fixed;
+    }
+</style>
+<style>
+    /*1+100=101*/
+    div#top{
+        /* border: solid 1px gray; 약식 */
+        border-width: 1px;
+        border-style: solid;
+        border-color: gray;
+
+        width: 25px;
+        height: 25px;
+
+        position: fixed;
+        right: 5px;
+        bottom: 5px;
+    }
+    div#top:hover{
+        background-color: black;
+        color: yellow;
+        font-weight: bold;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+<h3>ex05_02.html</h3>
+
+<!-- #top{top}+h3{css 배경이미지}+lorem+p*50>{.} -->
+<div id="top" onclick="moveTop();">top</div>
+<h3>css 배경이미지</h3>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, rem! Consequuntur minima alias temporibus facilis in laboriosam ipsa voluptatibus. Deserunt, deleniti inventore amet voluptas atque ea quis ab ratione repudiandae!
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+
+<script>
+    function moveTop(){
+        document.body.scrollTop=0;
+        document.documentElement.scrollTop=0;
+    }
+</script>
+</body>
+</html>

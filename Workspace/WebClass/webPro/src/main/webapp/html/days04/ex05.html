@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Insert title here</title>
+    <link rel="shortcut icon" href="http://localhost/webPro/images/SiSt.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <h3>웹 페이지에 그래픽 처리 사용: canvas, svg</h3>
+    <pre>
+        - js를 사용해서 그래픽을 처리
+        - canvas 컨테이너 역활
+        - 원, 텍스트, 도형, 이미지 등등
+        - id 속성 필수
+        - 너비, 높이 크기지정
+    </pre>
+
+    <canvas id="myCanvas" width="200px" height="100px" style="border: solid 1px black;"></canvas>
+
+<script>
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    //선
+    ctx.moveTo(0,0);
+    ctx.lineTo(200,100);
+    ctx.stroke();
+    //원
+    // ctx.arc(x,y,r,시작Angle,끝Angle)
+    ctx.beginPath();
+    ctx.arc(95,50,40,0,2*Math.PI);
+    ctx.stroke();
+    //텍스트
+    ctx.font="30px Arial"
+    ctx.strokeText("Hello World",10,50);
+
+</script>
+
+</body>
+
+</html>

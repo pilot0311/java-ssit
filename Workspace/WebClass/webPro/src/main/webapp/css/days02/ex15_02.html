@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="shortcut icon"href="http://localhost/webPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<style>
+    .box{
+        border: solid 1px gray;
+        width: 100px;
+        height: 100px;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+<!-- <div>Box - 1</div> -->
+
+<script>
+    // [DOM 조작] createElement(),appendChild()
+    // 1 <div></div> div 요소 생성
+    var divElement = document.createElement("div");
+    // 2 <div>Box-1</div>
+    divElement.innerText = "Box - 1";
+    // 2-2 css
+    /*
+    divElement.style.border = "solid 1px gray";
+    divElement.style.width = "100px";
+    divElement.style.height = "100px";
+    //js text-align -> textAlign
+    divElement.style.textAlign = "center";
+    */
+    divElement.className = "box"
+    // 3 body 자식 요소로 추가
+    document.body.appendChild(divElement);
+</script>
+</body>
+</html>
