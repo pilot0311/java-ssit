@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="shortcut icon"href="http://localhost/webPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<style>
+    .container{
+        position: relative;
+        /* border: solid 1px red; */
+    }
+    .blackbox{
+        position: relative;
+        border: solid 2px black;
+        height: 100px;
+        margin: 30px;
+        z-index: 1;
+    }
+    .graybox{
+        position: absolute;
+        left: 50px;
+        top: 50px;
+        background-color: lightgray;
+        height: 60px;
+        width: 70%;
+        z-index: 3;
+    }
+    .greenbox{
+        position: absolute;
+        left: 270px;
+        top: -15px;
+        height: 100px;
+        background-color: lightgreen;
+        z-index: 2;
+    }
+</style>
+</head>
+<body>
+<h3>z-index 속성</h3>
+<p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eligendi.
+</p>
+<div class="container">
+    <div class="blackbox">black box</div>
+    <div class="graybox">gray box</div>
+    <div class="greenbox">green box</div>
+</div>
+</body>
+</html>

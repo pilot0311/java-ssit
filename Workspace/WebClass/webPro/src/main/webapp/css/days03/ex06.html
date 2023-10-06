@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="shortcut icon"href="http://localhost/webPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<style>
+    div{
+        background-color: coral;
+        border: solid 1px;
+        width: 300px;
+        height: 65px;
+        /* overflow: visible; */
+        /* overflow: hidden; */
+        /* overflow: scroll; */
+        overflow: auto;
+        /* overflow-x: hidden;
+        overflow-y: scroll; */
+    }
+</style>
+</head>
+<body>
+<h3>ex06.html</h3>
+<pre>
+    [overflow]
+    - 요소의 내용이 너무 커서 지정된 영역에 맞지 않을 때
+    그 내용을 자를지, 스크롤바를 추가 할지 등을 지정하는 속성
+    - visivle(기본값): 내용이 넘치더라도 자르지 말고 보여준다
+    - hidden: 내용이 넘치면 잘라냄
+    - scroll: 내용이 넘치는 유무에 상관없이 스크롤바 추가
+    - auto: 내용이 넘치는 경우에만 스크롤바 추가
+    (주의) overflow 속성은 높이가 지정된 블럭요소에만 적용된다
+</pre>
+<div>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore eaque magni explicabo, commodi inventore exercitationem incidunt officiis sit eos voluptates ab ipsa molestiae rerum blanditiis expedita quibusdam fugit deleniti odit.
+</div>
+<br>
+<div>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+</div>
+</body>
+</html>

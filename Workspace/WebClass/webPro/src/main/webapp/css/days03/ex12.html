@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="shortcut icon"href="http://localhost/webPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<style>
+    /* CSS1, CSS2  ::first-letter, :frist-letter */
+    /* CSS3 ::의사요소, :의사클래스  구분 */
+    /* 블럭모드 */
+    p::first-letter{
+        color: red;
+        font-variant: small-caps;
+    }
+    /* 블럭모드 */
+    p::first-line{
+        color: blue;
+        font-size: x-large;
+    }
+    /* 요소의 내용 앞에 일부 내용을 삽입 */
+    h3::before{
+        content: url('../images/arr.gif');
+    }
+    /* 요소의 내용 뒤에 일부 내용을 삽입 */
+    h3::after{
+        content: "이상문";
+    }
+
+    ::selection{
+        color: red;
+        background-color: yellow;
+    }
+</style>
+</head>
+<body>
+    <h3>::의사요소</h3>
+<pre>
+    :의사클래스(상태) - :hover, :focus, :???
+
+    ::의사요소(지정된 일부분) - 스타일 지정
+        1) 요소의 첫 글자, 줄 + 스타일 지정
+        2) 요소의 내용의 앞, 뒤 + 어떤 컨텐츠 삽입
+    형식) selector::의사요소{}
+</pre>
+<p>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla quia eos rerum impedit, quaerat at! A, doloribus, delectus dolore vel quae magni minus alias deserunt, obcaecati hic ipsam maxime? Esse!
+</p>
+</body>
+</html>

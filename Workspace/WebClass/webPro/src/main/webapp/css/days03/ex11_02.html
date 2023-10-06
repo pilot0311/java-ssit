@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Insert title here</title>
+    <link rel="shortcut icon" href="http://localhost/webPro/images/SiSt.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        /* :의사클래스 - 특정 상태 */
+        /*첫번째 자식이 p이면 적용*/
+        /* p:first-child {
+            color: blue;
+        } */
+
+        /*자식들 중 첫번째 p에 적용*/
+        /* p:first-of-type {
+            color: red;
+        } */
+
+        /* p:last-child{
+            color: blue;
+        } */
+        /* p:last-of-type{
+            color: red;
+        } */
+
+        /* p:nth-child(4){
+            color: blue;
+        } */
+
+        p:nth-of-type(4){
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>body 1 번째 자식</h3>
+    <h3>body 2 번째 자식</h3>
+    <h3>body 3 번째 자식</h3>
+    <p>
+        Lorem ipsum dolor sit.
+    </p>
+    <p>
+        Incidunt accusantium tempora illum?
+    </p>
+    <p>
+        Incidunt accusantium tempora illum?
+    </p>
+    <p>
+        Incidunt accusantium tempora illum?
+    </p>
+    <div>
+        <h3>div 1 번째 자식</h3>
+        <h3>div 2 번째 자식</h3>
+        <h3>div 3 번째 자식</h3>
+        <p>
+            Lorem ipsum dolor sit.
+        </p>
+        <p>
+            Illo eligendi repudiandae cupiditate!
+        </p>
+        <p>
+            Illo eligendi repudiandae cupiditate!
+        </p>
+        <p>
+            Illo eligendi repudiandae cupiditate!
+        </p>
+    </div>
+</body>
+
+</html>

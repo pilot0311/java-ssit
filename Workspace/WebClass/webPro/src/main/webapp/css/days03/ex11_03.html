@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="shortcut icon"href="http://localhost/webPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<style>
+    p{
+        color: black;
+    }
+    /* :not(p){
+        color: red;
+    } */
+    p:empty{
+        width: 200px;
+        height: 20px;
+        background-color: red;
+    }
+    input:checked{
+        height: 50px;
+        width: 50px;
+    }
+    input[type=text]:disabled{
+        background-color: #ddd;
+    }
+    input[type=text]:enabled{
+        background-color: blue;
+    }
+</style>
+</head>
+<body>
+<pre>
+    :not(선택자)
+    선택자를 제외한 모든 선택자
+
+    :empty
+
+    :checked
+</pre>
+
+name: <input type="text" value="홍길동" disabled><br>
+age: <input type="text"><br>
+addr: <input type="text"><br>
+tell: <input type="text"><br>
+
+<form action="">
+    <input type="radio" checked>male <br>
+    <input type="radio">female <br>
+
+    <input type="checkbox" checked>bike <br>
+    <input type="checkbox">car <br>
+</form>
+
+<h1>Lorem ipsum dolor sit amet.</h1>
+<p>Lorem ipsum dolor sit amet.</p>
+<p></p>
+<div>
+    Lorem ipsum dolor sit amet.
+</div>
+<a href="#">SiSt</a>
+</body>
+</html>

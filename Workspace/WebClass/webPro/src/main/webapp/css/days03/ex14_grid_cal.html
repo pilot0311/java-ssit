@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Insert title here</title>
+    <link rel="shortcut icon" href="http://localhost/webPro/images/SiSt.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #1f1f1f;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .calculator{
+            border: solid 1px #333;
+            background-color: #ccc;
+            padding: 5px;
+            width: 287px;
+        }
+        .calculator form{
+            display: grid;
+            /* grid-template-columns: 65px 65px 65px 65px; */
+            grid-template-columns: repeat(4, 65px);
+            grid-auto-rows: 65px;
+            grid-gap: 5px;
+        }
+        .calculator form input{
+            border: solid 2px black;
+            cursor: pointer;
+            font-size: 19px;
+        }
+        .calculator form input:hover{
+            box-shadow: 1px 1px 2px #333;
+        }
+        .calculator form .clear{
+            background-color: #ed4848;
+            grid-column: span 3;
+        }
+        .calculator form .operator{
+            background-color: orange;
+        }
+        .calculator form .dot{
+            background-color: green;
+        }
+        .calculator form input[name=output]{
+            text-align: right;
+            padding: 0 10px;
+            /* grid-column: 1/5; */
+            /* grid-column: 1/-1; */
+            /* grid-column-start: 1;
+            grid-column-end: -1; */
+            grid-column: span 4;
+        }
+        .calculator form .result{
+            grid-column: span 2;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="calculator">
+        <form action="" name="forms">
+            <input type="text" name="output" value="0" readonly>
+            <input type="button" class="clear" value="C">
+            <input type="button" class="operator" value="/">
+            <input type="button" value="1">
+            <input type="button" value="2">
+            <input type="button"value="3">
+            <input type="button" class="operator" value="*">
+            <input type="button" value="4">
+            <input type="button" value="5">
+            <input type="button" value="6">
+            <input type="button" class="operator" value="+">
+            <input type="button" value="7">
+            <input type="button" value="8">
+            <input type="button" value="9">
+            <input type="button" class="operator" value="-">
+            <input type="button" class="dot" value=".">
+            <input type="button" value="0">
+            <input type="button"class="operator result" value="=">
+        </form>
+    </div>
+
+</body>
+
+</html>
