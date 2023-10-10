@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="shortcut icon"href="http://localhost/webPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<style>
+    button{
+        background-color: red;
+        display: inline-block;
+        padding: 5px;
+        border: none;
+    }
+    /* button:hover{
+        background-color: blue;
+    } */
+</style>
+</head>
+<body>
+<button>마우스 롤오버 효과</button>
+<button>마우스 롤오버 효과</button>
+<button>마우스 롤오버 효과</button>
+
+<script>
+    // 마우스 롤오버 효과 js
+    // 버튼 중에 첫 번째 요소만 반환
+    // document.querySelector("button");
+    // 모든 버튼 요소를 얻어와야한다
+    // var btns = document.querySelectorAll("button");
+
+    var btns = document.getElementsByTagName("button");
+    // alert(btns.length);
+    // 마우스 올릴 때 :mouseover
+    // 마우스 내릴 때 :mouseout
+    for (let index = 0; index < btns.length; index++) {
+        btns[index].onmouseover = function(){
+        // js: 이벤트가 발생할 때으 모든 이벤트 정보를 event객체가 가지고 있음
+            event.target.style.backgroundColor = "blue";
+        };
+        btns[index].onmouseout = function(){
+            event.target.style.backgroundColor = "red";
+        };
+        
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="shortcut icon"href="http://localhost/webPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<style>
+    div{
+        width: 300px;
+        height: 100px;
+        background-color: yellow;
+        border: solid 1px black;
+    }
+</style>
+</head>
+<body>
+	<h3>css 2D 변화</h3>
+	<pre>
+		이동, 비율조정, 회전, 기울기
+		transform 속성 : translate(), scale(), rotate(), skew()
+							matrix()
+	</pre>
+	
+	<input type="radio" name="direction" value="1" checked/>시계방향
+	<input type="radio" name="direction" value="-1" checked/>반시계반향
+    <br>
+    <button>회전 시작</button>
+    <button disabled>회전 멈춤</button>
+    <p>.</p>
+    <p>.</p>
+    <p>.</p>
+    <div>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti quaerat fugiat, blanditiis dolor ullam eveniet.
+    </div>
+    <script>
+        var angle = 1; //회전 각도
+        var direction = 1; //회전 방향 1(시계방향),-1(반시계방향)
+        var timer;
+
+        document.querySelector("button:first-of-type").onclick = function(){
+            var radios = document.querySelectorAll("input[name='direction']")
+            for (let i = 0; i < radios.length; i++) {
+                console.log(radios[i].checked + "/" + radios[i].value);
+                if (radios[i].checked) {
+                    direction = radios[i].value;
+                }
+            }
+            // var target = document.querySelector("div");
+            // target.style.transform = "rotate("+direction*angle+"deg)";
+            // console.log(direction*angle);
+            // angle+=1;
+            timer = setInterval(targetRotate,10);
+            this.disabled = true;
+            document.querySelector("button:last-of-type").disabled=false;
+        };
+        document.querySelector("button:last-of-type").onclick = function(){
+            clearInterval(timer);
+            this.disabled = true;
+            document.querySelector("button:first-of-type").disabled=false;
+        };
+        function targetRotate(){
+            var target = document.querySelector("div");
+            target.style.transform = "rotate("+angle+"deg)";
+            // console.log(direction*angle);
+            angle+=parseInt(direction);
+        }
+    </script>
+</body>
+</html>

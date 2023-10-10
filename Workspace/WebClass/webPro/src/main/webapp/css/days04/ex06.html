@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="shortcut icon" href="http://localhost/webPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<style>
+	a{
+        color: yellow;
+    }
+    p > a{
+        color: green;
+    }
+    p > a.button{
+        color: aqua;
+    }
+    #mydiv p > a{}
+    div#mydiv p > a{
+        color: black;
+    }
+    a{
+        color: red !important;
+    }
+</style>
+
+</head>
+<body>
+	<pre>
+		[css !important 규칙]
+		
+		!improtant ? 
+		- css 규칙, 일반적인 것보다 더 중요성을 추가
+		- 요소의 특정 속성에 대한 이전 모든 스타일 규칙을 재정의한다.
+		
+		[css 특이성]
+		1. 인라인식 스타일 시트 적용 : 1000점
+		2. * 0점
+			태그명, ||의사요소 1점
+			.클래스명, :의사클래스, 속성 선택자 10점
+			#아이디명 100점
+			예)
+				#navlist li#home 100+1+100 = 201
+		3. 
+	</pre>
+	
+	<p>
+		<a href="#" class="button">button 1</a>
+	</p>
+	
+	<div id="mydiv">
+		<p>
+			<a href="#" class="button">button 2</a>
+		</p>
+		<p>
+			<a href="#" class="button" style="color: black;">button 3</a>
+		</p>
+	</div>
+</body>
+</html>

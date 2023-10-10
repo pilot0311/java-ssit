@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="shortcut icon"href="http://localhost/webPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<style>
+    div{
+        border: 10px dotted black;
+        padding: 35px;
+        background: yellow url(../images/img_flwr.gif) no-repeat;
+    }
+    #demo1{
+        background-origin: padding-box;
+        background-clip: padding-box;
+    }
+    #demo2{
+        background-origin: border-box;
+        background-clip: border-box;
+    }
+    #demo3{
+        background-origin: content-box;
+        background-clip: content-box;
+    }
+</style>
+</head>
+<body>
+<pre>
+    [background-origin속성]
+    - 배경 이미지의 위치를 지정하는 속성
+    - 속성값
+        1) border-box           : 테두리 왼쪽 상단
+        2) padding-box (기본값)  : 패딩 왼쪽 상단 
+        3) content-box          : 콘텐츠 왼쪽 상단
+    - 배경 이미지의 위치 background-position 속성
+
+    [background-clip 속성]
+    - 배경의 페이팅 영역을 지정하는 속성
+        border-box(기본값)  : 배경이 테두리의 바깥쪽 가장자리에 그려진다
+        padding-box         : 배경이 패딩의 ''
+        content-box         : 콘텍츠 박스 내에서 배경이 그려진다
+</pre>
+<div id="demo1">
+    <h1>
+        Lorem ipsum dolor sit amet.
+    </h1>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quasi, animi magni rem voluptas possimus.
+</div>
+<div id="demo2">
+    <h1>
+        Impedit vel asperiores magnam expedita.
+    </h1>
+    Enim adipisci nemo illo, at recusandae, omnis suscipit blanditiis ut ipsum totam id non inventore.
+</div>
+<div id="demo3">
+    <h1>
+        Quae doloremque deserunt facere. Deserunt.
+    </h1>
+    Dolorem saepe unde at molestiae officiis minus eius excepturi iusto aperiam. Facere aut similique et?
+</div>
+</body>
+</html>

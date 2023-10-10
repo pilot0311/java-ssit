@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Insert title here</title>
+    <link rel="shortcut icon" href="http://localhost/webPro/images/SiSt.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        .dropbtn {
+            background-color: #3498DB;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .dropbtn:hover,
+        .dropbtn:focus {
+            background-color: #2980B9;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            overflow: auto;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown a:hover {
+            background-color: #ddd;
+        }
+    </style>
+    <style>
+        .dropdown2{
+            display: inline-block;
+            position: relative;
+            /* left: 200px */
+        }
+        .dropdown2 > .dropdown-content2{
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            padding: 12px 16px;
+            z-index: 1;
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+            display: none;
+        }
+        .dropdown2:hover > .dropdown-content2{
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>아무것도 하기 싫다</h3>
+    <pre>
+        드롭다운? 사용자가 요소위에 마우스를 올리면 나타나는 상자
+    </pre>
+    
+    <div class="dropdown2">
+        <span>Mouse Over</span>
+        <div class="dropdown-content2">
+            <p>Hello-World</p>
+        </div>
+    </div>
+<hr>
+
+    <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+        <div id="myDropdown" class="dropdown-content">
+            <a href="#">아무것도</a>
+            <a href="#">하기</a>
+            <a href="#">싫다</a>
+        </div>
+    </div>
+    <script>
+        $("#myDropdown").hide();
+        $(".dropbtn").click(function () {
+            $("#myDropdown").toggle();
+        });
+
+
+        $(document).click(function (event) {
+        // 클릭된 요소가 .dropbtn 클래스를 가지지 않으면
+        if (!$(event.target).hasClass("dropbtn")) {
+            // #myDropdown 요소를 숨깁니다.
+            $("#myDropdown").hide();
+        }
+    });
+
+    </script>
+</body>
+
+</html>

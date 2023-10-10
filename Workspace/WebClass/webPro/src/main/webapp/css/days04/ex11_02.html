@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="shortcut icon"href="http://localhost/webPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<style>
+    p.test1{
+        writing-mode: horizontal-tb;
+    }
+    p.test2 > span{
+        writing-mode: vertical-rl;
+    }
+    p.test3{
+        writing-mode: vertical-rl;
+    }
+</style>
+</head>
+<body>
+<p class="test1">
+    Lorem ipsum dolor sit amet.
+</p>
+<p class="test2">
+    Omnis laboriosam consequuntur <span>saepe</span> porro?
+</p>
+<p class="test3">
+    Voluptatem molestias fuga ab consectetur.
+</p>
+</body>
+</html>

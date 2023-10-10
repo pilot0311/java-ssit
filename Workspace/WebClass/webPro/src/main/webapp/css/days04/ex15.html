@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="shortcut icon"href="http://localhost/webPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<style>
+    div{
+        background-color: antiquewhite;
+        width: 200px;
+        height: 300px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .t1{
+        transition: 0.5s;
+    }
+    .t2{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 30px;
+        display: none;
+    }
+    .t1:hover{
+        transform: scale(1.3);
+        
+
+    }
+    .t1:hover + .t2{
+        display: block;
+    }
+</style>
+</head>
+<body>
+<div>
+<img class="t1" src="../images/favicon.ico" alt="">
+<img class="t2" src="../images/icon03.gif" alt="">
+</div>
+</body>
+</html>

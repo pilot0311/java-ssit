@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="shortcut icon"href="http://localhost/webPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<style>
+    p{
+        width: 200px;
+        height: 200px;
+        border: solid 1px green;
+        padding: 20px;
+
+    }
+    p:first-of-type{
+        background-color: red;
+        /*
+        border-top-left-radius: 15px;
+        border-top-right-radius: 50px;
+        border-bottom-left-radius: 30px;
+        border-bottom-left-radius: 5px;
+        */
+        border-radius: 15px 50px 30px 5px;
+    }
+    p:nth-of-type(2){
+        background: url("../images/paper.gif") left top repeat;
+        border-radius: 0 50%;
+
+    }
+    p:nth-of-type(3){
+        border: solid 2px #73da21;
+        border-top-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+</style>
+</head>
+<body>
+<pre>
+    둥근 모서리 - border-radius 속성
+</pre>
+<p>
+    Lorem, ipsum dolor.
+</p>
+<p>
+    Repellat, sunt cumque?
+</p>
+<p>
+    Fugit, impedit ducimus.
+</p>
+</body>
+</html>

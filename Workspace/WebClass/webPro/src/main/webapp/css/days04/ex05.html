@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Insert title here</title>
+    <link rel="shortcut icon" href="http://localhost/webPro/images/SiSt.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* input{ */
+        /* [type] { */
+        /* [type="text"] { */
+            /*where title Like flower%*/
+        /* [title^="flower"] { */
+            /*where title Like %flower*/
+        /* [title$="flower"] {  */
+            /* where title Like %flower% */
+            /* [title*="flower"] {  */
+            /* 단어가 flower*/
+            [title~="flower"] { 
+            width: 200px;
+            border: solid 1px red;
+        }
+    </style>
+</head>
+
+<body>
+    <pre>
+    [속성(attribute)을 css의 선택자(selector)]
+    1. [속성명]
+    2. [속성명=속성값]
+    3. [속성명^=속성값]
+    4. [속성명$=속성값]
+    5. [속성명*=속성값]
+    6. [속성명~=속성값]
+    7. [속성명|=속성값]     X
+</pre>
+    <a href="#" title="klematis flower">naver</a><br>
+    <a href="#" title="flower">daum</a><br>
+    <a href="#" title="kbsflower">sist</a><br>
+    <a href="#" title="kbs-flower">taeyo</a><br>
+    <a href="#" title="flowers">admin</a><br>
+    <hr>
+    <input><br>
+    <input><br>
+    <input type="text"><br>
+    <input type="text"><br>
+    <input type="text"><br>
+    <input type="submit"><br>
+    <input type="reset"><br>
+</body>
+
+</html>
