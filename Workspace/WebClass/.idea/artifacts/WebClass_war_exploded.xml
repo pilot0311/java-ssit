@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="WebClass:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/WebClass_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="library" level="application" name="jquery" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="WebClass/web/Web" />
+      <element id="javaee-facet-resources" facet="WebClass/web/Web3" />
+      <element id="javaee-facet-resources" facet="WebClass/web/Web2" />
+      <element id="javaee-facet-resources" facet="WebClass/web/Web5" />
+      <element id="javaee-facet-resources" facet="WebClass/web/Web4" />
+    </root>
+  </artifact>
+</component>

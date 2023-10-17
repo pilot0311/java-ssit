@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex06_05.html</title>
+    <link rel="shortcut icon" href="http://localhost/webPro/images/SiSt.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- vscode용 css/js 경로 -->
+    <link rel="stylesheet" href="/webPro/src/main/webapp/resources/cdn-main/example.css">
+    <script src="/webPro/src/main/webapp/resources/cdn-main/example.js"></script>
+    <!-- 이클 톰캣 css/js 경로 -->
+    <link rel="stylesheet" href="/webPro/resources/cdn-main/example.css">
+    <script src="/webPro/resources/cdn-main/example.js"></script>
+
+    <style>
+        span.material-symbols-outlined {
+            vertical-align: text-bottom;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1 class="main">
+        <a href="#" style="position: absolute;top:30px;">pilot0311</a>
+    </h1>
+    <ul>
+        <li>
+            <a href="#">로그인</a>
+        </li>
+        <li>
+            <a href="#">회원가입</a>
+        </li>
+    </ul>
+</header>
+<h3>
+    <span class="material-symbols-outlined">view_list</span>
+    <a target="_blank" href="https://developer.mozilla.org/ko/">JavaScript</a> days04
+<!--    <a target="_blank" href="https://api.jquery.com/">jQuery</a> days04-->
+</h3>
+<h1 class="main">ex06_05<small>.html</small></h1>
+<div>
+    <xmp class="code">
+
+    </xmp>
+</div>
+<script>
+    const m = [1, 30, 4, 21, 10000];
+    // console.log( m );
+
+    // 문자열 오름차순 정렬
+    // m.sort();
+
+    // 숫자 오름차순/내림차순 정렬
+    m.sort(function(a, b) {
+        // return a-b; // 오름차순
+        return b-a; // 내림차순
+    });
+
+
+    // m.sort( (a,b)=>{ a-b }   )
+
+    // [1, 10000, 21, 30, 4]
+    // console.log( m );
+
+</script>
+
+<script>
+    // 배열 요소 추가 : s[p]lice()  / slice()
+    //                  잇다,붙이다   잘라내다
+    // push() , unshift()
+    const n = ['d','a','f','c','e','b'];
+    console.log(n);
+    // n.splice(pos, amount)
+    n.splice(2, 2);
+
+    n.splice(2, 0, 'x','y');
+    console.log(n);
+
+    //잘라내기 해서 새로운 배열을 생성
+    // const arr = n.slice(from, to);
+    // const arr = n.slice(from);
+    const arr = n.slice(2,4)
+    console.log(arr)
+    console.log(n); //slice 하더라도 소스 배열은 유지 된다
+    //배열명.toString()
+    // "[3,5,]"
+</script>
+</body>
+</html>

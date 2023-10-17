@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex03_02..html</title>
+    <link rel="shortcut icon" href="http://localhost/webPro/images/SiSt.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- vscode용 css/js 경로 -->
+    <link rel="stylesheet" href="/webPro/src/main/webapp/resources/cdn-main/example.css">
+    <script src="/webPro/src/main/webapp/resources/cdn-main/example.js"></script>
+    <!-- 이클 톰캣 css/js 경로 -->
+    <link rel="stylesheet" href="/webPro/resources/cdn-main/example.css">
+    <script src="/webPro/resources/cdn-main/example.js"></script>
+
+    <style>
+        span.material-symbols-outlined {
+            vertical-align: text-bottom;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1 class="main">
+        <a href="#" style="position: absolute;top:30px;">pilot0311</a>
+    </h1>
+    <ul>
+        <li>
+            <a href="#">로그인</a>
+        </li>
+        <li>
+            <a href="#">회원가입</a>
+        </li>
+    </ul>
+</header>
+<h3>
+    <span class="material-symbols-outlined">view_list</span>
+    <a target="_blank" href="https://developer.mozilla.org/ko/">JavaScript</a> days03
+<!--    <a target="_blank" href="https://api.jquery.com/">jQuery</a> days03-->
+</h3>
+<h1 class="main">ex03_02<small>.html</small></h1>
+<div>
+    <xmp class="code">
+
+    </xmp>
+    <p id="demo"></p>
+</div>
+<script>
+    function myFunction(a,b){
+        return a+b;
+    }
+    //js 함수는 표현식을 사용해서 정의할 수도 있다
+    const test = function (a,b){
+        return a-b;
+    }
+    // $("p#demo").html(test(100,40))
+
+    // const test2 = myFunction;
+    // $("p#demo").html(test2(100,40));
+
+</script>
+<script>
+    // //Function() 생성자를 사용해서 함수 정의 할 수 있다
+    // const test3 = new Function("a","b","return a*b")
+    // $("p#demo").html(test3(10,4));
+</script>
+<script>
+    //js 호이스팅: 선언을 현재 범위의 매 위로 자동 이동시키는 js 기본 동작
+    //js 변수, js 함수도 호이스팅
+    //(주의) 표현식은 호이스팅 되지않는다
+    test4(10);
+    test5(10); // 표현식-> 정의된 함수는 호이스팅 X
+    //
+    //
+    //
+    //
+    //
+    //
+    function test4(x) {
+        alert(x)
+        return x*x;
+    }
+
+    //(주의) 표현식을 사용하여 정의된 함수는
+    //        호이스팅되지 않는다.
+    const test5 = function (){alert("test5");}
+</script>
+</body>
+</html>

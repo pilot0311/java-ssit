@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex07..html</title>
+    <link rel="shortcut icon" href="http://localhost/webPro/images/SiSt.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- vscode용 css/js 경로 -->
+    <link rel="stylesheet" href="/webPro/src/main/webapp/resources/cdn-main/example.css">
+    <script src="/webPro/src/main/webapp/resources/cdn-main/example.js"></script>
+    <!-- 이클 톰캣 css/js 경로 -->
+    <link rel="stylesheet" href="/webPro/resources/cdn-main/example.css">
+    <script src="/webPro/resources/cdn-main/example.js"></script>
+
+    <style>
+        span.material-symbols-outlined {
+            vertical-align: text-bottom;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1 class="main">
+        <a href="#" style="position: absolute;top:30px;">pilot0311</a>
+    </h1>
+    <ul>
+        <li>
+            <a href="#">로그인</a>
+        </li>
+        <li>
+            <a href="#">회원가입</a>
+        </li>
+    </ul>
+</header>
+<h3>
+    <span class="material-symbols-outlined">view_list</span>
+    <a target="_blank" href="https://developer.mozilla.org/ko/">JavaScript</a> days02
+</h3>
+<h1 class="main">ex07<small>.html</small></h1>
+<div>
+    <xmp class="code">
+        [js 연산자]
+        1. 산술 연산자           +   -   *   /   %
+        2. 증감 연산자
+        3. 할당(대입) 연산자
+        4. 문자열 연결 연산자
+        5. 비교연산자
+        6. 논리연산자
+        7. 비트연산자
+        8. 삼항연산자
+        9. 등등
+    </xmp>
+</div>
+<script>
+    /*
+    document.write(5+3); document.write("<br>");
+    document.write(5-3); document.write("<br>");
+    document.write(5*3); document.write("<br>");
+    //1.6666666666666667
+    document.write(5/3); document.write("<br>");
+    document.write(5%3); document.write("<br>");
+    */
+    /*
+    document.write(5/0); document.write("<br>");    //Infinity
+    document.write(5%0); document.write("<br>");    //NaN       (Not a Number)
+    document.write(5.0/0); document.write("<br>");  //Infinity
+    document.write(5.0%0); document.write("<br>");  //NaN       (Not a Number)
+    */
+</script>
+<script>
+    // document.write(2 * 3); document.write("<br>")   //6
+    // //누승(계승) 2^3
+    // document.write(2 ** 3); document.write("<br>")  //8 === 2*2*2
+    // document.write(Math.pow(2,3)); document.write("<br>")  //8 === 2*2*2
+</script>
+<script>
+    let x = 10;
+    ++x;
+    x++;
+    document.write(x);document.write("<br>")
+</script>
+</body>
+</html>

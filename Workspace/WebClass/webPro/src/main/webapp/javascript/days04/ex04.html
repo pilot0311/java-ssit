@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex04.html</title>
+    <link rel="shortcut icon" href="http://localhost/webPro/images/SiSt.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- vscode용 css/js 경로 -->
+    <link rel="stylesheet" href="/webPro/src/main/webapp/resources/cdn-main/example.css">
+    <script src="/webPro/src/main/webapp/resources/cdn-main/example.js"></script>
+    <!-- 이클 톰캣 css/js 경로 -->
+    <link rel="stylesheet" href="/webPro/resources/cdn-main/example.css">
+    <script src="/webPro/resources/cdn-main/example.js"></script>
+
+    <style>
+        span.material-symbols-outlined {
+            vertical-align: text-bottom;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1 class="main">
+        <a href="#" style="position: absolute;top:30px;">pilot0311</a>
+    </h1>
+    <ul>
+        <li>
+            <a href="#">로그인</a>
+        </li>
+        <li>
+            <a href="#">회원가입</a>
+        </li>
+    </ul>
+</header>
+<h3>
+    <span class="material-symbols-outlined">view_list</span>
+    <a target="_blank" href="https://developer.mozilla.org/ko/">JavaScript</a> days04
+<!--    <a target="_blank" href="https://api.jquery.com/">jQuery</a> days04-->
+</h3>
+<h1 class="main">ex04<small>.html</small></h1>
+<div>
+    <xmp class="code">
+        [js 문자열]
+        - js '문자열, "문자열"
+    </xmp>
+    <p id="demo"></p>
+</div>
+<script>
+    // let msg = 'Kim's Home';
+    let msg = "Kim's Home";
+    let a = '1 am "sam:';
+    let b = `Kim\'s \"H\"ome"
+                message`
+    $("#demo").html(b)
+</script>
+<script>
+    let str1 = "Hello World";
+    // new 연산자는 성능저하 (권장 X)
+    let str2 = new String("Hello World");
+    // alert(typeof str1) //string
+    // alert(typeof str2) // object
+    // alert(str1 == str2) //두문자열 비교 true
+    alert(str1 === str2) //두 문자열 비교 + 타입 비교 false
+
+</script>
+</body>
+</html>

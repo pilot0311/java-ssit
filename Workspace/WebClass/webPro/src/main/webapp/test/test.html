@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        div {
+            width: 30%;
+            height: 100px;
+            border: solid 1px black;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+이름입력: <input type="text"><br>
+<button id="jq">jq추가</button>
+<button id="js" onclick="add()">js추가</button>
+<div>
+    <ol>
+    </ol>
+</div>
+<script>
+    var num = 1;
+
+    $("#jq").click(function () {
+        var child = $("input").val();
+        if (child == "") {
+            alert("내용을 입력하세요");
+        } else {
+            $("div").append((num++) + ":" + child + "<br>");
+        }
+        $("input").select();
+    });
+    var child = document.querySelector("input");
+    var div = document.querySelector("div");
+    function add() {
+        var content = document.querySelector("input").value;
+        if (!content) {
+            alert("내용을 입력하세요");
+        } else {
+            div.innerHTML += (num++) + ":" + content + "<br>";
+        }
+        child.select();
+    }
+</script>
+</body>
+</html>

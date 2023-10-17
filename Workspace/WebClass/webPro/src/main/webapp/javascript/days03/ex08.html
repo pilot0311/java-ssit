@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex08.html</title>
+    <link rel="shortcut icon" href="http://localhost/webPro/images/SiSt.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- vscode용 css/js 경로 -->
+    <link rel="stylesheet" href="/webPro/src/main/webapp/resources/cdn-main/example.css">
+    <script src="/webPro/src/main/webapp/resources/cdn-main/example.js"></script>
+    <!-- 이클 톰캣 css/js 경로 -->
+    <link rel="stylesheet" href="/webPro/resources/cdn-main/example.css">
+    <script src="/webPro/resources/cdn-main/example.js"></script>
+
+    <style>
+        span.material-symbols-outlined {
+            vertical-align: text-bottom;
+        }
+    </style>
+    <style>
+        select{
+            height: 200px;
+            width: 100px;
+        }
+        button{
+            width: 80px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1 class="main">
+        <a href="#" style="position: absolute;top:30px;">pilot0311</a>
+    </h1>
+    <ul>
+        <li>
+            <a href="#">로그인</a>
+        </li>
+        <li>
+            <a href="#">회원가입</a>
+        </li>
+    </ul>
+</header>
+<h3>
+    <span class="material-symbols-outlined">view_list</span>
+    <a target="_blank" href="https://developer.mozilla.org/ko/">JavaScript</a> days03
+<!--    <a target="_blank" href="https://api.jquery.com/">jQuery</a> days03-->
+</h3>
+<h1 class="main">ex08<small>.html</small></h1>
+<div>
+    <xmp class="code">
+        
+    </xmp>
+    <table>
+        <tr>
+            <td>
+                <select multiple="multiple" name="leftCmb" id="leftCmb">
+                    <option selected>김성준</option>
+                    <option>주강민</option>
+                    <option selected>박정호</option>
+                    <option selected>신종혁</option>
+                    <option>이준희</option>
+                </select>
+            </td>
+            <td>
+                <button>▶</button><br>
+                <button>▶▶</button><br>
+                <button>◀</button><br>
+                <button>◀◀</button><br>
+            </td>
+            <td>
+                <select multiple="multiple"name="rightCmb" id="rightCmb"></select>
+            </td>
+        </tr>
+    </table>
+</div>
+<script>
+    // $("button:nth-of-type(1)").click(function (){
+    //     // alert($("select").val())
+    //     var txt = $("select#leftCmb").val();
+    //     // alert(txt.length)
+    //     for (let i = 0; i < txt.length; i++) {
+    //         $("select#rightCmb").append("<option>"+txt[i]+"</option>")
+    //     }
+    // })
+                            //:first-of-type
+    document.querySelector("button:nth-of-type(1)").onclick = function (){
+        // alert("이벤트 확인");
+
+        let rightCmb = document.querySelector("#rightCmb");
+
+        let leftCmbOptions = document.querySelectorAll("#leftCmb option");
+
+        // rightCmb.innerHTML = ""; // 초기화
+        rightCmb.options.length = 0; // 모든 option 제거
+
+        for (var i = 0, j = 0; i < leftCmbOptions.length; i++) {
+            // console.log( leftCmbOptions[i].selected );
+            if ( leftCmbOptions[i].selected) {
+                let text = leftCmbOptions[i].text;
+                // 1. 문제점
+                // rightCmb[j++] = new Option(text);
+
+                // 2. js 복제 : cloneNode(t/f)  문제점
+                rightCmb.appendChild(   leftCmbOptions[i].cloneNode(true)   );
+            } //
+        } // for
+    }
+
+    // ▶▶
+    document.querySelector("button:nth-of-type(2)").onclick = function (){
+        let rightCmb = document.querySelector("#rightCmb");
+        let leftCmbOptions = document.querySelectorAll("#leftCmb option");
+        // rightCmb.innerHTML = ""; // 초기화
+        rightCmb.options.length = 0; // 모든 option 제거
+
+        for (var i = 0, j = 0; i < leftCmbOptions.length; i++) {
+
+            if ( leftCmbOptions[i].selected) {
+                // appendChild() 기능
+                // 원래 왼쪽select 요소에서 -> 오른쪽 select 요소의
+                //      마지막 자식요소로 새로운 위치에 이동
+                rightCmb.appendChild(leftCmbOptions[i]);
+            } //
+
+        } // for
+    }
+</script>
+</body>
+</html>

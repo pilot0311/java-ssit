@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insert title here</title>
+<link rel="shortcut icon"href="http://localhost/webPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<!-- vscode용 css/js 경로 -->
+<link rel="stylesheet" href="/webPro/src/main/webapp/resources/cdn-main/example.css">
+<script src="/webPro/src/main/webapp/resources/cdn-main/example.js"></script>
+<!-- 이클 톰캣 css/js 경로 -->
+<link rel="stylesheet" href="/webPro/resources/cdn-main/example.css">
+<script src="/webPro/resources/cdn-main/example.js"></script>
+
+<style>
+    span.material-symbols-outlined{
+        vertical-align: text-bottom;
+    }
+    h1.main a{
+        vertical-align: -10px;
+    }
+</style>
+</head>
+<body onload="window_init();">
+<header>
+    <h1 class="main">
+        <a href="#">pilot0311</a>
+    </h1>
+    <ul>
+        <li>
+            <a href="#">로그인</a>
+        </li>
+        <li>
+            <a href="#">회원가입</a>
+        </li>
+    </ul>
+</header>
+<h3>
+    <span class="material-symbols-outlined">view_list</span>
+    Javascript days01
+</h3>
+<div>
+    <xmp class="code"></xmp>
+    <button>Turn ON</button>
+    <button>Turn OFF</button>
+    <br>
+    <img src="../images/pic_bulboff.gif" alt="bulb">
+</div>
+<script>
+    // first-child
+    var btnOn = document.body.querySelector("button:first-of-type");
+    // var btnOff = document.body.querySelector("button:nth-of-type(2)");
+    var btnOff = document.body.querySelector("button:last-of-type");
+    var img = document.body.querySelector("img");
+
+    function window_init() {
+
+        img.setAttribute("src", "../images/pic_bulboff.gif");
+        img.setAttribute("alt", "bulb");
+        // img.alt = "bulb";
+
+
+        // disabled="disabled"
+        // btnOff.disabled = true; // 비활성
+        // btnOff.setAttribute("disabled", "disabled");
+        btnOff.style.display = "none";
+        btnOn.style.display = "inline-block";
+    }
+
+    btnOn.onclick = function (){
+        // 이벤트 확인
+        bulb_on();
+    }
+
+    function bulb_on(){
+        img.setAttribute("src", "../images/pic_bulbon.gif");
+        btnOff.style.display = "inline-block";
+        btnOn.style.display = "none";
+    }
+    btnOff.onclick = function (){
+        // 이벤트 확인
+        bulb_off();
+    }
+
+    function bulb_off(){
+        img.setAttribute("src", "../images/pic_bulboff.gif");
+        btnOff.style.display = "none";
+        btnOn.style.display = "inline-block";
+    }
+</script>
+</body>
+</html>

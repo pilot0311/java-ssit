@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="shortcut icon"href="http://localhost/webPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<style>
+    div{
+        width: 300px;
+        height: 100px;
+        background-color: yellow;
+        border: solid 1px;
+    }
+    div#box{
+        /* 3D 변환 */
+        /* transform: rotateX(150deg); */
+        transform: rotateX(180deg);
+        /* transform: rotateX(90deg); */
+
+    }
+</style>
+</head>
+<body>
+<pre>
+    2D변환: transform 속성
+            이동(translate()), 회전(rotate()), 크기(scale()), 기울기(skew())
+
+    3D변환: transform 속성
+            이동 (translate3d(x,y,z))
+            회전 (rotate3d(x,y,z,angle))
+            크기 (scale3d(x,y,z))
+            matrix3d(,,,,)
+            perspective(n)
+</pre>
+<button>회전시작</button>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<div>
+    Lorem ipsum dolor sit.
+</div>
+<div id="box">
+    Lorem ipsum dolor sit.
+</div>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<script>
+    var angle = 1;
+    var timer;
+    $("button").val(1);
+    function rotate(){
+        $("#box").css("transform","rotateX("+angle+"deg)");
+        angle+=1;
+
+    }
+    $("button").click(function(){
+        // timer = setInterval(rotate,10);
+        
+        if ($(this).val() == 1) {
+            $(this).text("회전중지");
+            $(this).val(0);
+            timer = setInterval(rotate,10);
+        }else{
+            $(this).text("회전시작");
+            $(this).val(1);
+            clearInterval(timer);
+            
+        }
+        
+    });
+</script>
+</body>
+</html>

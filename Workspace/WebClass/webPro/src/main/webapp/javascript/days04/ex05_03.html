@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex05_03.html</title>
+    <link rel="shortcut icon" href="http://localhost/webPro/images/SiSt.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- vscode용 css/js 경로 -->
+    <link rel="stylesheet" href="/webPro/src/main/webapp/resources/cdn-main/example.css">
+    <script src="/webPro/src/main/webapp/resources/cdn-main/example.js"></script>
+    <!-- 이클 톰캣 css/js 경로 -->
+    <link rel="stylesheet" href="/webPro/resources/cdn-main/example.css">
+    <script src="/webPro/resources/cdn-main/example.js"></script>
+
+    <style>
+        span.material-symbols-outlined {
+            vertical-align: text-bottom;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1 class="main">
+        <a href="#" style="position: absolute;top:30px;">pilot0311</a>
+    </h1>
+    <ul>
+        <li>
+            <a href="#">로그인</a>
+        </li>
+        <li>
+            <a href="#">회원가입</a>
+        </li>
+    </ul>
+</header>
+<h3>
+    <span class="material-symbols-outlined">view_list</span>
+    <a target="_blank" href="https://developer.mozilla.org/ko/">JavaScript</a> days04
+<!--    <a target="_blank" href="https://api.jquery.com/">jQuery</a> days04-->
+</h3>
+<h1 class="main">ex05_03<small>.html</small></h1>
+<div>
+    <xmp class="code">
+        [js 숫자 형변환 메서드 ]
+        Number()
+        parseInt()
+        parseFloat()
+    </xmp>
+</div>
+<script>
+    // console.log(Number("10"))
+    // console.log(parseInt("10"))
+    // console.log(parseFloat("10"))
+
+    // console.log(Number("   10   "))
+    // console.log(parseInt("   10   "))
+    // console.log(parseFloat("   10   "))
+
+
+    // console.log(Number("10.33"))        //10.33
+    // console.log(parseInt("10.33"))      //10
+    // console.log(parseFloat("10.33"))    //10.33
+
+    // console.log(Number("10 20 30"))        //NaN
+    // console.log(parseInt("10 20 30"))      //10
+    // console.log(parseFloat("10 20 30"))    //10
+
+    // console.log(Number("10,20,30"))        //NaN
+    // console.log(parseInt("10,20,30"))      //10
+    // console.log(parseFloat("10,20,30"))    //10
+
+    // console.log(Number(true))        // 1
+    // console.log(parseInt(true))      // NaN
+    // console.log(parseFloat(true))    // NaN
+
+    //Number() 날짜 -> 숫자 변환
+    // 1970.1.1 00:00:00.000 ms
+    console.log(Number(new Date())) //1697524481690
+</script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex05.html</title>
+    <link rel="shortcut icon" href="http://localhost/webPro/images/SiSt.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- vscode용 css/js 경로 -->
+    <link rel="stylesheet" href="/webPro/src/main/webapp/resources/cdn-main/example.css">
+    <script src="/webPro/src/main/webapp/resources/cdn-main/example.js"></script>
+    <!-- 이클 톰캣 css/js 경로 -->
+    <link rel="stylesheet" href="/webPro/resources/cdn-main/example.css">
+    <script src="/webPro/resources/cdn-main/example.js"></script>
+
+    <style>
+        span.material-symbols-outlined {
+            vertical-align: text-bottom;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1 class="main">
+        <a href="#" style="position: absolute;top:30px;">pilot0311</a>
+    </h1>
+    <ul>
+        <li>
+            <a href="#">로그인</a>
+        </li>
+        <li>
+            <a href="#">회원가입</a>
+        </li>
+    </ul>
+</header>
+<h3>
+    <span class="material-symbols-outlined">view_list</span>
+    <a target="_blank" href="https://developer.mozilla.org/ko/">JavaScript</a> days04
+<!--    <a target="_blank" href="https://api.jquery.com/">jQuery</a> days04-->
+</h3>
+<h1 class="main">ex05<small>.html</small></h1>
+<div>
+    <xmp class="code">
+        js 숫자(Number)
+    </xmp>
+</div>
+<script>
+    let x = 3;
+    let y = 3.14;
+    let z = 123e5; // 12300000
+    // js의 숫자는 항상 64비트 부동 소수점.
+    // js 최대 15자리까지 정확하다
+    //    소수점 최대 17자리 까지 정확
+    x = 999999999999999; // 15
+    y = 9999999999999999; // 16
+    console.log(x);
+    console.log(y);
+
+    z = 0.2 + 0.1;
+    // console.log(z)  //0.30000000000000004 오차 발생
+
+    // 10+20 => 30
+    // "10"+"20"="1020"
+    // 10+"20"="1020"
+    // + 왼 -> 오
+    // 10+20+"30"
+    // 30+"30"="3030"
+    x = "100"
+    y = "10"
+    z = x/y //10
+    //js ->모든 숫자 연산은 문자로 변환하려고 한다
+    // 100/"text" => NaN
+    // isNaN(100/"text")    true
+    // NaN + "5" = "NaN5"
+    // alert(typeof (100/"text"))  //number
+    // alert(typeof NaN)  //number
+</script>
+<script>
+    x = 2 / 0
+    // console.log(x) //Infinity
+    // console.log(typeof x) //number
+    y= -2 / 0;
+    // alert(y) //-Infinity
+</script>
+<script>
+    // js에서 0x34 16진수
+    x = 0xFF;
+    // js에서 0을 붙이면 8진수
+    y = 012;
+</script>
+<script>
+    x = 10;
+    console.log(x.toString())   // 10진수 string
+    console.log(x.toString(2))  // 2진수 string
+    console.log(x.toString(8))  // 8진수 string
+    console.log(x.toString(16)) // 16진수 string
+</script>
+<script>
+    var a ="hong"
+    var b = new String("hong");
+    // == true string
+    // === false object
+    var a =10
+    var b = new Number(10)
+    // a==b true
+    // a===b false
+
+</script>
+</body>
+</html>

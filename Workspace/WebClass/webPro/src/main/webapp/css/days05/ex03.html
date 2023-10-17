@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="shortcut icon"href="http://localhost/webPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<style>
+    div{
+        width: 100px;
+        height: 100px;
+        background-color: RED;
+
+        position: relative; /* *** */
+
+        /* animation-name: sample; */
+        /* 애니메이션 완료하는데 걸리는 시간 설정 */
+        /* animation-duration: 4s; */
+        /* animation-timing-function: linear; */
+        /* 반복횟수 */
+        /* animation-iteration-count: 3; */
+        /* animation-iteration-count: infinite; */
+        /* 애니메이션 시작 전 지연 시간 (음수도 가능)*/
+        /* animation-delay: 1s; */
+        /*  normal(기본) reverse, alternate-reverse */
+        /* animation-direction: alternate; */
+        /* 애니메이션 시작전, 종료후 요소의 스타일
+            fowards: 마지막 키프레임 스타일 유지
+            backwards: 시작 키프레임 스타일 유지 */
+        /* animation-fill-mode: forwards; */
+        /* 약식 */
+        /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+        animation: sample 2s linear 0 3 alternate-reverse forwards;
+        
+    }
+    @keyframes sample{
+        from{
+            background-color: red;
+        }
+        to{
+            background-color: yellow;
+        }
+    }
+</style>
+</head>
+<body>
+<pre>
+    [애니메이션]
+    - javascript, Flash 애니메이션 처리가능
+    - css 사용해서 애니메이션 처리
+    - 애니메이션 = 하나의 스타일에서 점차 다른 스타일로 변환되는 것
+    - 키프레임(keyframe)
+        ㄴ 특정 시간에 가지는 요소의 스타일
+    - @keyframe 규칙
+</pre>
+<div></div>
+</body>
+</html>

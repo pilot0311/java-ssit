@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="shortcut icon"href="http://localhost/webPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<style>
+    div{
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        display: inline-block;
+        /* transition: width 2s,height 2s, transform 2s; */
+        /* transition-delay: 1s; */
+        /* 전환 효과의 속도 곡선을 지정 */
+        /* ease 기본값: 느리게 시작 ~ 빠른~ 느리게 */
+        /* linear 등속 */
+        /* ease-in: 천천히 시작 */
+        /* ease-out: 천천히 종료 */
+        /* transition-timing-function: ease; */
+
+        /* transition-property: width;
+        transition-duration: 2s;
+        transition-timing-function: ease;
+        transition-delay: 1s; */
+        /* 약식 */
+        transition: width 2s,height 2s, transform 2s;
+        
+        /* 전환 + 변환 */
+    }
+    div:hover{
+        width: 200px;
+        height: 200px;
+
+        transform: rotate(360deg);
+    }
+</style>
+</head>
+<body>
+<pre>
+    [변환 transform] - 이동, 회전, 크기, 기울기
+    [전환 transition] - 지정된 기간 동안 원활하게 속성값들을 변경...
+        1) 속성
+            - transition
+            - transition-delay              기다린 후
+            - transition-duration           지속시간
+            - transition-property           css 속성
+            - transition-timing-function    지속 속도
+
+        2) transition 사용하는 방법
+            - 효과를 추가 하려는 css 속성
+                width=100px -> 200px
+            - 효과 지속 시간 (기본값: 0)
+                1s
+</pre>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+</body>
+</html>

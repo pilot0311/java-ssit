@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex09..html</title>
+    <link rel="shortcut icon" href="http://localhost/webPro/images/SiSt.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- vscode용 css/js 경로 -->
+    <link rel="stylesheet" href="/webPro/src/main/webapp/resources/cdn-main/example.css">
+    <script src="/webPro/src/main/webapp/resources/cdn-main/example.js"></script>
+    <!-- 이클 톰캣 css/js 경로 -->
+    <link rel="stylesheet" href="/webPro/resources/cdn-main/example.css">
+    <script src="/webPro/resources/cdn-main/example.js"></script>
+
+    <style>
+        span.material-symbols-outlined {
+            vertical-align: text-bottom;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1 class="main">
+        <a href="#" style="position: absolute;top:30px;">pilot0311</a>
+    </h1>
+    <ul>
+        <li>
+            <a href="#">로그인</a>
+        </li>
+        <li>
+            <a href="#">회원가입</a>
+        </li>
+    </ul>
+</header>
+<h3>
+    <span class="material-symbols-outlined">view_list</span>
+    <a target="_blank" href="https://developer.mozilla.org/ko/">JavaScript</a> days02
+</h3>
+<h1 class="main">ex09<small>.html</small></h1>
+<div>
+    <xmp class="code">
+
+    </xmp>
+    <input type="text" id="age" placeholder="나이 입력" value="20" />
+    <button>실행</button>
+    <p id="demo"></p>
+</div>
+<script>
+    document.querySelector("button").onclick = ()=>{
+        let age = document.querySelector("#age").value;
+        let result ;
+        if (  isNaN( age )  ) {
+            result = "입력 잘못";
+            document.querySelector("#age").select();
+
+        } else {
+            result = age >= 20 ? "old" :	"young";
+        }
+
+        document.querySelector("#demo").innerHTML = result;
+    }
+</script>
+</body>
+</html>

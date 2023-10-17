@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex02.html</title>
+    <link rel="shortcut icon" href="http://localhost/webPro/images/SiSt.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- vscode용 css/js 경로 -->
+    <link rel="stylesheet" href="/webPro/src/main/webapp/resources/cdn-main/example.css">
+    <script src="/webPro/src/main/webapp/resources/cdn-main/example.js"></script>
+    <!-- 이클 톰캣 css/js 경로 -->
+    <link rel="stylesheet" href="/webPro/resources/cdn-main/example.css">
+    <script src="/webPro/resources/cdn-main/example.js"></script>
+
+    <style>
+        span.material-symbols-outlined {
+            vertical-align: text-bottom;
+        }
+    </style>
+    <style>
+        table, th, td{
+            border: 1px solid gray;
+        }
+        table{
+            width: 50%;
+            margin:0 auto !important;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1 class="main">
+        <a href="#" style="position: absolute;top:30px;">pilot0311</a>
+    </h1>
+    <ul>
+        <li>
+            <a href="#">로그인</a>
+        </li>
+        <li>
+            <a href="#">회원가입</a>
+        </li>
+    </ul>
+</header>
+<h3>
+    <span class="material-symbols-outlined">view_list</span>
+    <a target="_blank" href="https://developer.mozilla.org/ko/">JavaScript</a> days04
+<!--    <a target="_blank" href="https://api.jquery.com/">jQuery</a> days04-->
+</h3>
+<h1 class="main">ex02<small>.html</small></h1>
+<div>
+    <xmp class="code">
+
+    </xmp>
+
+    <!-- table>(thead>tr>td*3)+(tbody>tr*4>td*3>lorem1)+(tfoot>td>button>{선택 확인}) -->
+    <table id="tblDept">
+        <thead>
+        <tr>
+            <th><input type="checkbox" class="all">모두 선택</th>
+            <th>Name</th>
+            <th>Loc</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td><input type="checkbox" id="ck1"></td>
+            <td>Quam.</td>
+            <td>Sapiente.</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" id="ck2"></td>
+            <td>Consequatur!</td>
+            <td>Nisi.</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" id="ck3"></td>
+            <td>Tenetur!</td>
+            <td>Modi.</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" id="ck4"></td>
+            <td>Earum.</td>
+            <td>Officiis.</td>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr>
+            <td colspan="3" align="center">
+                <button>선택 확인</button>
+            </td>
+        </tr>
+        </tfoot>
+    </table>
+    <p id="demo"></p>
+</div>
+<script>
+    let allckb = document.querySelector(".all");
+    let ckbs = document.querySelectorAll("#tblDept > tbody input[id ^= 'ck']");
+    allckb.onclick = function (){
+        for (let i = 0; i < ckbs.length; i++) {
+            ckbs[i].checked = this.checked;
+        }
+    }
+
+    for (var i = 0; i < ckbs.length; i++) {
+        ckbs[i].onclick = function (){
+            // 모든 체크박스 checked => allckb checked
+            let isCkbsAllChecked = true;
+            for (var j = 0; j < ckbs.length; j++) {
+                isCkbsAllChecked = ckbs[j].checked
+                if( !isCkbsAllChecked ) break;
+            } // for
+            allckb.checked = isCkbsAllChecked;
+        }
+    } // for
+    let pdemo = document.querySelector("p#demo");
+
+    document.querySelector("tfoot button").onclick = function (){
+        let id;
+        let name;
+        let loc;
+        let content = "<ul>";
+        for (var i = 0; i < ckbs.length; i++) {
+            if(  ckbs[i].checked ){
+                id = ckbs[i].id;
+                // txt = ckbs[i].parentElement.nextElementSibling.innerHTML;
+                // content += `<li>${id}</li>`;
+                // content += `<li>${txt}</li>`;
+                loc = ckbs[i].parentElement.parentElement.children[2].innerHTML
+                name = ckbs[i].parentElement.parentElement.children[1].innerHTML
+                content += `<li>${id}/${name}/${loc}</li>`;
+            }
+        }
+        content += "</ul>";
+        pdemo.innerHTML = content;
+
+    }
+</script>
+</body>
+</html>

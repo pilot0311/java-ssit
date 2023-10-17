@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body onload="window_init();">
+jquery용
+<input type="range" id="jq" min="10" value="16"><span id="jqs"></span>
+<br>
+js용
+<input type="range" id="js" oninput="resize();" min="10" value="16"><span id="js"></span>
+<p>홍길동</p>
+<script>
+    $("body").ready(function(){
+        $("#jqs").text($("#jq").val()+"px")
+    })
+
+    $("#jq").on("input",function(){
+        var resize = $(this).val()+"px";
+        $("#jqs").text(resize);
+        $("p").css("font-size",resize);
+    })
+
+
+    var span = document.querySelector("span#js");
+    var input = document.querySelector("input#js");
+    var p = document.querySelector("p");
+    function window_init(){
+        span.innerHTML = input.value+"px";
+    }
+
+    function resize(){
+        span.innerHTML = input.value+"px";
+        p.style.fontSize=input.value+"px";
+    }
+</script>
+</body>
+</html>

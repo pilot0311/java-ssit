@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex06.html</title>
+    <link rel="shortcut icon" href="http://localhost/webPro/images/SiSt.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- vscode용 css/js 경로 -->
+    <link rel="stylesheet" href="/webPro/src/main/webapp/resources/cdn-main/example.css">
+    <script src="/webPro/src/main/webapp/resources/cdn-main/example.js"></script>
+    <!-- 이클 톰캣 css/js 경로 -->
+    <link rel="stylesheet" href="/webPro/resources/cdn-main/example.css">
+    <script src="/webPro/resources/cdn-main/example.js"></script>
+
+    <style>
+        span.material-symbols-outlined {
+            vertical-align: text-bottom;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1 class="main">
+        <a href="#" style="position: absolute;top:30px;">pilot0311</a>
+    </h1>
+    <ul>
+        <li>
+            <a href="#">로그인</a>
+        </li>
+        <li>
+            <a href="#">회원가입</a>
+        </li>
+    </ul>
+</header>
+<h3>
+    <span class="material-symbols-outlined">view_list</span>
+    <a target="_blank" href="https://developer.mozilla.org/ko/">JavaScript</a> days04
+<!--    <a target="_blank" href="https://api.jquery.com/">jQuery</a> days04-->
+</h3>
+<h1 class="main">ex06<small>.html</small></h1>
+<div>
+    <xmp class="code">
+        [js 배열(array)]
+        1. 배열 개념 : 둘 이상의 값을
+        보유할 수 있는 특수한 변수
+        2. 배열 사용 목적
+        3. 배열 선언 형식
+        자바)
+        int [] m = new int[3];
+        m[0] = 1;
+        m[1] = 2;
+        m[2] = 3;
+        배열 초기화
+        int [] m = { 1,2,3 }
+
+        js) let, var, [const] 권장
+        let m = []; (권장)
+        let m = new Array();
+
+        m[0] = 1;
+        m[1] = 2;
+        m[2] = 3;
+
+        let m = [1,2,3]; (권장)
+        let m = new Array(1,2,3);
+
+        4. js의 배열은 특수한 형태의 객체이다
+            typeof 배열 -> object
+
+    </xmp>
+</div>
+
+<script>
+    // js 배열 선언
+    const m = [1, 2];
+    console.log( m[0] ); // 1
+    console.log( m[1] ); // 2
+    console.log( m.length ); //배열크기 2
+
+    console.log( m[2] ); // undefined
+
+    m[2] = 3;
+    m[3] = 4;
+    // m[4] = undefined  m[5] = undefined
+    m[6] = 100;
+
+    // let x ;
+    // console.log( x ) ; // undefined
+
+    console.log( m.length );    // 7
+
+    m[1] = 1000;
+
+</script>
+</body>
+</html>

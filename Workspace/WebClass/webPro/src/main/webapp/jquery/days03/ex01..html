@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex01..html</title>
+    <link rel="shortcut icon" href="http://localhost/webPro/images/SiSt.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- vscode용 css/js 경로 -->
+    <link rel="stylesheet" href="/webPro/src/main/webapp/resources/cdn-main/example.css">
+    <script src="/webPro/src/main/webapp/resources/cdn-main/example.js"></script>
+    <!-- 이클 톰캣 css/js 경로 -->
+    <link rel="stylesheet" href="/webPro/resources/cdn-main/example.css">
+    <script src="/webPro/resources/cdn-main/example.js"></script>
+
+    <style>
+        span.material-symbols-outlined {
+            vertical-align: text-bottom;
+        }
+        p#demo{
+            width: 300px;
+            height: 200px;
+            border: solid 1px gray;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1 class="main">
+        <a href="#" style="position: absolute;top:30px;">pilot0311</a>
+    </h1>
+    <ul>
+        <li>
+            <a href="#">로그인</a>
+        </li>
+        <li>
+            <a href="#">회원가입</a>
+        </li>
+    </ul>
+</header>
+<h3>
+    <span class="material-symbols-outlined">view_list</span><a href="https://api.jquery.com/">jQuery</a> days03
+</h3>
+<h1 class="main">ex01<small>.html</small></h1>
+<div>
+    <xmp class="code">
+        jquery 수정
+    </xmp>
+
+</div>
+<script>
+    var $cmb = $("<select name = 'count' id='count'><option>선택...</option></select>");
+
+    for (let i = 1; i <= 15; i++) {
+        // $('<option value ="'+i+"'>" +i+ '</option>');
+        //  ` back-Tick (백틱)기호
+        $($cmb).append($(`<option value="${i}">${i}</option>`));
+    }
+
+    $("div").append($cmb);
+    // $cmb.appendTo($("div"))
+    $pdemo = $("<p id ='demo'></p>");
+    $pdemo.appendTo($("div"));
+</script>
+<script>
+    $cmb.change(function (event){
+        let n = $(this).val();
+        $pdemo.html("");
+        for (let i = 1; i <= n; i++) {
+            $pdemo.append(`항목 ${i} :&nbsp;`,$("<input type='text' id='${i}' class='box'><br>"))
+        }
+    })
+</script>
+</body>
+</html>

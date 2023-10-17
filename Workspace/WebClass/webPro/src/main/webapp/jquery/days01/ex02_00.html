@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert title here</title>
+    <link rel="shortcut icon" href="http://localhost/webPro/images/SiSt.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- vscode용 css/js 경로 -->
+    <link rel="stylesheet" href="/webPro/src/main/webapp/resources/cdn-main/example.css">
+    <script src="/webPro/src/main/webapp/resources/cdn-main/example.js"></script>
+    <!-- 이클 톰캣 css/js 경로 -->
+    <link rel="stylesheet" href="/webPro/resources/cdn-main/example.css">
+    <script src="/webPro/resources/cdn-main/example.js"></script>
+    <style>
+        span.material-symbols-outlined{
+            vertical-align: text-bottom;
+        }
+    </style>
+    <style>
+        .box{
+            color : red;
+            font-size: 35px;
+            border: 1px solid gray;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1 class="main"><a href="#" style="position: absolute;top:30px;">pilot0311</a></h1>
+    <ul>
+        <li><a href="#">로그인</a></li>
+        <li><a href="#">회원가입</a></li>
+    </ul>
+</header>
+<h3>
+    <span class="material-symbols-outlined">view_list</span>javascript days01
+</h3>
+<div>
+    <xmp class="code">
+        html 속성을 변경
+        [html 스타일을 변경]
+        1. 글색상
+        2. 글크기
+        3. 테두리
+
+        마우스올릴때 -> mouseover 이벤트
+    </xmp>
+
+    <!-- p#demo>lorem -->
+    <p id="demo" class="demo">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel beatae sequi ut officia animi officiis velit maxime quam repellat aut dolorem odio eveniet voluptatum voluptas voluptate? Exercitationem temporibus obcaecati culpa.
+    </p>
+</div>
+<script>
+    //jquery로 수정
+    $("body div p#demo").on("mouseover", function (event){
+        // this.css(name, value)
+        // $(this).css("color","red");
+        // $(this).css("font-size","30px");
+        // $(this).css("border","solid 1px gray");
+
+        //체이닝
+        // $(this).css("color","red").css("font-size","30px").css("border","solid 1px gray");
+        // $(this).css({
+        //     "color":"red",
+        //     "font-size":"30px",
+        //     "border":"solid 1px gray"
+        // })
+        $(this).addClass("box");
+        alert("1");
+        $(this).removeClass("box");
+
+    });
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

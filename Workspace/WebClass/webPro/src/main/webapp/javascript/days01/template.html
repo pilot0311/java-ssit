@@ -1,0 +1,215 @@
+!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert title here</title>
+    <link rel="shortcut icon"href="http://localhost/webPro/images/SiSt.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- vscode용 css/js 경로 -->
+    <link rel="stylesheet" href="/webPro/src/main/webapp/resources/cdn-main/example.css">
+    <script src="/webPro/src/main/webapp/resources/cdn-main/example.js"></script>
+    <!-- 이클 톰캣 css/js 경로 -->
+    <link rel="stylesheet" href="/webPro/resources/cdn-main/example.css">
+    <script src="/webPro/resources/cdn-main/example.js"></script>
+    <style>
+        span.material-symbols-outlined {
+            vertical-align: text-bottom;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h1 class="main">
+            <a href="#">pilot0311</a>
+        </h1>
+        <ul>
+            <li><a href="#">로그인</a></li>
+            <li><a href="#">회원가입</a></li>
+        </ul>
+    </header>
+    <h3>
+        <span class="material-symbols-outlined">view_list</span>
+        javascript days01
+    </h3>
+    <div>
+        <h1 class="main">H1 Title<small>sub title</small></h1>
+        <xmp class="code">
+            1] resources > cdn-main > example.css
+            2]
+            <link rel="stylesheet" href="/webPro/resources/cdn-main/example.css">
+            3]
+            <script src="/webPro/resources/cdn-main/example.js"></script>
+        </xmp>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni maiores nam repellat minus ab esse rem
+            similique amet! Cumque nihil voluptate numquam rerum earum velit omnis aspernatur at praesentium nostrum?
+        </p>
+
+        <h2>H2 Title</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam iure molestiae repellat porro enim animi
+            nesciunt ducimus adipisci provident quod consectetur perspiciatis esse asperiores culpa perferendis eaque
+            non aliquid qui.</p>
+
+        <h3>H3 Title</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam iure molestiae repellat porro enim animi
+            nesciunt ducimus adipisci provident quod consectetur perspiciatis esse asperiores culpa perferendis eaque
+            non aliquid qui.</p>
+
+        <hr>
+
+        <div>
+            <h3>Form Controls</h3>
+            <form>
+                <div><input type="text" class="short" placeholder="이름 입력"></div>
+                <div><input type="text" class="long" placeholder="연락처 입력"></div>
+                <div><input type="text" class="full" placeholder="주소 입력"></div>
+            </form>
+
+            <h3>일반 버튼</h3>
+            <form>
+                <div>
+                    <input type="button" class="primary" value="메인 버튼">
+                    <input type="button" value="보조 버튼">
+                </div>
+            </form>
+            <h3>이미지 버튼</h3>
+            <form>
+                <div>
+                    <button>마우스 이미지</button>
+                    <button class="add">쓰기</button>
+                    <button class="back">돌아가기</button>
+                </div>
+            </form>
+
+            <h3>라벨 컨트롤</h3>
+            <form>
+                <div class="group">
+                    <label for="name">이름</label>
+                    <input id="name" type="text" class="short" placeholder="이름 입력">
+                </div>
+                <div class="group">
+                    <label>연락처</label>
+                    <input type="text" class="long" placeholder="연락처 입력">
+                </div>
+                <div class="group">
+                    <label>주소</label>
+                    <input type="text" class="full" placeholder="주소 입력">
+                </div>
+            </form>
+
+            <h3>버튼 그룹</h3>
+            <form>
+                <div class="group">
+                    <input type="button" value="확인">
+                    <input type="button" value="취소">
+                    <input type="button" value="삭제">
+                    <input type="button" value="수정">
+                </div>
+
+                <div class="group">
+                    <button class="add">글쓰기</button>
+                    <button class="list">글목록</button>
+                </div>
+            </form>
+            <h3>테이블(가로)</h3>
+            <!-- table>(tr>th*3>{column})+tr*3>td*3>{cell} -->
+            <table>
+                <tr>
+                    <th>column</th>
+                    <th>column</th>
+                    <th>column</th>
+                </tr>
+                <tr>
+                    <td>cell</td>
+                    <td>cell</td>
+                    <td>cell</td>
+                </tr>
+                <tr>
+                    <td>cell</td>
+                    <td>cell</td>
+                    <td>cell</td>
+                </tr>
+                <tr>
+                    <td>cell</td>
+                    <td>cell</td>
+                    <td>cell</td>
+                </tr>
+            </table>
+
+            <h3>테이블(세로)</h3>
+            <table class="vertical">
+                <tr>
+                    <th>colum</th>
+                    <td>cell</td>
+                </tr>
+                <tr>
+                    <th>colum</th>
+                    <td>cell</td>
+                </tr>
+                <tr>
+                    <th>colum</th>
+                    <td>cell</td>
+                </tr>
+                <tr>
+                    <th>colum</th>
+                    <td>cell</td>
+                </tr>
+            </table>
+
+            <h3>패널</h3>
+            <div class="panel" title="notice">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum ea, quas in consequatur id quam illo architecto dolorum praesentium soluta tempore eligendi accusamus necessitatibus! Labore officia magnam quidem voluptatem doloremque!
+            </div>
+
+            <h3>배지</h3>
+            <div>Lorem ipsum dolor sit amet.
+                <span class="badge right red">25</span>
+            </div>
+            <h3>좌우 분리</h3>
+            <div class="seperate">
+                <div>PREV</div>
+                <div>NEXT</div>
+            </div>
+            <h3>목록</h3>
+            <div class="list">
+                <div>item1</div>
+                <div>item2</div>
+                <div>item3</div>
+            </div>
+
+            <div class="list full">
+                <div>item1<span class="badge right red">5</span></div>
+                <div>item2<span class="badge right red">25</span></div>
+                <div>item3<span class="badge right red">15</span></div>
+            </div>
+            <pre class="code">
+                int age = 30;
+                String name = "홍길동";
+                System.out.println(name);
+            </pre>
+
+            <h3>페이징 처리</h3>
+            <div class="center">
+                <div class="pagination">
+                    <a href="">1</a>
+                    <a href="">2</a>
+                    <a href="">3</a>
+                    <a href="">4</a>
+                    <a href="">5</a>
+                    <a href="">6</a>
+                    <a href="">7</a>
+                    <a href="">8</a>
+                    <a href="">9</a>
+                    <a href="">10</a>
+                    <a href="">></a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+<
+</html>

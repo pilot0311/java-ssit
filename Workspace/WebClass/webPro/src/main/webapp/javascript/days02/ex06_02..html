@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex06_02..html</title>
+    <link rel="shortcut icon" href="http://localhost/webPro/images/SiSt.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- vscode용 css/js 경로 -->
+    <link rel="stylesheet" href="/webPro/src/main/webapp/resources/cdn-main/example.css">
+    <script src="/webPro/src/main/webapp/resources/cdn-main/example.js"></script>
+    <!-- 이클 톰캣 css/js 경로 -->
+    <link rel="stylesheet" href="/webPro/resources/cdn-main/example.css">
+    <script src="/webPro/resources/cdn-main/example.js"></script>
+
+    <style>
+        span.material-symbols-outlined {
+            vertical-align: text-bottom;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1 class="main">
+        <a href="#" style="position: absolute;top:30px;">pilot0311</a>
+    </h1>
+    <ul>
+        <li>
+            <a href="#">로그인</a>
+        </li>
+        <li>
+            <a href="#">회원가입</a>
+        </li>
+    </ul>
+</header>
+<h3>
+    <span class="material-symbols-outlined">view_list</span>
+    <a target="_blank" href="https://developer.mozilla.org/ko/">JavaScript</a> days02
+</h3>
+<h1 class="main">ex06_02<small>.html</small></h1>
+<div>
+    <xmp class="code">
+        호에스팅 설명
+    </xmp>
+</div>
+<p id="demo"></p>
+<script>
+    /*
+    // var
+    var age = 30;
+
+    //document.getElementById("demo").innerText = age;
+
+    // 변수 재선언 가능 O
+    // 재선언할지라도 변수값은 손실되지 않고 유지된다.
+    var age;  // age 변수를 다시 선언
+    document.getElementById("demo").innerText = age;
+     */
+
+</script>
+<script>
+    /*
+    // let 변수 선언
+    let age = 20;
+
+    // let 변수 재선언
+    // Uncaught SyntaxError:
+    //	   Identifier 'age' has already been declared (at ex06_02.html:55:8)
+    let age;
+
+    document.getElementById("demo").innerText = age;
+    */
+</script>
+
+<script>
+    /*
+   // 왜 가능한가 ? [js 호이스팅]
+   // 모든 선언을 현재 범위(함수안, 현재 script 안)의 맨 위로 이동시키는 js 기본 동작(기능)
+
+   // 1. 값 할당
+   age = 150;
+
+   // 3. 출력
+   document.getElementById("demo").innerText = age;
+
+   // 2. 변수 선언
+   var age;
+   */
+</script>
+
+<script>
+    /*
+   // let, const 키워드로 변수 선언.
+   age = 100;
+   document.getElementById("demo").innerText = age;
+
+
+   let age;
+   //          참조 에러
+   // Uncaught ReferenceError: Cannot access 'age' before initialization
+   // 이유? let,const 변수를 선언하면
+   // -      맨 위로 이동은 하지만, 초기화 X
+   // -       변수는 인식하지만 선언될 때까지는
+   //       사용할 수는 없다.
+   // - 범위(영역)시작 ~ 선언될 때까지 "일시적 데드존"
+   */
+</script>
+
+<script>
+    // (주의)
+    var x = 10;
+    document.getElementById("demo").innerText = x + " / " + y;
+    //
+    //
+    //
+    // 변수 선언 + 초기화  : 호이스팅 X
+    // var y ; 선언
+    var y = 20;
+
+    // (권장)
+    // 변수 선언은 사용하기 전에 미리 위에 선언+사용.
+</script>
+</body>
+</html>

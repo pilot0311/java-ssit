@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insert title here</title>
+<link rel="shortcut icon"href="http://localhost/webPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<!-- vscode용 css/js 경로 -->
+<link rel="stylesheet" href="/webPro/src/main/webapp/resources/cdn-main/example.css">
+<script src="/webPro/src/main/webapp/resources/cdn-main/example.js"></script>
+<!-- 이클 톰캣 css/js 경로 -->
+<link rel="stylesheet" href="/webPro/resources/cdn-main/example.css">
+<script src="/webPro/resources/cdn-main/example.js"></script>
+
+<style>
+    span.material-symbols-outlined{
+        vertical-align: text-bottom;
+    }
+    h1.main a{
+        vertical-align: -10px;
+    }
+</style>
+    <style>
+        .style{
+            color: red;
+            display: inline-block;
+            width: 200px;
+            border: 1px solid gray;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1 class="main">
+        <a href="#">pilot0311</a>
+    </h1>
+    <ul>
+        <li>
+            <a href="#">로그인</a>
+        </li>
+        <li>
+            <a href="#">회원가입</a>
+        </li>
+    </ul>
+</header>
+<h3>
+    <span class="material-symbols-outlined">view_list</span>
+    Javascript days02
+</h3>
+<div>
+    <xmp class="code">
+        
+    </xmp>
+    <fieldset>
+        <legend>html 적용여부</legend>
+        <input type="radio" name="htmlapply" id="hy" checked><label for="hy">적용</label>
+        <input type="radio" name="htmlapply" id="hn"><label for="hn">미적용</label>
+    </fieldset>
+    <input type="text" id="msg" class="long" value="<span class = 'style'>홍길동</span>">
+    <br>
+    <button>실행</button>
+    <br>
+    <div id="demo"></div>
+</div>
+<script>
+    /*
+    document.querySelector("button").onclick = function (){
+        alert("이벤트 확인");
+    }
+     */
+
+    // 이벤트 핸들러
+    document.querySelector("button").onclick = ()=>{
+        // alert("홍길동");
+        var message = document.querySelector("#msg").value;
+        // alert(message);
+
+        // [js] radio 버튼 누가 checked 확인.
+        // 1. name=htmlapply 모든 라디오버튼을 얻어오기.
+        //   document.getElementById("아이디명");
+        //   document.getElement[s]ByClassName("클래스명");
+        //   document.getElementsByTagName("태그명");
+        //  *** document.getElementsByName("name 속성값");
+
+        //var radios = document.getElementsByName("htmlapply");
+        var radioList = document.querySelectorAll("fieldset input[type=radio][name=htmlapply]");
+        // alert( radioList.length );
+
+        // 2. 그 라디오 버튼 중에 checked 확인
+        /*
+        for (var i = 0; i < radioList.length; i++) {
+        console.log(  radioList[i].checked  );
+        } // for
+        */
+        //                   true
+        // false
+
+        // 10:03 수업시작~
+        // 3. if 문으로  innerHTML / innerText 출력.
+        if ( radioList[0].checked  ) {
+            // 적용 라디오버튼이 체크된 경우에는
+            document.querySelector("#demo").innerHTML = message;
+        } else {
+            // 미적용 라디오버튼이 체크된 경우에는
+            document.querySelector("#demo").innerText = message;
+
+        }
+
+
+    }
+</script>
+</body>
+</html>

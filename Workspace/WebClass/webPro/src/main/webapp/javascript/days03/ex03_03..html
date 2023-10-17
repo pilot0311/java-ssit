@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex03_03..html</title>
+    <link rel="shortcut icon" href="http://localhost/webPro/images/SiSt.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- vscode용 css/js 경로 -->
+    <link rel="stylesheet" href="/webPro/src/main/webapp/resources/cdn-main/example.css">
+    <script src="/webPro/src/main/webapp/resources/cdn-main/example.js"></script>
+    <!-- 이클 톰캣 css/js 경로 -->
+    <link rel="stylesheet" href="/webPro/resources/cdn-main/example.css">
+    <script src="/webPro/resources/cdn-main/example.js"></script>
+
+    <style>
+        span.material-symbols-outlined {
+            vertical-align: text-bottom;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1 class="main">
+        <a href="#" style="position: absolute;top:30px;">pilot0311</a>
+    </h1>
+    <ul>
+        <li>
+            <a href="#">로그인</a>
+        </li>
+        <li>
+            <a href="#">회원가입</a>
+        </li>
+    </ul>
+</header>
+<h3>
+    <span class="material-symbols-outlined">view_list</span>
+    <a target="_blank" href="https://developer.mozilla.org/ko/">JavaScript</a> days03
+<!--    <a target="_blank" href="https://api.jquery.com/">jQuery</a> days03-->
+</h3>
+<h1 class="main">ex03_03<small>.html</small></h1>
+<div>
+    <xmp class="code">
+        [js 함수 호출 방법]
+        1. 이벤트 발생
+        2. js 코딩으로 함수 호출
+        3. 자체 호출
+            (함수 클로저)
+
+        함수 표현식은 "자기 호출" 생성
+        자체 호출 표현식은 호출하지 않다도 자동으로 실행된다
+        (주의) 함수 표현삭울 나타내기 위해 괄호를 붙여야 한다
+    </xmp>
+</div>
+<script>
+    // const test = function (a,b){
+    //     alert("익명함수 표현식")
+    // }
+    // test();
+</script>
+<script>
+    // (function (a,b){
+    //     alert("익명함수 표현식2")
+    // })();
+</script>
+<script>
+    // js에서 함수는 객체이다
+    function test() {
+        alert("test")
+    }
+    alert(test.toString())
+    
+    // alert(typeof test) //function -> object
+    // alert(typeof "asa")//string
+    // alert(typeof 100)//number
+</script>
+</body>
+</html>

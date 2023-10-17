@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex03..html</title>
+    <link rel="shortcut icon" href="http://localhost/webPro/images/SiSt.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- vscode용 css/js 경로 -->
+    <link rel="stylesheet" href="/webPro/src/main/webapp/resources/cdn-main/example.css">
+    <script src="/webPro/src/main/webapp/resources/cdn-main/example.js"></script>
+    <!-- 이클 톰캣 css/js 경로 -->
+    <link rel="stylesheet" href="/webPro/resources/cdn-main/example.css">
+    <script src="/webPro/resources/cdn-main/example.js"></script>
+
+    <style>
+        span.material-symbols-outlined {
+            vertical-align: text-bottom;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1 class="main">
+        <a href="#" style="position: absolute;top:30px;">pilot0311</a>
+    </h1>
+    <ul>
+        <li>
+            <a href="#">로그인</a>
+        </li>
+        <li>
+            <a href="#">회원가입</a>
+        </li>
+    </ul>
+</header>
+<h3>
+    <span class="material-symbols-outlined">view_list</span>
+    <a target="_blank" href="https://developer.mozilla.org/ko/">JavaScript</a> days03
+<!--    <a target="_blank" href="https://api.jquery.com/">jQuery</a> days03-->
+</h3>
+<h1 class="main">ex03<small>.html</small></h1>
+<div>
+    <xmp class="code">
+        [js 함수(function)]
+        1. 개념 - 반복적으로 사용되는 코드 블럭을 함수로 처리
+            drawLine(): 선긋기
+        2. 함수 선언 형식
+        //java
+        [접] [기] 리 함([매개...]){
+            [return 리턴값]
+        }
+
+        //js
+        function 함수명([매1,매2...]){
+            [return 리턴값]
+        }
+
+        3. 함수 호출 방법
+            1) 이벤트가 발생할 때 자동으로 함수를 호출
+            2) js 코딩으로 함수 호출
+            3) 자체 호출 ****
+                (함수 클로저)
+    </xmp>
+    <button onclick="test(3,4)">버튼 1</button>
+    <button onclick="test()">버튼 2</button>
+    <button onclick="test(1,2,3)">버튼 3</button>
+</div>
+<script>
+
+    function sum(x,y){
+        return x+y;
+    }
+    function test(x,y){
+        //x,y 매개변수는 지역 변수 이다
+        let z = sum(x,y);
+        alert(z)
+    }
+</script>
+</body>
+</html>

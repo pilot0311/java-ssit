@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex06_06.html</title>
+    <link rel="shortcut icon" href="http://localhost/webPro/images/SiSt.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- vscode용 css/js 경로 -->
+    <link rel="stylesheet" href="/webPro/src/main/webapp/resources/cdn-main/example.css">
+    <script src="/webPro/src/main/webapp/resources/cdn-main/example.js"></script>
+    <!-- 이클 톰캣 css/js 경로 -->
+    <link rel="stylesheet" href="/webPro/resources/cdn-main/example.css">
+    <script src="/webPro/resources/cdn-main/example.js"></script>
+
+    <style>
+        span.material-symbols-outlined {
+            vertical-align: text-bottom;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1 class="main">
+        <a href="#" style="position: absolute;top:30px;">pilot0311</a>
+    </h1>
+    <ul>
+        <li>
+            <a href="#">로그인</a>
+        </li>
+        <li>
+            <a href="#">회원가입</a>
+        </li>
+    </ul>
+</header>
+<h3>
+    <span class="material-symbols-outlined">view_list</span>
+    <a target="_blank" href="https://developer.mozilla.org/ko/">JavaScript</a> days04
+<!--    <a target="_blank" href="https://api.jquery.com/">jQuery</a> days04-->
+</h3>
+<h1 class="main">ex06_06<small>.html</small></h1>
+<div>
+    <xmp class="code">
+
+    </xmp>
+</div>
+<script>
+    const m = [3, 11, 5, 2, 4, 1];
+    console.log( m );
+
+    let max = Math.max.apply(null, m);
+    let min = Math.min.apply(null, m);
+    console.log(`max=${max}, min=${min}`)
+    // 무작위로 배열 섞기
+    // console.log(Math.random())  //0.15234911833735065
+    // m.sort(function (a,b) {
+    //     return Math.random() - 0.5;
+    // })
+    // console.log( m );
+    // 가장 큰값, 가장 작은 값
+    /*
+    let max = m[0];
+    let min = m[0];
+
+    for (var i = 0; i < m.length; i++) {
+        if( max < m[i]) max = m[i];
+        if( min > m[i]) min = m[i];
+    }
+
+    // max=11, min=1
+    console.log(`max=${max}, min=${min}`);
+    */
+
+    // 오름차순 정렬
+    // m[0]       m[m.length-1]
+
+    // m.sort(function(a, b) {
+    //     return a-b;
+    // });
+    // console.log( m );
+    // // let min = m[0];
+    // let min = m.shift();
+    // // let max = m[m.length-1];
+    // let max = m.pop();
+</script>
+</body>
+</html>

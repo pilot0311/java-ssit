@@ -1,95 +1,162 @@
-
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>이상문</title>
-<style>
-		span {
-            text-align: center;
-            font-size: 30px;
-        }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>모음집</title>
+    <link rel="shortcut icon" href="http://localhost/webPro/images/SiSt.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-        span:hover {
-            animation: anim 0.5s infinite;
+    <!-- vscode용 css/js 경로 -->
+    <link rel="stylesheet" href="/webPro/src/main/webapp/resources/cdn-main/example.css">
+    <script src="/webPro/src/main/webapp/resources/cdn-main/example.js"></script>
+    <!-- 이클 톰캣 css/js 경로 -->
+    <link rel="stylesheet" href="/webPro/resources/cdn-main/example.css">
+    <script src="/webPro/resources/cdn-main/example.js"></script>
+    <style>
+        span.material-symbols-outlined {
+            vertical-align: text-bottom;
         }
-
-        @keyframes anim {
-            10% {transform: rotateY(180deg);}
-            20% {
-                transform: rotateY(-180deg);
-                font-size: 25px;
-            }
-            30% {transform: rotateY(180deg);}
-            40% {
-                transform: rotateY(-180deg);
-                font-size: 20px;
-            }
-            50% {transform: rotateY(180deg);}
-            60% {
-                transform: rotateY(-180deg);
-                font-size: 15px;
-            }
-            70% {transform: rotateY(180deg);}
-            80% {
-                transform: rotateY(-180deg);
-                font-size: 10px;
-            }
-            90% {transform: rotateY(180deg);}
-            100% {
-                transform: rotateY(-180deg);
-                font-size: 5px;
-            }
+        fieldset {
+            background-color: rgba(150, 150, 150, .1);
         }
-        
-        /* div {
-            font-size: 25px;
-            color: black;
-            display: inline;
-        }
-
-        body {
-            position: relative;
-            background-image: url("images.jpg");
-            background-size: 100%;
-            background-repeat: no-repeat;
-        } */
-</style>
-<script type="text/javascript">
-	
-</script>
+    </style>
 </head>
+
 <body>
-	
-    
-    <!-- <script>
-        let width = window.innerWidth;
-        let height = window.innerHeight;
+<header>
+    <h1 class="main">
+        <a href="#" style="position: absolute; top: 30px;">pilot0311</a>
+    </h1>
+    <ul>
+        <li><a href="#">로그인</a></li>
+        <li><a href="#">회원가입</a></li>
+    </ul>
+</header>
+<h2>
+    <span class="material-symbols-outlined">view_list</span>
+    javascript + jquery 모음집
+</h2>
+<div>
+<fieldset>
+    <legend><h3><a target="_blank" href="https://developer.mozilla.org/ko/">JavaScript</a></h3></legend>
+    <h3>days01</h3>
+    <table class="vertical">
+        <tr>
+            <th><a target="_blank" href="javascript/days01/ex01.html">ex01</a></th>
+            <td>설명</td>
+        </tr>
+        <tr>
+            <th><a target="_blank" href="javascript/days01/ex02.html">ex02</a></th>
+            <td>설명</td>
+        </tr>
+        <tr>
+            <th><a target="_blank" href="javascript/days01/ex02_00.html">ex02_00</a></th>
+            <td>설명</td>
+        </tr>
+        <tr>
+            <th><a target="_blank" href="javascript/days01/ex02_02.html">ex02_02</a></th>
+            <td>설명</td>
+        </tr>
+        <tr>
+            <th><a target="_blank" href="javascript/days01/ex02_03.html">ex02_03</a></th>
+            <td>설명</td>
+        </tr>
+        <tr>
+            <th><a target="_blank" href="javascript/days01/ex03.html">ex03</a></th>
+            <td>설명</td>
+        </tr>
+    </table>
 
-        function init() {
-            for(let i=0; i<30; i++) {
-                let div = document.createElement("div");
-                div.style.position = 'absolute'
-                div.style.left = Math.floor(Math.random()*width) + "px";
-                div.style.top = Math.floor(Math.random()*height) + "px";
-                div.innerHTML = "이상문";
-                document.getElementsByTagName("body")[0].appendChild(div);
-            }
-        
-        }
+    <h3>days02</h3>
+    <table class="vertical">
+        <tr>
+            <th><a href="javascript/days02/ex01.html" target="_blank">ex01</a></th>
+            <td>설명</td>
+        </tr>
+        <tr>
+            <th><a href="javascript/days02/ex02.html" target="_blank">ex02</a></th>
+            <td>설명</td>
+        </tr>
+        <tr>
+            <th><a href="javascript/days02/ex03.html" target="_blank">ex03</a></th>
+            <td>설명</td>
+        </tr>
+        <tr>
+            <th><a href="javascript/days02/ex04.html" target="_blank">ex04</a></th>
+            <td>설명</td>
+        </tr>
+        <tr>
+            <th><a href="javascript/days02/ex04_02.html" target="_blank">ex04_02</a></th>
+            <td>설명</td>
+        </tr>
+        <tr>
+            <th><a href="javascript/days02/ex05.html" target="_blank">ex05</a></th>
+            <td>설명</td>
+        </tr>
 
-        function moveSnow() {
-            let div = document.getElementsByTagName("div");
-            for(let i=0; i<div.length; i++) {
-                div[i].style.top = (parseInt(div[i].style.top) + 20) + "px";
-                if(parseInt(div[i].style.top) > height) {
-                    div[i].style.top = "0px";
-                }
-            }
-        }
+    </table>
+</fieldset>
 
-        init();
-        setInterval(moveSnow, 500);
-    </script> -->
+<fieldset>
+    <legend><h3><a target="_blank" href="https://api.jquery.com/">jQuery</a></h3></legend>
+    <h3>days01</h3>
+    <table class="vertical">
+        <tr>
+            <th><a target="_blank" href="jquery/days01/ex02_00.html">ex02_00</a></th>
+            <td>설명</td>
+        </tr>
+        <tr>
+            <th><a target="_blank" href="jquery/days01/ex02_04.html">ex02_04</a></th>
+            <td>설명</td>
+        </tr>
+        <tr>
+            <th><a target="_blank" href="jquery/days01/ex03.html">ex03</a></th>
+            <td>설명</td>
+        </tr>
+    </table>
+
+    <h3>days02</h3>
+    <table class="vertical">
+        <tr>
+            <th><a target="_blank" href="jquery/days02/ex01.html">ex01</a></th>
+            <td>설명</td>
+        </tr>
+        <tr>
+            <th><a target="_blank" href="jquery/days02/ex01_02.html">ex01_02</a></th>
+            <td>설명</td>
+        </tr>
+        <tr>
+            <th><a target="_blank" href="jquery/days02/ex02.html">ex02</a></th>
+            <td>설명</td>
+        </tr>
+    </table>
+</fieldset>
+
+<fieldset>
+    <legend><h3>기타</h3></legend>
+<!--    <h3>days01</h3>-->
+    <table class="vertical">
+        <tr>
+            <th><a target="_blank" href="resources/cdn-main/template.html">추가</a></th>
+            <td>js와 css 추가</td>
+        </tr>
+        <tr>
+            <th><a target="_blank" href="javascript/days01/template.html">template</a></th>
+            <td>template 폼</td>
+        </tr>
+        <tr>
+            <th><a target="_blank" href="test/test.html">test</a></th>
+            <td>설명</td>
+        </tr>
+        <tr>
+            <th><a target="_blank" href="test/test01.html">test01</a></th>
+            <td>설명</td>
+        </tr>
+
+    </table>
+</fieldset>
+
+</div>
 </body>
 </html>

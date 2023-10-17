@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex04_03.html</title>
+    <link rel="shortcut icon" href="http://localhost/webPro/images/SiSt.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- vscode용 css/js 경로 -->
+    <link rel="stylesheet" href="/webPro/src/main/webapp/resources/cdn-main/example.css">
+    <script src="/webPro/src/main/webapp/resources/cdn-main/example.js"></script>
+    <!-- 이클 톰캣 css/js 경로 -->
+    <link rel="stylesheet" href="/webPro/resources/cdn-main/example.css">
+    <script src="/webPro/resources/cdn-main/example.js"></script>
+
+    <style>
+        span.material-symbols-outlined {
+            vertical-align: text-bottom;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1 class="main">
+        <a href="#" style="position: absolute;top:30px;">pilot0311</a>
+    </h1>
+    <ul>
+        <li>
+            <a href="#">로그인</a>
+        </li>
+        <li>
+            <a href="#">회원가입</a>
+        </li>
+    </ul>
+</header>
+<h3>
+    <span class="material-symbols-outlined">view_list</span>
+    <a target="_blank" href="https://developer.mozilla.org/ko/">JavaScript</a> days04
+    <!--    <a target="_blank" href="https://api.jquery.com/">jQuery</a> days04-->
+</h3>
+<h1 class="main">ex04_03<small>.html</small></h1>
+<div>
+    <xmp class="code">
+        [js 문자열 메서드]
+        1. charAt(i) 메서드
+        2. length 속성 문자열 길이
+    </xmp>
+</div>
+<script>
+    /*
+    var text= "hello world";
+    console.log(text.charAt(0))//h
+    console.log(text[0])//h
+
+     */
+</script>
+<script>
+    /*
+    var no = "5";
+    alert(no.padStart(4,"0"));
+    */
+    /*
+    var no = "5";
+    //js number -> string 형변환
+    alert(String(no).padStart(4, "0"))
+    */
+    /*
+    var no = "5";
+    alert(no.toString().padStart(4, "0"))
+    */
+</script>
+<script>
+    /*
+    var txt1 ="hello"
+    var txt2 ="world"
+    var txt = txt1.concat(txt2);
+    txt = txt1 + txt2;
+    */
+</script>
+<script>
+    var txt = "Admin";
+    txt.toUpperCase();
+    txt.toLowerCase();
+</script>
+<script>
+    /*
+    var txt = "txt.toLowerCase(txt);"
+    var searchWord = "txt"; //검색 후 수정 삭제
+    var index = txt.indexOf(searchWord)
+    console.log(index)//0
+    index = txt.indexOf(searchWord, index + searchWord.length)
+    console.log(index)//16
+    var newTxt = txt.replace(searchWord, "xxx")
+    console.log(newTxt)//xxx.toLowerCase(txt);
+    newTxt = txt.replaceAll(searchWord, "xxx")
+    console.log(newTxt)//xxx.toLowerCase(xxx);
+    searchWord = "Txt"
+    console.log(txt.replace(searchWord,"xxx"))//txt.toLowerCase(txt);
+    searchWord = /Txt/i;
+    console.log(txt.replace(searchWord, "xxx"))//xxx.toLowerCase(txt);
+
+     */
+</script>
+<script>
+    //js trim() trimStart() trimEnd()
+    var txt = "    hello    ";
+    // alert(`${txt}`)
+    // alert(`${txt.trim()}`)
+    // alert(`${txt.trimStart()}`)
+    // alert(`${txt.trimEnd()}`)
+</script>
+<script>
+    let rrn = "821023-1700001";
+    //slice(), substring(), substr()
+    let year = rrn.slice(0,2)
+    let month = rrn.slice(2,4)
+    let day = rrn.slice(4,6)
+    // console.log(`${year}.${month}.${day}`)
+    year = rrn.substring(0,2)
+    month = rrn.substring(2,4)
+    day = rrn.substring(4,6)
+    console.log(`${year}/${month}/${day}`)
+    console.log(rrn.slice(-7))//1700001
+
+    console.log(rrn.substr(0,2))
+</script>
+</body>
+</html>
